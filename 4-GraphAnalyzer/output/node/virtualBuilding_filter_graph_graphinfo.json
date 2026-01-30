@@ -1,0 +1,8312 @@
+{
+  "nodes": [
+    {
+      "ID": "CH_CO2",
+      "Label": "CO2 [Physical]",
+      "Type": "physical_channel",
+      "Target": [
+        "T_Rule_15_0",
+        "T_Rule_16_0",
+        "T_Rule_17_0"
+      ],
+      "Source": [
+        "A_Rule_15_0",
+        "A_Rule_16_0",
+        "A_Rule_17_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "CH_Temperature_ServerRoom",
+      "Label": "Temperature_ServerRoom [Physical]",
+      "Type": "physical_channel",
+      "Target": [
+        "T_Rule_163_0"
+      ],
+      "Source": [
+        "A_Rule_162_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "CH_access_authentication",
+      "Label": "access_authentication [System]",
+      "Type": "system_channel",
+      "Target": [
+        "T_Rule_129_0",
+        "T_Rule_130_0",
+        "T_Rule_131_0",
+        "T_Rule_132_0",
+        "T_Rule_133_0",
+        "T_Rule_134_0",
+        "T_Rule_135_0",
+        "T_Rule_136_0",
+        "T_Rule_137_0",
+        "T_Rule_138_0",
+        "T_Rule_139_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "CH_alarm",
+      "Label": "alarm [System]",
+      "Type": "system_channel",
+      "Target": [
+        "T_Rule_40_0",
+        "T_Rule_41_0",
+        "T_Rule_42_0",
+        "T_Rule_43_0",
+        "T_Rule_44_0",
+        "T_Rule_45_0",
+        "T_Rule_46_0",
+        "T_Rule_47_0",
+        "T_Rule_48_0",
+        "T_Rule_49_0",
+        "T_Rule_50_0",
+        "T_Rule_51_0",
+        "T_Rule_52_0",
+        "T_Rule_53_0",
+        "T_Rule_54_0",
+        "T_Rule_55_0",
+        "T_Rule_56_0",
+        "T_Rule_57_0",
+        "T_Rule_58_0",
+        "T_Rule_59_0",
+        "T_Rule_60_0",
+        "T_Rule_61_0",
+        "T_Rule_62_0",
+        "T_Rule_63_0",
+        "T_Rule_64_0",
+        "T_Rule_65_0",
+        "T_Rule_66_0",
+        "T_Rule_67_0",
+        "T_Rule_68_0",
+        "T_Rule_69_0",
+        "T_Rule_70_0",
+        "T_Rule_71_0",
+        "T_Rule_72_0",
+        "T_Rule_73_0",
+        "T_Rule_74_0",
+        "T_Rule_75_0",
+        "T_Rule_76_0",
+        "T_Rule_77_0",
+        "T_Rule_78_0",
+        "T_Rule_79_0",
+        "T_Rule_80_0",
+        "T_Rule_81_0",
+        "T_Rule_82_0",
+        "T_Rule_83_0",
+        "T_Rule_84_0",
+        "T_Rule_85_0",
+        "T_Rule_86_0",
+        "T_Rule_87_0",
+        "T_Rule_90_0",
+        "T_Rule_140_0",
+        "T_Rule_141_0",
+        "T_Rule_155_0",
+        "T_Rule_156_0"
+      ],
+      "Source": [
+        "A_Rule_22_0",
+        "A_Rule_23_0",
+        "A_Rule_24_0",
+        "A_Rule_25_0",
+        "A_Rule_26_0",
+        "A_Rule_27_0",
+        "A_Rule_28_0",
+        "A_Rule_29_0",
+        "A_Rule_30_0",
+        "A_Rule_31_0",
+        "A_Rule_32_0",
+        "A_Rule_33_0",
+        "A_Rule_34_0",
+        "A_Rule_35_0",
+        "A_Rule_36_0",
+        "A_Rule_37_0",
+        "A_Rule_38_0",
+        "A_Rule_39_0",
+        "A_Rule_89_0",
+        "A_Rule_90_0",
+        "A_Rule_153_0",
+        "A_Rule_154_0",
+        "A_Rule_155_0",
+        "A_Rule_156_0",
+        "A_Rule_163_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "CH_door_lock",
+      "Label": "door_lock [System]",
+      "Type": "system_channel",
+      "Target": [
+        "T_Rule_153_0",
+        "T_Rule_154_0"
+      ],
+      "Source": [
+        "A_Rule_58_0",
+        "A_Rule_59_0",
+        "A_Rule_60_0",
+        "A_Rule_61_0",
+        "A_Rule_62_0",
+        "A_Rule_63_0",
+        "A_Rule_64_0",
+        "A_Rule_65_0",
+        "A_Rule_66_0",
+        "A_Rule_67_0",
+        "A_Rule_68_0",
+        "A_Rule_129_0",
+        "A_Rule_130_0",
+        "A_Rule_131_0",
+        "A_Rule_132_0",
+        "A_Rule_133_0",
+        "A_Rule_134_0",
+        "A_Rule_135_0",
+        "A_Rule_136_0",
+        "A_Rule_137_0",
+        "A_Rule_138_0",
+        "A_Rule_139_0",
+        "A_Rule_140_0",
+        "A_Rule_141_0",
+        "A_Rule_142_0",
+        "A_Rule_143_0",
+        "A_Rule_144_0",
+        "A_Rule_145_0",
+        "A_Rule_146_0",
+        "A_Rule_147_0",
+        "A_Rule_148_0",
+        "A_Rule_149_0",
+        "A_Rule_150_0",
+        "A_Rule_151_0",
+        "A_Rule_152_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "CH_humidity",
+      "Label": "humidity [Physical]",
+      "Type": "physical_channel",
+      "Target": [
+        "T_Rule_18_0"
+      ],
+      "Source": [
+        "A_Rule_18_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "CH_luminance",
+      "Label": "luminance [Physical]",
+      "Type": "physical_channel",
+      "Target": [
+        "T_Rule_95_0",
+        "T_Rule_96_0"
+      ],
+      "Source": [
+        "A_Rule_40_1",
+        "A_Rule_41_1",
+        "A_Rule_42_1",
+        "A_Rule_43_1",
+        "A_Rule_44_1",
+        "A_Rule_45_1",
+        "A_Rule_46_1",
+        "A_Rule_47_1",
+        "A_Rule_48_1",
+        "A_Rule_49_1",
+        "A_Rule_50_0",
+        "A_Rule_51_0",
+        "A_Rule_52_0",
+        "A_Rule_53_0",
+        "A_Rule_54_0",
+        "A_Rule_55_0",
+        "A_Rule_56_0",
+        "A_Rule_69_0",
+        "A_Rule_70_0",
+        "A_Rule_71_0",
+        "A_Rule_72_0",
+        "A_Rule_73_0",
+        "A_Rule_74_0",
+        "A_Rule_75_0",
+        "A_Rule_76_0",
+        "A_Rule_77_0",
+        "A_Rule_78_0",
+        "A_Rule_79_0",
+        "A_Rule_80_0",
+        "A_Rule_81_0",
+        "A_Rule_82_0",
+        "A_Rule_83_0",
+        "A_Rule_84_0",
+        "A_Rule_85_0",
+        "A_Rule_86_0",
+        "A_Rule_87_0",
+        "A_Rule_91_0",
+        "A_Rule_92_0",
+        "A_Rule_93_0",
+        "A_Rule_93_1",
+        "A_Rule_94_0",
+        "A_Rule_95_0",
+        "A_Rule_96_0",
+        "A_Rule_97_0",
+        "A_Rule_98_0",
+        "A_Rule_99_0",
+        "A_Rule_100_0",
+        "A_Rule_101_0",
+        "A_Rule_102_0",
+        "A_Rule_103_0",
+        "A_Rule_104_0",
+        "A_Rule_105_0",
+        "A_Rule_106_0",
+        "A_Rule_107_0",
+        "A_Rule_108_0",
+        "A_Rule_109_0",
+        "A_Rule_110_0",
+        "A_Rule_111_0",
+        "A_Rule_112_0",
+        "A_Rule_113_0",
+        "A_Rule_114_0",
+        "A_Rule_115_0",
+        "A_Rule_116_0",
+        "A_Rule_117_0",
+        "A_Rule_118_0",
+        "A_Rule_119_0",
+        "A_Rule_120_0",
+        "A_Rule_121_0",
+        "A_Rule_122_0",
+        "A_Rule_123_0",
+        "A_Rule_124_0",
+        "A_Rule_125_0",
+        "A_Rule_126_0",
+        "A_Rule_127_0",
+        "A_Rule_127_1",
+        "A_Rule_127_2",
+        "A_Rule_128_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "CH_motion",
+      "Label": "motion [Physical]",
+      "Type": "physical_channel",
+      "Target": [
+        "T_Rule_91_0",
+        "T_Rule_92_0",
+        "T_Rule_93_0",
+        "T_Rule_94_0",
+        "T_Rule_96_1",
+        "T_Rule_97_0",
+        "T_Rule_98_0",
+        "T_Rule_99_0",
+        "T_Rule_100_0",
+        "T_Rule_101_0",
+        "T_Rule_102_0",
+        "T_Rule_103_0",
+        "T_Rule_104_0",
+        "T_Rule_105_0",
+        "T_Rule_106_0",
+        "T_Rule_107_0",
+        "T_Rule_108_0",
+        "T_Rule_109_0",
+        "T_Rule_110_0",
+        "T_Rule_111_0",
+        "T_Rule_112_0",
+        "T_Rule_113_0",
+        "T_Rule_114_0",
+        "T_Rule_115_0",
+        "T_Rule_116_0",
+        "T_Rule_117_0",
+        "T_Rule_118_0",
+        "T_Rule_119_0",
+        "T_Rule_120_0",
+        "T_Rule_121_0",
+        "T_Rule_122_0",
+        "T_Rule_123_0",
+        "T_Rule_124_0",
+        "T_Rule_125_0",
+        "T_Rule_126_0",
+        "T_Rule_127_1",
+        "T_Rule_158_0",
+        "T_Rule_159_0",
+        "T_Rule_160_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "CH_recording_status",
+      "Label": "recording_status [System]",
+      "Type": "system_channel",
+      "Target": [],
+      "Source": [
+        "A_Rule_140_1"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "CH_smoke",
+      "Label": "smoke [Physical]",
+      "Type": "physical_channel",
+      "Target": [
+        "T_Rule_22_0",
+        "T_Rule_23_0",
+        "T_Rule_24_0",
+        "T_Rule_25_0",
+        "T_Rule_26_0",
+        "T_Rule_27_0",
+        "T_Rule_28_0",
+        "T_Rule_29_0",
+        "T_Rule_30_0",
+        "T_Rule_31_0",
+        "T_Rule_32_0",
+        "T_Rule_33_0",
+        "T_Rule_34_0",
+        "T_Rule_35_0",
+        "T_Rule_36_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "CH_sound",
+      "Label": "sound [Physical]",
+      "Type": "physical_channel",
+      "Target": [],
+      "Source": [
+        "A_Rule_40_0",
+        "A_Rule_41_0",
+        "A_Rule_42_0",
+        "A_Rule_43_0",
+        "A_Rule_44_0",
+        "A_Rule_45_0",
+        "A_Rule_46_0",
+        "A_Rule_47_0",
+        "A_Rule_48_0",
+        "A_Rule_49_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "CH_temperature",
+      "Label": "temperature [Physical]",
+      "Type": "physical_channel",
+      "Target": [
+        "T_Rule_1_0",
+        "T_Rule_2_0",
+        "T_Rule_3_0",
+        "T_Rule_4_0",
+        "T_Rule_5_0",
+        "T_Rule_6_0",
+        "T_Rule_7_0",
+        "T_Rule_8_0",
+        "T_Rule_9_0",
+        "T_Rule_10_0",
+        "T_Rule_11_0",
+        "T_Rule_12_0",
+        "T_Rule_13_0",
+        "T_Rule_14_0",
+        "T_Rule_37_0",
+        "T_Rule_38_0",
+        "T_Rule_88_0"
+      ],
+      "Source": [
+        "A_Rule_1_0",
+        "A_Rule_2_0",
+        "A_Rule_3_0",
+        "A_Rule_4_0",
+        "A_Rule_5_0",
+        "A_Rule_6_0",
+        "A_Rule_7_0",
+        "A_Rule_8_0",
+        "A_Rule_9_0",
+        "A_Rule_10_0",
+        "A_Rule_11_0",
+        "A_Rule_12_0",
+        "A_Rule_13_0",
+        "A_Rule_14_0",
+        "A_Rule_88_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "CH_time",
+      "Label": "time [System]",
+      "Type": "system_channel",
+      "Target": [
+        "T_Rule_19_0",
+        "T_Rule_19_1",
+        "T_Rule_20_0",
+        "T_Rule_20_1",
+        "T_Rule_21_0",
+        "T_Rule_127_0",
+        "T_Rule_157_0",
+        "T_Rule_161_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "CH_user_command",
+      "Label": "user_command [System]",
+      "Type": "system_channel",
+      "Target": [
+        "T_Rule_89_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_1_0",
+      "Label": "Action_Rule_1:VAV_1A.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_temperature"
+      ],
+      "Source": [
+        "T_Rule_1_0"
+      ],
+      "centrality": 0.0012351223894004047
+    },
+    {
+      "ID": "T_Rule_1_0",
+      "Label": "Trigger_(Rule_1):TempSensor_1A.temperature>24",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_1_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.00021708211692491954
+    },
+    {
+      "ID": "A_Rule_2_0",
+      "Label": "Action_Rule_2:VAV_1A.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_temperature"
+      ],
+      "Source": [
+        "T_Rule_2_0"
+      ],
+      "centrality": 0.0012351223894004047
+    },
+    {
+      "ID": "T_Rule_2_0",
+      "Label": "Trigger_(Rule_2):TempSensor_1A.temperature<21",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_2_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.00021708211692491954
+    },
+    {
+      "ID": "A_Rule_3_0",
+      "Label": "Action_Rule_3:VAV_1B.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_temperature"
+      ],
+      "Source": [
+        "T_Rule_3_0"
+      ],
+      "centrality": 0.0012351223894004047
+    },
+    {
+      "ID": "T_Rule_3_0",
+      "Label": "Trigger_(Rule_3):TempSensor_1B.temperature>24",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_3_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.00021708211692491954
+    },
+    {
+      "ID": "A_Rule_4_0",
+      "Label": "Action_Rule_4:VAV_1B.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_temperature"
+      ],
+      "Source": [
+        "T_Rule_4_0"
+      ],
+      "centrality": 0.0012351223894004047
+    },
+    {
+      "ID": "T_Rule_4_0",
+      "Label": "Trigger_(Rule_4):TempSensor_1B.temperature<21",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_4_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.00021708211692491954
+    },
+    {
+      "ID": "A_Rule_5_0",
+      "Label": "Action_Rule_5:VAV_2A.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_temperature"
+      ],
+      "Source": [
+        "T_Rule_5_0"
+      ],
+      "centrality": 0.0012351223894004047
+    },
+    {
+      "ID": "T_Rule_5_0",
+      "Label": "Trigger_(Rule_5):TempSensor_2A.temperature>24",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_5_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.00021708211692491954
+    },
+    {
+      "ID": "A_Rule_6_0",
+      "Label": "Action_Rule_6:VAV_2A.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_temperature"
+      ],
+      "Source": [
+        "T_Rule_6_0"
+      ],
+      "centrality": 0.0012351223894004047
+    },
+    {
+      "ID": "T_Rule_6_0",
+      "Label": "Trigger_(Rule_6):TempSensor_2A.temperature<21",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_6_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.00021708211692491954
+    },
+    {
+      "ID": "A_Rule_7_0",
+      "Label": "Action_Rule_7:VAV_2B.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_temperature"
+      ],
+      "Source": [
+        "T_Rule_7_0"
+      ],
+      "centrality": 0.0012351223894004047
+    },
+    {
+      "ID": "T_Rule_7_0",
+      "Label": "Trigger_(Rule_7):TempSensor_2B.temperature>24",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_7_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.00021708211692491954
+    },
+    {
+      "ID": "A_Rule_8_0",
+      "Label": "Action_Rule_8:VAV_2B.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_temperature"
+      ],
+      "Source": [
+        "T_Rule_8_0"
+      ],
+      "centrality": 0.0012351223894004047
+    },
+    {
+      "ID": "T_Rule_8_0",
+      "Label": "Trigger_(Rule_8):TempSensor_2B.temperature<21",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_8_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.00021708211692491954
+    },
+    {
+      "ID": "A_Rule_9_0",
+      "Label": "Action_Rule_9:VAV_2C.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_temperature"
+      ],
+      "Source": [
+        "T_Rule_9_0"
+      ],
+      "centrality": 0.0012351223894004047
+    },
+    {
+      "ID": "T_Rule_9_0",
+      "Label": "Trigger_(Rule_9):TempSensor_2C.temperature>24",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_9_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.00021708211692491954
+    },
+    {
+      "ID": "A_Rule_10_0",
+      "Label": "Action_Rule_10:VAV_2C.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_temperature"
+      ],
+      "Source": [
+        "T_Rule_10_0"
+      ],
+      "centrality": 0.0012351223894004047
+    },
+    {
+      "ID": "T_Rule_10_0",
+      "Label": "Trigger_(Rule_10):TempSensor_2C.temperature<21",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_10_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.00021708211692491954
+    },
+    {
+      "ID": "A_Rule_11_0",
+      "Label": "Action_Rule_11:VAV_3A.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_temperature"
+      ],
+      "Source": [
+        "T_Rule_11_0"
+      ],
+      "centrality": 0.0012351223894004047
+    },
+    {
+      "ID": "T_Rule_11_0",
+      "Label": "Trigger_(Rule_11):TempSensor_3A.temperature>24",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_11_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.00021708211692491954
+    },
+    {
+      "ID": "A_Rule_12_0",
+      "Label": "Action_Rule_12:VAV_3A.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_temperature"
+      ],
+      "Source": [
+        "T_Rule_12_0"
+      ],
+      "centrality": 0.0012351223894004047
+    },
+    {
+      "ID": "T_Rule_12_0",
+      "Label": "Trigger_(Rule_12):TempSensor_3A.temperature<21",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_12_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.00021708211692491954
+    },
+    {
+      "ID": "A_Rule_13_0",
+      "Label": "Action_Rule_13:VAV_3B.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_temperature"
+      ],
+      "Source": [
+        "T_Rule_13_0"
+      ],
+      "centrality": 0.0012351223894004047
+    },
+    {
+      "ID": "T_Rule_13_0",
+      "Label": "Trigger_(Rule_13):TempSensor_3B.temperature>24",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_13_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.00021708211692491954
+    },
+    {
+      "ID": "A_Rule_14_0",
+      "Label": "Action_Rule_14:VAV_3B.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_temperature"
+      ],
+      "Source": [
+        "T_Rule_14_0"
+      ],
+      "centrality": 0.0012351223894004047
+    },
+    {
+      "ID": "T_Rule_14_0",
+      "Label": "Trigger_(Rule_14):TempSensor_3B.temperature<21",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_14_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.00021708211692491954
+    },
+    {
+      "ID": "A_Rule_15_0",
+      "Label": "Action_Rule_15:VAV_Conf1.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_CO2"
+      ],
+      "Source": [
+        "T_Rule_15_0"
+      ],
+      "centrality": 3.742795119395164e-05
+    },
+    {
+      "ID": "T_Rule_15_0",
+      "Label": "Trigger_(Rule_15):CO2Sensor_Conf1.co2_concentration>1000",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_15_0"
+      ],
+      "Source": [
+        "CH_CO2"
+      ],
+      "centrality": 3.742795119395164e-05
+    },
+    {
+      "ID": "A_Rule_16_0",
+      "Label": "Action_Rule_16:VAV_Conf2.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_CO2"
+      ],
+      "Source": [
+        "T_Rule_16_0"
+      ],
+      "centrality": 3.742795119395164e-05
+    },
+    {
+      "ID": "T_Rule_16_0",
+      "Label": "Trigger_(Rule_16):CO2Sensor_Conf2.co2_concentration>1000",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_16_0"
+      ],
+      "Source": [
+        "CH_CO2"
+      ],
+      "centrality": 3.742795119395164e-05
+    },
+    {
+      "ID": "A_Rule_17_0",
+      "Label": "Action_Rule_17:VAV_Conf3.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_CO2"
+      ],
+      "Source": [
+        "T_Rule_17_0"
+      ],
+      "centrality": 3.742795119395164e-05
+    },
+    {
+      "ID": "T_Rule_17_0",
+      "Label": "Trigger_(Rule_17):CO2Sensor_Conf3.co2_concentration>1000",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_17_0"
+      ],
+      "Source": [
+        "CH_CO2"
+      ],
+      "centrality": 3.742795119395164e-05
+    },
+    {
+      "ID": "A_Rule_18_0",
+      "Label": "Action_Rule_18:VAV_ServerRoom.set_damper_position(100)",
+      "Type": "action",
+      "Target": [
+        "CH_humidity"
+      ],
+      "Source": [
+        "T_Rule_18_0"
+      ],
+      "centrality": 7.485590238790329e-06
+    },
+    {
+      "ID": "T_Rule_18_0",
+      "Label": "Trigger_(Rule_18):HumiditySensor_ServerRoom.relative_humidity>60",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_18_0"
+      ],
+      "Source": [
+        "CH_humidity"
+      ],
+      "centrality": 7.485590238790329e-06
+    },
+    {
+      "ID": "A_Rule_19_0",
+      "Label": "Action_Rule_19:Main_Chiller.set_power(ON)",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "LOGIC_Rule_19_AND"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_19_1",
+      "Label": "Action_Rule_19:Main_CoolingTower.set_power(ON)",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "LOGIC_Rule_19_AND"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_19_2",
+      "Label": "Action_Rule_19:Central_AHU.set_power(ON)",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "LOGIC_Rule_19_AND"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_19_0",
+      "Label": "Trigger_(Rule_19):Time_Mode_Controller.day_profile==WORK_HOURS",
+      "Type": "trigger",
+      "Target": [
+        "LOGIC_Rule_19_AND"
+      ],
+      "Source": [
+        "CH_time"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_19_1",
+      "Label": "Trigger_(Rule_19):Time_Mode_Controller.season_profile==SUMMER",
+      "Type": "trigger",
+      "Target": [
+        "LOGIC_Rule_19_AND"
+      ],
+      "Source": [
+        "CH_time"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "LOGIC_Rule_19_AND",
+      "Label": "AND",
+      "Type": "AND",
+      "Target": [
+        "A_Rule_19_0",
+        "A_Rule_19_1",
+        "A_Rule_19_2"
+      ],
+      "Source": [
+        "T_Rule_19_0",
+        "T_Rule_19_1"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_20_0",
+      "Label": "Action_Rule_20:Main_Boiler.set_power(ON)",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "LOGIC_Rule_20_AND"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_20_1",
+      "Label": "Action_Rule_20:Central_AHU.set_power(ON)",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "LOGIC_Rule_20_AND"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_20_0",
+      "Label": "Trigger_(Rule_20):Time_Mode_Controller.day_profile==WORK_HOURS",
+      "Type": "trigger",
+      "Target": [
+        "LOGIC_Rule_20_AND"
+      ],
+      "Source": [
+        "CH_time"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_20_1",
+      "Label": "Trigger_(Rule_20):Time_Mode_Controller.season_profile==WINTER",
+      "Type": "trigger",
+      "Target": [
+        "LOGIC_Rule_20_AND"
+      ],
+      "Source": [
+        "CH_time"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "LOGIC_Rule_20_AND",
+      "Label": "AND",
+      "Type": "AND",
+      "Target": [
+        "A_Rule_20_0",
+        "A_Rule_20_1"
+      ],
+      "Source": [
+        "T_Rule_20_0",
+        "T_Rule_20_1"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_21_0",
+      "Label": "Action_Rule_21:Central_AHU.set_power(OFF)",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "T_Rule_21_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_21_1",
+      "Label": "Action_Rule_21:Main_Chiller.set_power(OFF)",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "T_Rule_21_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_21_2",
+      "Label": "Action_Rule_21:Main_Boiler.set_power(OFF)",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "T_Rule_21_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_21_3",
+      "Label": "Action_Rule_21:Main_CoolingTower.set_power(OFF)",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "T_Rule_21_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_21_0",
+      "Label": "Trigger_(Rule_21):Time_Mode_Controller.day_profile==OFF_HOURS",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_21_0",
+        "A_Rule_21_1",
+        "A_Rule_21_2",
+        "A_Rule_21_3"
+      ],
+      "Source": [
+        "CH_time"
+      ],
+      "centrality": 2.9942360955161315e-05
+    },
+    {
+      "ID": "A_Rule_22_0",
+      "Label": "Action_Rule_22:Main_FACP.value_to_set(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_22_0"
+      ],
+      "centrality": 0.0010539711056216788
+    },
+    {
+      "ID": "T_Rule_22_0",
+      "Label": "Trigger_(Rule_22):Smoke_Detector_Lobby_1.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_22_0"
+      ],
+      "Source": [
+        "CH_smoke"
+      ],
+      "centrality": 7.335878434014525e-05
+    },
+    {
+      "ID": "A_Rule_23_0",
+      "Label": "Action_Rule_23:Main_FACP.value_to_set(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_23_0"
+      ],
+      "centrality": 0.0010539711056216788
+    },
+    {
+      "ID": "T_Rule_23_0",
+      "Label": "Trigger_(Rule_23):Smoke_Detector_Hallway_1.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_23_0"
+      ],
+      "Source": [
+        "CH_smoke"
+      ],
+      "centrality": 7.335878434014525e-05
+    },
+    {
+      "ID": "A_Rule_24_0",
+      "Label": "Action_Rule_24:Main_FACP.value_to_set(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_24_0"
+      ],
+      "centrality": 0.0010539711056216788
+    },
+    {
+      "ID": "T_Rule_24_0",
+      "Label": "Trigger_(Rule_24):Smoke_Detector_Office_1A.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_24_0"
+      ],
+      "Source": [
+        "CH_smoke"
+      ],
+      "centrality": 7.335878434014525e-05
+    },
+    {
+      "ID": "A_Rule_25_0",
+      "Label": "Action_Rule_25:Main_FACP.value_to_set(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_25_0"
+      ],
+      "centrality": 0.0010539711056216788
+    },
+    {
+      "ID": "T_Rule_25_0",
+      "Label": "Trigger_(Rule_25):Smoke_Detector_Office_1B.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_25_0"
+      ],
+      "Source": [
+        "CH_smoke"
+      ],
+      "centrality": 7.335878434014525e-05
+    },
+    {
+      "ID": "A_Rule_26_0",
+      "Label": "Action_Rule_26:Main_FACP.value_to_set(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_26_0"
+      ],
+      "centrality": 0.0010539711056216788
+    },
+    {
+      "ID": "T_Rule_26_0",
+      "Label": "Trigger_(Rule_26):Smoke_Detector_ConfRoom_1.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_26_0"
+      ],
+      "Source": [
+        "CH_smoke"
+      ],
+      "centrality": 7.335878434014525e-05
+    },
+    {
+      "ID": "A_Rule_27_0",
+      "Label": "Action_Rule_27:Main_FACP.value_to_set(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_27_0"
+      ],
+      "centrality": 0.0010539711056216788
+    },
+    {
+      "ID": "T_Rule_27_0",
+      "Label": "Trigger_(Rule_27):Smoke_Detector_Control_Room.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_27_0"
+      ],
+      "Source": [
+        "CH_smoke"
+      ],
+      "centrality": 7.335878434014525e-05
+    },
+    {
+      "ID": "A_Rule_28_0",
+      "Label": "Action_Rule_28:Main_FACP.value_to_set(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_28_0"
+      ],
+      "centrality": 0.0010539711056216788
+    },
+    {
+      "ID": "T_Rule_28_0",
+      "Label": "Trigger_(Rule_28):Smoke_Detector_Hallway_2.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_28_0"
+      ],
+      "Source": [
+        "CH_smoke"
+      ],
+      "centrality": 7.335878434014525e-05
+    },
+    {
+      "ID": "A_Rule_29_0",
+      "Label": "Action_Rule_29:Main_FACP.value_to_set(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_29_0"
+      ],
+      "centrality": 0.0010539711056216788
+    },
+    {
+      "ID": "T_Rule_29_0",
+      "Label": "Trigger_(Rule_29):Smoke_Detector_Office_2A.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_29_0"
+      ],
+      "Source": [
+        "CH_smoke"
+      ],
+      "centrality": 7.335878434014525e-05
+    },
+    {
+      "ID": "A_Rule_30_0",
+      "Label": "Action_Rule_30:Main_FACP.set_value(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_30_0"
+      ],
+      "centrality": 0.0010539711056216788
+    },
+    {
+      "ID": "T_Rule_30_0",
+      "Label": "Trigger_(Rule_30):Smoke_Detector_Office_2B.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_30_0"
+      ],
+      "Source": [
+        "CH_smoke"
+      ],
+      "centrality": 7.335878434014525e-05
+    },
+    {
+      "ID": "A_Rule_31_0",
+      "Label": "Action_Rule_31:Main_FACP.set_value(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_31_0"
+      ],
+      "centrality": 0.0010539711056216788
+    },
+    {
+      "ID": "T_Rule_31_0",
+      "Label": "Trigger_(Rule_31):Smoke_Detector_Office_2C.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_31_0"
+      ],
+      "Source": [
+        "CH_smoke"
+      ],
+      "centrality": 7.335878434014525e-05
+    },
+    {
+      "ID": "A_Rule_32_0",
+      "Label": "Action_Rule_32:Main_FACP.set_value(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_32_0"
+      ],
+      "centrality": 0.0010539711056216788
+    },
+    {
+      "ID": "T_Rule_32_0",
+      "Label": "Trigger_(Rule_32):Smoke_Detector_ConfRoom_2.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_32_0"
+      ],
+      "Source": [
+        "CH_smoke"
+      ],
+      "centrality": 7.335878434014525e-05
+    },
+    {
+      "ID": "A_Rule_33_0",
+      "Label": "Action_Rule_33:Main_FACP.set_value(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_33_0"
+      ],
+      "centrality": 0.0010539711056216788
+    },
+    {
+      "ID": "T_Rule_33_0",
+      "Label": "Trigger_(Rule_33):Smoke_Detector_Hallway_3.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_33_0"
+      ],
+      "Source": [
+        "CH_smoke"
+      ],
+      "centrality": 7.335878434014525e-05
+    },
+    {
+      "ID": "A_Rule_34_0",
+      "Label": "Action_Rule_34:Main_FACP.set_value(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_34_0"
+      ],
+      "centrality": 0.0010539711056216788
+    },
+    {
+      "ID": "T_Rule_34_0",
+      "Label": "Trigger_(Rule_34):Smoke_Detector_Office_3A.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_34_0"
+      ],
+      "Source": [
+        "CH_smoke"
+      ],
+      "centrality": 7.335878434014525e-05
+    },
+    {
+      "ID": "A_Rule_35_0",
+      "Label": "Action_Rule_35:Main_FACP.set_value(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_35_0"
+      ],
+      "centrality": 0.0010539711056216788
+    },
+    {
+      "ID": "T_Rule_35_0",
+      "Label": "Trigger_(Rule_35):Smoke_Detector_Office_3B.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_35_0"
+      ],
+      "Source": [
+        "CH_smoke"
+      ],
+      "centrality": 7.335878434014525e-05
+    },
+    {
+      "ID": "A_Rule_36_0",
+      "Label": "Action_Rule_36:Main_FACP.set_value(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_36_0"
+      ],
+      "centrality": 0.0010539711056216788
+    },
+    {
+      "ID": "T_Rule_36_0",
+      "Label": "Trigger_(Rule_36):Smoke_Detector_ConfRoom_3.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_36_0"
+      ],
+      "Source": [
+        "CH_smoke"
+      ],
+      "centrality": 7.335878434014525e-05
+    },
+    {
+      "ID": "A_Rule_37_0",
+      "Label": "Action_Rule_37:Main_FACP.set_value(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_37_0"
+      ],
+      "centrality": 0.016303615540085338
+    },
+    {
+      "ID": "T_Rule_37_0",
+      "Label": "Trigger_(Rule_37):Heat_Detector_Server_Room.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_37_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.015547570925967516
+    },
+    {
+      "ID": "A_Rule_38_0",
+      "Label": "Action_Rule_38:Main_FACP.set_value(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_38_0"
+      ],
+      "centrality": 0.016303615540085338
+    },
+    {
+      "ID": "T_Rule_38_0",
+      "Label": "Trigger_(Rule_38):Heat_Detector_Mechanical_Room_1.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_38_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.015547570925967516
+    },
+    {
+      "ID": "A_Rule_39_0",
+      "Label": "Action_Rule_39:Main_FACP.set_value(ALARM)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_39_0"
+      ],
+      "centrality": 0.000988097911520324
+    },
+    {
+      "ID": "T_Rule_39_0",
+      "Label": "Trigger_(Rule_39):Pull_Station_Lobby_1.activation_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_39_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_40_0",
+      "Label": "Action_Rule_40:Horn_Lobby_1.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_sound"
+      ],
+      "Source": [
+        "T_Rule_40_0"
+      ],
+      "centrality": 0.00012650647503555635
+    },
+    {
+      "ID": "A_Rule_40_1",
+      "Label": "Action_Rule_40:Strobe_Lobby_1.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_40_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_40_0",
+      "Label": "Trigger_(Rule_40):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_40_0",
+        "A_Rule_40_1"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0026316840082840505
+    },
+    {
+      "ID": "A_Rule_41_0",
+      "Label": "Action_Rule_41:Horn_Hallway_1.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_sound"
+      ],
+      "Source": [
+        "T_Rule_41_0"
+      ],
+      "centrality": 0.00012650647503555635
+    },
+    {
+      "ID": "A_Rule_41_1",
+      "Label": "Action_Rule_41:Strobe_Hallway_1.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_41_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_41_0",
+      "Label": "Trigger_(Rule_41):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_41_0",
+        "A_Rule_41_1"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0026316840082840505
+    },
+    {
+      "ID": "A_Rule_42_0",
+      "Label": "Action_Rule_42:Horn_ConfRoom_1.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_sound"
+      ],
+      "Source": [
+        "T_Rule_42_0"
+      ],
+      "centrality": 0.00012650647503555635
+    },
+    {
+      "ID": "A_Rule_42_1",
+      "Label": "Action_Rule_42:Strobe_ConfRoom_1.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_42_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_42_0",
+      "Label": "Trigger_(Rule_42):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_42_0",
+        "A_Rule_42_1"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0026316840082840505
+    },
+    {
+      "ID": "A_Rule_43_0",
+      "Label": "Action_Rule_43:Horn_Server_Room.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_sound"
+      ],
+      "Source": [
+        "T_Rule_43_0"
+      ],
+      "centrality": 0.00012650647503555635
+    },
+    {
+      "ID": "A_Rule_43_1",
+      "Label": "Action_Rule_43:Strobe_Server_Room.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_43_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_43_0",
+      "Label": "Trigger_(Rule_43):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_43_0",
+        "A_Rule_43_1"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0026316840082840505
+    },
+    {
+      "ID": "A_Rule_44_0",
+      "Label": "Action_Rule_44:Horn_Control_Room.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_sound"
+      ],
+      "Source": [
+        "T_Rule_44_0"
+      ],
+      "centrality": 0.00012650647503555635
+    },
+    {
+      "ID": "A_Rule_44_1",
+      "Label": "Action_Rule_44:Strobe_Control_Room.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_44_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_44_0",
+      "Label": "Trigger_(Rule_44):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_44_0",
+        "A_Rule_44_1"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0026316840082840505
+    },
+    {
+      "ID": "A_Rule_45_0",
+      "Label": "Action_Rule_45:Horn_Mechanical_Room_1.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_sound"
+      ],
+      "Source": [
+        "T_Rule_45_0"
+      ],
+      "centrality": 0.00012650647503555635
+    },
+    {
+      "ID": "A_Rule_45_1",
+      "Label": "Action_Rule_45:Strobe_Mechanical_Room_1.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_45_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_45_0",
+      "Label": "Trigger_(Rule_45):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_45_0",
+        "A_Rule_45_1"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0026316840082840505
+    },
+    {
+      "ID": "A_Rule_46_0",
+      "Label": "Action_Rule_46:Horn_Hallway_2.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_sound"
+      ],
+      "Source": [
+        "T_Rule_46_0"
+      ],
+      "centrality": 0.00012650647503555635
+    },
+    {
+      "ID": "A_Rule_46_1",
+      "Label": "Action_Rule_46:Strobe_Hallway_2.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_46_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_46_0",
+      "Label": "Trigger_(Rule_46):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_46_0",
+        "A_Rule_46_1"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0026316840082840505
+    },
+    {
+      "ID": "A_Rule_47_0",
+      "Label": "Action_Rule_47:Horn_ConfRoom_2.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_sound"
+      ],
+      "Source": [
+        "T_Rule_47_0"
+      ],
+      "centrality": 0.00012650647503555635
+    },
+    {
+      "ID": "A_Rule_47_1",
+      "Label": "Action_Rule_47:Strobe_ConfRoom_2.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_47_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_47_0",
+      "Label": "Trigger_(Rule_47):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_47_0",
+        "A_Rule_47_1"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0026316840082840505
+    },
+    {
+      "ID": "A_Rule_48_0",
+      "Label": "Action_Rule_48:Horn_Hallway_3.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_sound"
+      ],
+      "Source": [
+        "T_Rule_48_0"
+      ],
+      "centrality": 0.00012650647503555635
+    },
+    {
+      "ID": "A_Rule_48_1",
+      "Label": "Action_Rule_48:Strobe_Hallway_3.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_48_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_48_0",
+      "Label": "Trigger_(Rule_48):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_48_0",
+        "A_Rule_48_1"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0026316840082840505
+    },
+    {
+      "ID": "A_Rule_49_0",
+      "Label": "Action_Rule_49:Horn_ConfRoom_3.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_sound"
+      ],
+      "Source": [
+        "T_Rule_49_0"
+      ],
+      "centrality": 0.00012650647503555635
+    },
+    {
+      "ID": "A_Rule_49_1",
+      "Label": "Action_Rule_49:Strobe_ConfRoom_3.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_49_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_49_0",
+      "Label": "Trigger_(Rule_49):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_49_0",
+        "A_Rule_49_1"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0026316840082840505
+    },
+    {
+      "ID": "A_Rule_50_0",
+      "Label": "Action_Rule_50:Strobe_Office_1A.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_50_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_50_0",
+      "Label": "Trigger_(Rule_50):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_50_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_51_0",
+      "Label": "Action_Rule_51:Strobe_Office_1B.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_51_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_51_0",
+      "Label": "Trigger_(Rule_51):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_51_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_52_0",
+      "Label": "Action_Rule_52:Strobe_Office_2A.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_52_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_52_0",
+      "Label": "Trigger_(Rule_52):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_52_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_53_0",
+      "Label": "Action_Rule_53:Strobe_Office_2B.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_53_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_53_0",
+      "Label": "Trigger_(Rule_53):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_53_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_54_0",
+      "Label": "Action_Rule_54:Strobe_Office_2C.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_54_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_54_0",
+      "Label": "Trigger_(Rule_54):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_54_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_55_0",
+      "Label": "Action_Rule_55:Strobe_Office_3A.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_55_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_55_0",
+      "Label": "Trigger_(Rule_55):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_55_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_56_0",
+      "Label": "Action_Rule_56:Strobe_Office_3B.activate()",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_56_0"
+      ],
+      "centrality": 0.00016218778850712342
+    },
+    {
+      "ID": "T_Rule_56_0",
+      "Label": "Trigger_(Rule_56):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_56_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_57_0",
+      "Label": "Action_Rule_57:Central_AHU.set_power(OFF)",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "T_Rule_57_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_57_0",
+      "Label": "Trigger_(Rule_57):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_57_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0011902088479676623
+    },
+    {
+      "ID": "A_Rule_58_0",
+      "Label": "Action_Rule_58:Strike_Main_Entrance.unlock()",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_58_0"
+      ],
+      "centrality": 0.001220151208922824
+    },
+    {
+      "ID": "T_Rule_58_0",
+      "Label": "Trigger_(Rule_58):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_58_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0014222621453701635
+    },
+    {
+      "ID": "A_Rule_59_0",
+      "Label": "Action_Rule_59:Strike_Office_1A.unlock()",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_59_0"
+      ],
+      "centrality": 0.001220151208922824
+    },
+    {
+      "ID": "T_Rule_59_0",
+      "Label": "Trigger_(Rule_59):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_59_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0014222621453701635
+    },
+    {
+      "ID": "A_Rule_60_0",
+      "Label": "Action_Rule_60:Strike_Office_1B.unlock(UNLOCKED)",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_60_0"
+      ],
+      "centrality": 0.001220151208922824
+    },
+    {
+      "ID": "T_Rule_60_0",
+      "Label": "Trigger_(Rule_60):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_60_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0014222621453701635
+    },
+    {
+      "ID": "A_Rule_61_0",
+      "Label": "Action_Rule_61:Strike_Office_2A.unlock(UNLOCKED)",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_61_0"
+      ],
+      "centrality": 0.001220151208922824
+    },
+    {
+      "ID": "T_Rule_61_0",
+      "Label": "Trigger_(Rule_61):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_61_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0014222621453701635
+    },
+    {
+      "ID": "A_Rule_62_0",
+      "Label": "Action_Rule_62:Strike_Office_2B.unlock(UNLOCKED)",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_62_0"
+      ],
+      "centrality": 0.001220151208922824
+    },
+    {
+      "ID": "T_Rule_62_0",
+      "Label": "Trigger_(Rule_62):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_62_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0014222621453701635
+    },
+    {
+      "ID": "A_Rule_63_0",
+      "Label": "Action_Rule_63:Strike_Office_2C.unlock(UNLOCKED)",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_63_0"
+      ],
+      "centrality": 0.001220151208922824
+    },
+    {
+      "ID": "T_Rule_63_0",
+      "Label": "Trigger_(Rule_63):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_63_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0014222621453701635
+    },
+    {
+      "ID": "A_Rule_64_0",
+      "Label": "Action_Rule_64:Strike_Office_3A.unlock(UNLOCKED)",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_64_0"
+      ],
+      "centrality": 0.001220151208922824
+    },
+    {
+      "ID": "T_Rule_64_0",
+      "Label": "Trigger_(Rule_64):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_64_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0014222621453701635
+    },
+    {
+      "ID": "A_Rule_65_0",
+      "Label": "Action_Rule_65:Strike_Office_3B.unlock(UNLOCKED)",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_65_0"
+      ],
+      "centrality": 0.001220151208922824
+    },
+    {
+      "ID": "T_Rule_65_0",
+      "Label": "Trigger_(Rule_65):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_65_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0014222621453701635
+    },
+    {
+      "ID": "A_Rule_66_0",
+      "Label": "Action_Rule_66:Strike_Server_Room.unlock(UNLOCKED)",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_66_0"
+      ],
+      "centrality": 0.001220151208922824
+    },
+    {
+      "ID": "T_Rule_66_0",
+      "Label": "Trigger_(Rule_66):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_66_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0014222621453701635
+    },
+    {
+      "ID": "A_Rule_67_0",
+      "Label": "Action_Rule_67:Strike_Mechanical_Room_1.unlock(UNLOCKED)",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_67_0"
+      ],
+      "centrality": 0.001220151208922824
+    },
+    {
+      "ID": "T_Rule_67_0",
+      "Label": "Trigger_(Rule_67):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_67_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0014222621453701635
+    },
+    {
+      "ID": "A_Rule_68_0",
+      "Label": "Action_Rule_68:Strike_Roof.unlock(UNLOCKED)",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_68_0"
+      ],
+      "centrality": 0.001220151208922824
+    },
+    {
+      "ID": "T_Rule_68_0",
+      "Label": "Trigger_(Rule_68):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_68_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0014222621453701635
+    },
+    {
+      "ID": "A_Rule_69_0",
+      "Label": "Action_Rule_69:Luminaire_Main_Entrance.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_69_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_69_0",
+      "Label": "Trigger_(Rule_69):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_69_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_70_0",
+      "Label": "Action_Rule_70:Luminaire_Lobby_1.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_70_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_70_0",
+      "Label": "Trigger_(Rule_70):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_70_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_71_0",
+      "Label": "Action_Rule_71:Luminaire_Hallway_1.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_71_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_71_0",
+      "Label": "Trigger_(Rule_71):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_71_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_72_0",
+      "Label": "Action_Rule_72:Luminaire_Office_1A.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_72_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_72_0",
+      "Label": "Trigger_(Rule_72):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_72_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_73_0",
+      "Label": "Action_Rule_73:Luminaire_Office_1B.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_73_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_73_0",
+      "Label": "Trigger_(Rule_73):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_73_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_74_0",
+      "Label": "Action_Rule_74:Luminaire_ConfRoom_1.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_74_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_74_0",
+      "Label": "Trigger_(Rule_74):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_74_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_75_0",
+      "Label": "Action_Rule_75:Luminaire_Server_Room.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_75_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_75_0",
+      "Label": "Trigger_(Rule_75):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_75_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_76_0",
+      "Label": "Action_Rule_76:Luminaire_Control_Room.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_76_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_76_0",
+      "Label": "Trigger_(Rule_76):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_76_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_77_0",
+      "Label": "Action_Rule_77:Luminaire_Mechanical_Room_1.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_77_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_77_0",
+      "Label": "Trigger_(Rule_77):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_77_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_78_0",
+      "Label": "Action_Rule_78:Luminaire_Hallway_2.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_78_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_78_0",
+      "Label": "Trigger_(Rule_78):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_78_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_79_0",
+      "Label": "Action_Rule_79:Luminaire_Office_2A.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_79_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_79_0",
+      "Label": "Trigger_(Rule_79):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_79_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_80_0",
+      "Label": "Action_Rule_80:Luminaire_Office_2B.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_80_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_80_0",
+      "Label": "Trigger_(Rule_80):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_80_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_81_0",
+      "Label": "Action_Rule_81:Luminaire_Office_2C.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_81_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_81_0",
+      "Label": "Trigger_(Rule_81):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_81_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_82_0",
+      "Label": "Action_Rule_82:Luminaire_ConfRoom_2.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_82_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_82_0",
+      "Label": "Trigger_(Rule_82):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_82_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_83_0",
+      "Label": "Action_Rule_83:Luminaire_Hallway_3.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_83_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_83_0",
+      "Label": "Trigger_(Rule_83):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_83_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_84_0",
+      "Label": "Action_Rule_84:Luminaire_Office_3A.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_84_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_84_0",
+      "Label": "Trigger_(Rule_84):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_84_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_85_0",
+      "Label": "Action_Rule_85:Luminaire_Office_3B.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_85_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_85_0",
+      "Label": "Trigger_(Rule_85):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_85_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_86_0",
+      "Label": "Action_Rule_86:Luminaire_ConfRoom_3.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_86_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_86_0",
+      "Label": "Trigger_(Rule_86):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_86_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_87_0",
+      "Label": "Action_Rule_87:Luminaire_Roof.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_87_0"
+      ],
+      "centrality": 0.00016218778850712344
+    },
+    {
+      "ID": "T_Rule_87_0",
+      "Label": "Trigger_(Rule_87):Main_FACP.system_status==ALARM",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_87_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0013224542755196275
+    },
+    {
+      "ID": "A_Rule_88_0",
+      "Label": "Action_Rule_88:Server_Room_Gas_Suppression.discharge(DISCHARGED)",
+      "Type": "action",
+      "Target": [
+        "CH_temperature"
+      ],
+      "Source": [
+        "T_Rule_88_0"
+      ],
+      "centrality": 0.0012351223894004047
+    },
+    {
+      "ID": "T_Rule_88_0",
+      "Label": "Trigger_(Rule_88):Heat_Detector_Server_Room.alarm_status==True",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_88_0"
+      ],
+      "Source": [
+        "CH_temperature"
+      ],
+      "centrality": 0.00021708211692491954
+    },
+    {
+      "ID": "A_Rule_89_0",
+      "Label": "Action_Rule_89:Main_FACP.silence_alarm(SILENCED)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_89_0"
+      ],
+      "centrality": 0.001976195823040648
+    },
+    {
+      "ID": "T_Rule_89_0",
+      "Label": "Trigger_(Rule_89):Main_FACP.user_interaction==silence_command_issued",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_89_0"
+      ],
+      "Source": [
+        "CH_user_command"
+      ],
+      "centrality": 0.000995583501759114
+    },
+    {
+      "ID": "A_Rule_90_0",
+      "Label": "Action_Rule_90:Main_FACP.reset_system(NORMAL)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_90_0"
+      ],
+      "centrality": 0.0009731267310427431
+    },
+    {
+      "ID": "T_Rule_90_0",
+      "Label": "Trigger_(Rule_90):Main_FACP.system_status!=NORMAL",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_90_0"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0011752376674900816
+    },
+    {
+      "ID": "A_Rule_91_0",
+      "Label": "Action_Rule_91:Luminaire_Main_Entrance.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_91_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_91_0",
+      "Label": "Trigger_(Rule_91):Occupancy_Sensor_Main_Entrance.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_91_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_92_0",
+      "Label": "Action_Rule_92:Luminaire_Main_Entrance.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_92_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_92_0",
+      "Label": "Trigger_(Rule_92):Occupancy_Sensor_Main_Entrance.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_92_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_93_0",
+      "Label": "Action_Rule_93:Luminaire_Lobby_1.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_93_0"
+      ],
+      "centrality": 1.582667650487098e-05
+    },
+    {
+      "ID": "A_Rule_93_1",
+      "Label": "Action_Rule_93:Luminaire_Lobby_1.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_93_0"
+      ],
+      "centrality": 1.582667650487098e-05
+    },
+    {
+      "ID": "T_Rule_93_0",
+      "Label": "Trigger_(Rule_93):Occupancy_Sensor_Lobby_1.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_93_0",
+        "A_Rule_93_1"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 1.6682172532161305e-05
+    },
+    {
+      "ID": "A_Rule_94_0",
+      "Label": "Action_Rule_94:Luminaire_Lobby_1.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_94_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_94_0",
+      "Label": "Trigger_(Rule_94):Occupancy_Sensor_Lobby_1.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_94_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_95_0",
+      "Label": "Action_Rule_95:Luminaire_Lobby_1.set_brightness(30)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_95_0"
+      ],
+      "centrality": 1.4971180477580657e-05
+    },
+    {
+      "ID": "T_Rule_95_0",
+      "Label": "Trigger_(Rule_95):Luminance_Sensor_Lobby_1.illuminance>750",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_95_0"
+      ],
+      "Source": [
+        "CH_luminance"
+      ],
+      "centrality": 0.002305561793547421
+    },
+    {
+      "ID": "A_Rule_96_0",
+      "Label": "Action_Rule_96:Luminaire_Lobby_1.set_brightness(100)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "LOGIC_Rule_96_AND"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_96_0",
+      "Label": "Trigger_(Rule_96):Luminance_Sensor_Lobby_1.illuminance<300",
+      "Type": "trigger",
+      "Target": [
+        "LOGIC_Rule_96_AND"
+      ],
+      "Source": [
+        "CH_luminance"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_96_1",
+      "Label": "Trigger_(Rule_96):Occupancy_Sensor_Lobby_1.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "LOGIC_Rule_96_AND"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "LOGIC_Rule_96_AND",
+      "Label": "AND",
+      "Type": "AND",
+      "Target": [
+        "A_Rule_96_0"
+      ],
+      "Source": [
+        "T_Rule_96_0",
+        "T_Rule_96_1"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_97_0",
+      "Label": "Action_Rule_97:Luminaire_Hallway_1.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_97_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_97_0",
+      "Label": "Trigger_(Rule_97):Occupancy_Sensor_Hallway_1.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_97_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_98_0",
+      "Label": "Action_Rule_98:Luminaire_Hallway_1.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_98_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_98_0",
+      "Label": "Trigger_(Rule_98):Occupancy_Sensor_Hallway_1.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_98_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_99_0",
+      "Label": "Action_Rule_99:Luminaire_Hallway_2.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_99_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_99_0",
+      "Label": "Trigger_(Rule_99):Occupancy_Sensor_Hallway_2.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_99_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_100_0",
+      "Label": "Action_Rule_100:Luminaire_Hallway_2.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_100_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_100_0",
+      "Label": "Trigger_(Rule_100):Occupancy_Sensor_Hallway_2.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_100_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_101_0",
+      "Label": "Action_Rule_101:Luminaire_Hallway_3.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_101_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_101_0",
+      "Label": "Trigger_(Rule_101):Occupancy_Sensor_Hallway_3.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_101_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_102_0",
+      "Label": "Action_Rule_102:Luminaire_Hallway_3.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_102_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_102_0",
+      "Label": "Trigger_(Rule_102):Occupancy_Sensor_Hallway_3.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_102_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_103_0",
+      "Label": "Action_Rule_103:Luminaire_Office_1A.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_103_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_103_0",
+      "Label": "Trigger_(Rule_103):Occupancy_Sensor_Office_1A.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_103_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_104_0",
+      "Label": "Action_Rule_104:Luminaire_Office_1A.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_104_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_104_0",
+      "Label": "Trigger_(Rule_104):Occupancy_Sensor_Office_1A.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_104_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_105_0",
+      "Label": "Action_Rule_105:Luminaire_Office_1B.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_105_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_105_0",
+      "Label": "Trigger_(Rule_105):Occupancy_Sensor_Office_1B.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_105_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_106_0",
+      "Label": "Action_Rule_106:Luminaire_Office_1B.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_106_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_106_0",
+      "Label": "Trigger_(Rule_106):Occupancy_Sensor_Office_1B.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_106_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_107_0",
+      "Label": "Action_Rule_107:Luminaire_Office_2A.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_107_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_107_0",
+      "Label": "Trigger_(Rule_107):Occupancy_Sensor_Office_2A.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_107_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_108_0",
+      "Label": "Action_Rule_108:Luminaire_Office_2A.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_108_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_108_0",
+      "Label": "Trigger_(Rule_108):Occupancy_Sensor_Office_2A.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_108_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_109_0",
+      "Label": "Action_Rule_109:Luminaire_Office_2B.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_109_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_109_0",
+      "Label": "Trigger_(Rule_109):Occupancy_Sensor_Office_2B.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_109_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_110_0",
+      "Label": "Action_Rule_110:Luminaire_Office_2B.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_110_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_110_0",
+      "Label": "Trigger_(Rule_110):Occupancy_Sensor_Office_2B.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_110_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_111_0",
+      "Label": "Action_Rule_111:Luminaire_Office_2C.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_111_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_111_0",
+      "Label": "Trigger_(Rule_111):Occupancy_Sensor_Office_2C.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_111_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_112_0",
+      "Label": "Action_Rule_112:Luminaire_Office_2C.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_112_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_112_0",
+      "Label": "Trigger_(Rule_112):Occupancy_Sensor_Office_2C.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_112_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_113_0",
+      "Label": "Action_Rule_113:Luminaire_Office_3A.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_113_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_113_0",
+      "Label": "Trigger_(Rule_113):Occupancy_Sensor_Office_3A.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_113_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_114_0",
+      "Label": "Action_Rule_114:Luminaire_Office_3A.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_114_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_114_0",
+      "Label": "Trigger_(Rule_114):Occupancy_Sensor_Office_3A.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_114_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_115_0",
+      "Label": "Action_Rule_115:Luminaire_Office_3B.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_115_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_115_0",
+      "Label": "Trigger_(Rule_115):Occupancy_Sensor_Office_3B.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_115_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_116_0",
+      "Label": "Action_Rule_116:Luminaire_Office_3B.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_116_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_116_0",
+      "Label": "Trigger_(Rule_116):Occupancy_Sensor_Office_3B.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_116_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_117_0",
+      "Label": "Action_Rule_117:Luminaire_ConfRoom_1.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_117_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_117_0",
+      "Label": "Trigger_(Rule_117):Occupancy_Sensor_ConfRoom_1.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_117_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_118_0",
+      "Label": "Action_Rule_118:Luminaire_ConfRoom_1.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_118_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_118_0",
+      "Label": "Trigger_(Rule_118):Occupancy_Sensor_ConfRoom_1.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_118_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_119_0",
+      "Label": "Action_Rule_119:Luminaire_ConfRoom_2.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_119_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_119_0",
+      "Label": "Trigger_(Rule_119):Occupancy_Sensor_ConfRoom_2.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_119_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_120_0",
+      "Label": "Action_Rule_120:Luminaire_ConfRoom_2.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_120_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_120_0",
+      "Label": "Trigger_(Rule_120):Occupancy_Sensor_ConfRoom_2.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_120_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_121_0",
+      "Label": "Action_Rule_121:Luminaire_ConfRoom_3.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_121_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_121_0",
+      "Label": "Trigger_(Rule_121):Occupancy_Sensor_ConfRoom_3.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_121_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_122_0",
+      "Label": "Action_Rule_122:Luminaire_ConfRoom_3.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_122_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_122_0",
+      "Label": "Trigger_(Rule_122):Occupancy_Sensor_ConfRoom_3.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_122_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_123_0",
+      "Label": "Action_Rule_123:Luminaire_Server_Room.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_123_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_123_0",
+      "Label": "Trigger_(Rule_123):Occupancy_Sensor_Server_Room.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_123_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_124_0",
+      "Label": "Action_Rule_124:Luminaire_Server_Room.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_124_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_124_0",
+      "Label": "Trigger_(Rule_124):Occupancy_Sensor_Server_Room.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_124_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_125_0",
+      "Label": "Action_Rule_125:Luminaire_Mechanical_Room_1.set_power(ON)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_125_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_125_0",
+      "Label": "Trigger_(Rule_125):Occupancy_Sensor_Mechanical_Room_1.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_125_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_126_0",
+      "Label": "Action_Rule_126:Luminaire_Mechanical_Room_1.set_power(OFF)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_126_0"
+      ],
+      "centrality": 3.079785698245163e-05
+    },
+    {
+      "ID": "T_Rule_126_0",
+      "Label": "Trigger_(Rule_126):Occupancy_Sensor_Mechanical_Room_1.occupancy_status==UNOCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_126_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 8.341086266080652e-06
+    },
+    {
+      "ID": "A_Rule_127_0",
+      "Label": "Action_Rule_127:Luminaire_Hallway_1.set_brightness(50)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "LOGIC_Rule_127_AND"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_127_1",
+      "Label": "Action_Rule_127:Luminaire_Hallway_2.set_brightness(50)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "LOGIC_Rule_127_AND"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_127_2",
+      "Label": "Action_Rule_127:Luminaire_Hallway_3.set_brightness(50)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "LOGIC_Rule_127_AND"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_127_0",
+      "Label": "Trigger_(Rule_127):Time_Mode_Controller.day_profile==OFF_HOURS",
+      "Type": "trigger",
+      "Target": [
+        "LOGIC_Rule_127_AND"
+      ],
+      "Source": [
+        "CH_time"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_127_1",
+      "Label": "Trigger_(Rule_127):Occupancy_Sensor_Hallway_1, Occupancy_Sensor_Hallway_2, Occupancy_Sensor_Hallway_3.occupancy_status==OCCUPIED",
+      "Type": "trigger",
+      "Target": [
+        "LOGIC_Rule_127_AND"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "LOGIC_Rule_127_AND",
+      "Label": "AND",
+      "Type": "AND",
+      "Target": [
+        "A_Rule_127_0",
+        "A_Rule_127_1",
+        "A_Rule_127_2"
+      ],
+      "Source": [
+        "T_Rule_127_0",
+        "T_Rule_127_1"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_128_0",
+      "Label": "Action_Rule_128:Luminaire_Office_1A.set_power(follow_switch)",
+      "Type": "action",
+      "Target": [
+        "CH_luminance"
+      ],
+      "Source": [
+        "T_Rule_128_0"
+      ],
+      "centrality": 2.9942360955161315e-05
+    },
+    {
+      "ID": "T_Rule_128_0",
+      "Label": "Trigger_(Rule_128):Switch_Office_1A.switch_status!=",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_128_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_129_0",
+      "Label": "Action_Rule_129:Strike_Main_Entrance.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_129_0"
+      ],
+      "centrality": 0.0010779249943858075
+    },
+    {
+      "ID": "T_Rule_129_0",
+      "Label": "Trigger_(Rule_129):Reader_Main_Entrance.last_scan_result==SUCCESS",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_129_0"
+      ],
+      "Source": [
+        "CH_access_authentication"
+      ],
+      "centrality": 9.731267310427428e-05
+    },
+    {
+      "ID": "A_Rule_130_0",
+      "Label": "Action_Rule_130:Strike_Office_1A.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_130_0"
+      ],
+      "centrality": 0.0010779249943858075
+    },
+    {
+      "ID": "T_Rule_130_0",
+      "Label": "Trigger_(Rule_130):Reader_Office_1A.last_scan_result==SUCCESS",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_130_0"
+      ],
+      "Source": [
+        "CH_access_authentication"
+      ],
+      "centrality": 9.731267310427428e-05
+    },
+    {
+      "ID": "A_Rule_131_0",
+      "Label": "Action_Rule_131:Strike_Office_1B.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_131_0"
+      ],
+      "centrality": 0.0010779249943858075
+    },
+    {
+      "ID": "T_Rule_131_0",
+      "Label": "Trigger_(Rule_131):Reader_Office_1B.last_scan_result==SUCCESS",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_131_0"
+      ],
+      "Source": [
+        "CH_access_authentication"
+      ],
+      "centrality": 9.731267310427428e-05
+    },
+    {
+      "ID": "A_Rule_132_0",
+      "Label": "Action_Rule_132:Strike_Office_2A.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_132_0"
+      ],
+      "centrality": 0.0010779249943858075
+    },
+    {
+      "ID": "T_Rule_132_0",
+      "Label": "Trigger_(Rule_132):Reader_Office_2A.last_scan_result==SUCCESS",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_132_0"
+      ],
+      "Source": [
+        "CH_access_authentication"
+      ],
+      "centrality": 9.731267310427428e-05
+    },
+    {
+      "ID": "A_Rule_133_0",
+      "Label": "Action_Rule_133:Strike_Office_2B.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_133_0"
+      ],
+      "centrality": 0.0010779249943858075
+    },
+    {
+      "ID": "T_Rule_133_0",
+      "Label": "Trigger_(Rule_133):Reader_Office_2B.last_scan_result==SUCCESS",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_133_0"
+      ],
+      "Source": [
+        "CH_access_authentication"
+      ],
+      "centrality": 9.731267310427428e-05
+    },
+    {
+      "ID": "A_Rule_134_0",
+      "Label": "Action_Rule_134:Strike_Office_2C.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_134_0"
+      ],
+      "centrality": 0.0010779249943858075
+    },
+    {
+      "ID": "T_Rule_134_0",
+      "Label": "Trigger_(Rule_134):Reader_Office_2C.last_scan_result==SUCCESS",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_134_0"
+      ],
+      "Source": [
+        "CH_access_authentication"
+      ],
+      "centrality": 9.731267310427428e-05
+    },
+    {
+      "ID": "A_Rule_135_0",
+      "Label": "Action_Rule_135:Strike_Office_3A.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_135_0"
+      ],
+      "centrality": 0.0010779249943858075
+    },
+    {
+      "ID": "T_Rule_135_0",
+      "Label": "Trigger_(Rule_135):Reader_Office_3A.last_scan_result==SUCCESS",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_135_0"
+      ],
+      "Source": [
+        "CH_access_authentication"
+      ],
+      "centrality": 9.731267310427428e-05
+    },
+    {
+      "ID": "A_Rule_136_0",
+      "Label": "Action_Rule_136:Strike_Office_3B.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_136_0"
+      ],
+      "centrality": 0.0010779249943858075
+    },
+    {
+      "ID": "T_Rule_136_0",
+      "Label": "Trigger_(Rule_136):Reader_Office_3B.last_scan_result==SUCCESS",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_136_0"
+      ],
+      "Source": [
+        "CH_access_authentication"
+      ],
+      "centrality": 9.731267310427428e-05
+    },
+    {
+      "ID": "A_Rule_137_0",
+      "Label": "Action_Rule_137:Strike_Server_Room.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_137_0"
+      ],
+      "centrality": 0.0010779249943858075
+    },
+    {
+      "ID": "T_Rule_137_0",
+      "Label": "Trigger_(Rule_137):Reader_Server_Room.last_scan_result==SUCCESS",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_137_0"
+      ],
+      "Source": [
+        "CH_access_authentication"
+      ],
+      "centrality": 9.731267310427428e-05
+    },
+    {
+      "ID": "A_Rule_138_0",
+      "Label": "Action_Rule_138:Strike_Mechanical_Room_1.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_138_0"
+      ],
+      "centrality": 0.0010779249943858075
+    },
+    {
+      "ID": "T_Rule_138_0",
+      "Label": "Trigger_(Rule_138):Reader_Mechanical_Room_1.last_scan_result==SUCCESS",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_138_0"
+      ],
+      "Source": [
+        "CH_access_authentication"
+      ],
+      "centrality": 9.731267310427428e-05
+    },
+    {
+      "ID": "A_Rule_139_0",
+      "Label": "Action_Rule_139:Strike_Roof.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_139_0"
+      ],
+      "centrality": 0.0010779249943858075
+    },
+    {
+      "ID": "T_Rule_139_0",
+      "Label": "Trigger_(Rule_139):Reader_Roof.last_scan_result==SUCCESS",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_139_0"
+      ],
+      "Source": [
+        "CH_access_authentication"
+      ],
+      "centrality": 9.731267310427428e-05
+    },
+    {
+      "ID": "A_Rule_140_0",
+      "Label": "Action_Rule_140:Strike_Main_Entrance.lock()",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_140_0"
+      ],
+      "centrality": 0.001205180028445243
+    },
+    {
+      "ID": "A_Rule_140_1",
+      "Label": "Action_Rule_140:Main_NVR.start_recording({\\",
+      "Type": "action",
+      "Target": [
+        "CH_recording_status"
+      ],
+      "Source": [
+        "T_Rule_140_0"
+      ],
+      "centrality": 0.0011902088479676623
+    },
+    {
+      "ID": "T_Rule_140_0",
+      "Label": "Trigger_(Rule_140):Reader_Main_Entrance.last_scan_result==FAIL",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_140_0",
+        "A_Rule_140_1"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0037877086608279044
+    },
+    {
+      "ID": "A_Rule_141_0",
+      "Label": "Action_Rule_141:Strike_Server_Room.lock()",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_141_0"
+      ],
+      "centrality": 0.0012126656186840334
+    },
+    {
+      "ID": "A_Rule_141_1",
+      "Label": "Action_Rule_141:Main_NVR.start_recording({\\",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "T_Rule_141_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_141_0",
+      "Label": "Trigger_(Rule_141):Reader_Server_Room.last_scan_result==FAIL",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_141_0",
+        "A_Rule_141_1"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.002604985403099034
+    },
+    {
+      "ID": "A_Rule_142_0",
+      "Label": "Action_Rule_142:Strike_Main_Entrance.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_142_0"
+      ],
+      "centrality": 0.0009880979115203237
+    },
+    {
+      "ID": "T_Rule_142_0",
+      "Label": "Trigger_(Rule_142):REX_Main_Entrance.button_pressed==true",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_142_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_143_0",
+      "Label": "Action_Rule_143:Strike_Office_1A.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_143_0"
+      ],
+      "centrality": 0.0009880979115203237
+    },
+    {
+      "ID": "T_Rule_143_0",
+      "Label": "Trigger_(Rule_143):REX_Office_1A.button_pressed==true",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_143_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_144_0",
+      "Label": "Action_Rule_144:Strike_Office_1B.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_144_0"
+      ],
+      "centrality": 0.0009880979115203237
+    },
+    {
+      "ID": "T_Rule_144_0",
+      "Label": "Trigger_(Rule_144):REX_Office_1B.button_pressed==true",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_144_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_145_0",
+      "Label": "Action_Rule_145:Strike_Office_2A.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_145_0"
+      ],
+      "centrality": 0.0009880979115203237
+    },
+    {
+      "ID": "T_Rule_145_0",
+      "Label": "Trigger_(Rule_145):REX_Office_2A.button_pressed==true",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_145_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_146_0",
+      "Label": "Action_Rule_146:Strike_Office_2B.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_146_0"
+      ],
+      "centrality": 0.0009880979115203237
+    },
+    {
+      "ID": "T_Rule_146_0",
+      "Label": "Trigger_(Rule_146):REX_Office_2B.button_pressed==true",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_146_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_147_0",
+      "Label": "Action_Rule_147:Strike_Office_2C.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_147_0"
+      ],
+      "centrality": 0.0009880979115203237
+    },
+    {
+      "ID": "T_Rule_147_0",
+      "Label": "Trigger_(Rule_147):REX_Office_2C.button_pressed==true",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_147_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_148_0",
+      "Label": "Action_Rule_148:Strike_Office_3A.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_148_0"
+      ],
+      "centrality": 0.0009880979115203237
+    },
+    {
+      "ID": "T_Rule_148_0",
+      "Label": "Trigger_(Rule_148):REX_Office_3A.button_pressed==true",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_148_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_149_0",
+      "Label": "Action_Rule_149:Strike_Office_3B.unlock({\\",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_149_0"
+      ],
+      "centrality": 0.0009880979115203237
+    },
+    {
+      "ID": "T_Rule_149_0",
+      "Label": "Trigger_(Rule_149):REX_Office_3B.button_pressed==true",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_149_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_150_0",
+      "Label": "Action_Rule_150:Strike_Server_Room.unlock(UNLOCKED)",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_150_0"
+      ],
+      "centrality": 0.0009880979115203237
+    },
+    {
+      "ID": "T_Rule_150_0",
+      "Label": "Trigger_(Rule_150):REX_Server_Room.button_pressed==true",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_150_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_151_0",
+      "Label": "Action_Rule_151:Strike_Mechanical_Room_1.unlock(UNLOCKED)",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_151_0"
+      ],
+      "centrality": 0.0009880979115203237
+    },
+    {
+      "ID": "T_Rule_151_0",
+      "Label": "Trigger_(Rule_151):REX_Mechanical_Room_1.button_pressed==true",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_151_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_152_0",
+      "Label": "Action_Rule_152:Strike_Roof.unlock(UNLOCKED)",
+      "Type": "action",
+      "Target": [
+        "CH_door_lock"
+      ],
+      "Source": [
+        "T_Rule_152_0"
+      ],
+      "centrality": 0.0009880979115203237
+    },
+    {
+      "ID": "T_Rule_152_0",
+      "Label": "Trigger_(Rule_152):REX_Roof.button_pressed==true",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_152_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_153_0",
+      "Label": "Action_Rule_153:Main_Access_Control_Panel.generate_alarm(door_propped_open)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_153_0"
+      ],
+      "centrality": 0.03504004790777754
+    },
+    {
+      "ID": "T_Rule_153_0",
+      "Label": "Trigger_(Rule_153):Door_Sensor_Main_Entrance.door_state_held_open>60",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_153_0"
+      ],
+      "Source": [
+        "CH_door_lock"
+      ],
+      "centrality": 0.03524215884422487
+    },
+    {
+      "ID": "A_Rule_154_0",
+      "Label": "Action_Rule_154:Main_Access_Control_Panel.generate_alarm(door_propped_open)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_154_0"
+      ],
+      "centrality": 0.03504004790777754
+    },
+    {
+      "ID": "T_Rule_154_0",
+      "Label": "Trigger_(Rule_154):Door_Sensor_Server_Room.door_state_held_open>30",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_154_0"
+      ],
+      "Source": [
+        "CH_door_lock"
+      ],
+      "centrality": 0.03524215884422487
+    },
+    {
+      "ID": "A_Rule_155_0",
+      "Label": "Action_Rule_155:Main_Access_Control_Panel.generate_alarm(door_forced_open)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_155_0"
+      ],
+      "centrality": 0.0009656411408039529
+    },
+    {
+      "ID": "A_Rule_155_1",
+      "Label": "Action_Rule_155:Main_NVR.start_recording(Camera_Lobby_1)",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "T_Rule_155_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_155_0",
+      "Label": "Trigger_(Rule_155):Door_Sensor_Main_Entrance.alarm_status==FORCED_OPEN",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_155_0",
+        "A_Rule_155_1"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0023579609252189536
+    },
+    {
+      "ID": "A_Rule_156_0",
+      "Label": "Action_Rule_156:Main_Access_Control_Panel.generate_alarm(door_forced_open)",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_156_0"
+      ],
+      "centrality": 0.0009656411408039529
+    },
+    {
+      "ID": "A_Rule_156_1",
+      "Label": "Action_Rule_156:Main_NVR.start_recording(Camera_Server_Room_Exterior)",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "T_Rule_156_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_156_0",
+      "Label": "Trigger_(Rule_156):Door_Sensor_Server_Room.alarm_status==FORCED_OPEN",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_156_0",
+        "A_Rule_156_1"
+      ],
+      "Source": [
+        "CH_alarm"
+      ],
+      "centrality": 0.0023579609252189536
+    },
+    {
+      "ID": "A_Rule_157_0",
+      "Label": "Action_Rule_157:Main_NVR.start_recording(Camera_Lobby_1)",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "T_Rule_157_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_157_0",
+      "Label": "Trigger_(Rule_157):Time_Mode_Controller.day_profile==WORK_HOURS",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_157_0"
+      ],
+      "Source": [
+        "CH_time"
+      ],
+      "centrality": 7.485590238790329e-06
+    },
+    {
+      "ID": "A_Rule_158_0",
+      "Label": "Action_Rule_158:Main_NVR.start_recording_for_duration({\\",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "T_Rule_158_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_158_0",
+      "Label": "Trigger_(Rule_158):Camera_Hallway_1.motion_detected==true",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_158_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 7.485590238790329e-06
+    },
+    {
+      "ID": "A_Rule_159_0",
+      "Label": "Action_Rule_159:Main_NVR.start_recording_for_duration({\\",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "T_Rule_159_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_159_0",
+      "Label": "Trigger_(Rule_159):Camera_Hallway_2.motion_detected==true",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_159_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 7.485590238790329e-06
+    },
+    {
+      "ID": "A_Rule_160_0",
+      "Label": "Action_Rule_160:Main_NVR.start_recording_for_duration({\\",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "T_Rule_160_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_160_0",
+      "Label": "Trigger_(Rule_160):Camera_Hallway_3.motion_detected==true",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_160_0"
+      ],
+      "Source": [
+        "CH_motion"
+      ],
+      "centrality": 7.485590238790329e-06
+    },
+    {
+      "ID": "A_Rule_161_0",
+      "Label": "Action_Rule_161:Camera_Roof_PTZ.start_patrol_tour()",
+      "Type": "action",
+      "Target": [],
+      "Source": [
+        "T_Rule_161_0"
+      ],
+      "centrality": 0.0
+    },
+    {
+      "ID": "T_Rule_161_0",
+      "Label": "Trigger_(Rule_161):Time_Mode_Controller.day_profile==OFF_HOURS",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_161_0"
+      ],
+      "Source": [
+        "CH_time"
+      ],
+      "centrality": 7.485590238790329e-06
+    },
+    {
+      "ID": "A_Rule_162_0",
+      "Label": "Action_Rule_162:server_room_HVAC.increase()",
+      "Type": "action",
+      "Target": [
+        "CH_Temperature_ServerRoom"
+      ],
+      "Source": [
+        "T_Rule_162_0"
+      ],
+      "centrality": 0.0010105546822366948
+    },
+    {
+      "ID": "T_Rule_162_0",
+      "Label": "Trigger_(Rule_162):main_outdoor_temperature_sensor.temperature<5",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_162_0"
+      ],
+      "Source": [],
+      "centrality": 0.0
+    },
+    {
+      "ID": "A_Rule_163_0",
+      "Label": "Action_Rule_163:Fire_Controller.ALARM()",
+      "Type": "action",
+      "Target": [
+        "CH_alarm"
+      ],
+      "Source": [
+        "T_Rule_163_0"
+      ],
+      "centrality": 0.003952391646081296
+    },
+    {
+      "ID": "T_Rule_163_0",
+      "Label": "Trigger_(Rule_163):server_room_rate_of_rise_heat_detector.temperature_rise_rate>8",
+      "Type": "trigger",
+      "Target": [
+        "A_Rule_163_0"
+      ],
+      "Source": [
+        "CH_Temperature_ServerRoom"
+      ],
+      "centrality": 0.0029867505052773424
+    }
+  ],
+  "edges": [
+    {
+      "source": "A_Rule_1_0",
+      "target": "CH_temperature",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_1_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_1_0",
+      "target": "A_Rule_1_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_2_0",
+      "target": "CH_temperature",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_2_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_2_0",
+      "target": "A_Rule_2_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_3_0",
+      "target": "CH_temperature",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_3_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_3_0",
+      "target": "A_Rule_3_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_4_0",
+      "target": "CH_temperature",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_4_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_4_0",
+      "target": "A_Rule_4_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_5_0",
+      "target": "CH_temperature",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_5_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_5_0",
+      "target": "A_Rule_5_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_6_0",
+      "target": "CH_temperature",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_6_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_6_0",
+      "target": "A_Rule_6_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_7_0",
+      "target": "CH_temperature",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_7_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_7_0",
+      "target": "A_Rule_7_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_8_0",
+      "target": "CH_temperature",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_8_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_8_0",
+      "target": "A_Rule_8_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_9_0",
+      "target": "CH_temperature",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_9_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_9_0",
+      "target": "A_Rule_9_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_10_0",
+      "target": "CH_temperature",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_10_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_10_0",
+      "target": "A_Rule_10_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_11_0",
+      "target": "CH_temperature",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_11_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_11_0",
+      "target": "A_Rule_11_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_12_0",
+      "target": "CH_temperature",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_12_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_12_0",
+      "target": "A_Rule_12_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_13_0",
+      "target": "CH_temperature",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_13_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_13_0",
+      "target": "A_Rule_13_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_14_0",
+      "target": "CH_temperature",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_14_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_14_0",
+      "target": "A_Rule_14_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_15_0",
+      "target": "CH_CO2",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_CO2",
+      "target": "T_Rule_15_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_15_0",
+      "target": "A_Rule_15_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_16_0",
+      "target": "CH_CO2",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_CO2",
+      "target": "T_Rule_16_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_16_0",
+      "target": "A_Rule_16_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_17_0",
+      "target": "CH_CO2",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_CO2",
+      "target": "T_Rule_17_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_17_0",
+      "target": "A_Rule_17_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_18_0",
+      "target": "CH_humidity",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_humidity",
+      "target": "T_Rule_18_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_18_0",
+      "target": "A_Rule_18_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "CH_time",
+      "target": "T_Rule_19_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_time",
+      "target": "T_Rule_19_1",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_19_0",
+      "target": "LOGIC_Rule_19_AND",
+      "type": "explicit",
+      "cost": null,
+      "stealth": null
+    },
+    {
+      "source": "T_Rule_19_1",
+      "target": "LOGIC_Rule_19_AND",
+      "type": "explicit",
+      "cost": null,
+      "stealth": null
+    },
+    {
+      "source": "LOGIC_Rule_19_AND",
+      "target": "A_Rule_19_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "LOGIC_Rule_19_AND",
+      "target": "A_Rule_19_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "LOGIC_Rule_19_AND",
+      "target": "A_Rule_19_2",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "CH_time",
+      "target": "T_Rule_20_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_time",
+      "target": "T_Rule_20_1",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_20_0",
+      "target": "LOGIC_Rule_20_AND",
+      "type": "explicit",
+      "cost": null,
+      "stealth": null
+    },
+    {
+      "source": "T_Rule_20_1",
+      "target": "LOGIC_Rule_20_AND",
+      "type": "explicit",
+      "cost": null,
+      "stealth": null
+    },
+    {
+      "source": "LOGIC_Rule_20_AND",
+      "target": "A_Rule_20_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "LOGIC_Rule_20_AND",
+      "target": "A_Rule_20_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "CH_time",
+      "target": "T_Rule_21_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_21_0",
+      "target": "A_Rule_21_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_21_0",
+      "target": "A_Rule_21_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_21_0",
+      "target": "A_Rule_21_2",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_21_0",
+      "target": "A_Rule_21_3",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_22_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_smoke",
+      "target": "T_Rule_22_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_22_0",
+      "target": "A_Rule_22_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_23_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_smoke",
+      "target": "T_Rule_23_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_23_0",
+      "target": "A_Rule_23_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_24_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_smoke",
+      "target": "T_Rule_24_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_24_0",
+      "target": "A_Rule_24_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_25_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_smoke",
+      "target": "T_Rule_25_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_25_0",
+      "target": "A_Rule_25_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_26_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_smoke",
+      "target": "T_Rule_26_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_26_0",
+      "target": "A_Rule_26_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_27_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_smoke",
+      "target": "T_Rule_27_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_27_0",
+      "target": "A_Rule_27_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_28_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_smoke",
+      "target": "T_Rule_28_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_28_0",
+      "target": "A_Rule_28_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_29_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_smoke",
+      "target": "T_Rule_29_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_29_0",
+      "target": "A_Rule_29_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_30_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_smoke",
+      "target": "T_Rule_30_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_30_0",
+      "target": "A_Rule_30_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_31_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_smoke",
+      "target": "T_Rule_31_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_31_0",
+      "target": "A_Rule_31_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_32_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_smoke",
+      "target": "T_Rule_32_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_32_0",
+      "target": "A_Rule_32_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_33_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_smoke",
+      "target": "T_Rule_33_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_33_0",
+      "target": "A_Rule_33_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_34_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_smoke",
+      "target": "T_Rule_34_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_34_0",
+      "target": "A_Rule_34_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_35_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_smoke",
+      "target": "T_Rule_35_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_35_0",
+      "target": "A_Rule_35_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_36_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_smoke",
+      "target": "T_Rule_36_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_36_0",
+      "target": "A_Rule_36_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_37_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_37_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_37_0",
+      "target": "A_Rule_37_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_38_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_38_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_38_0",
+      "target": "A_Rule_38_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_39_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_39_0",
+      "target": "A_Rule_39_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_40_0",
+      "target": "CH_sound",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "A_Rule_40_1",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_40_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_40_0",
+      "target": "A_Rule_40_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_40_0",
+      "target": "A_Rule_40_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_41_0",
+      "target": "CH_sound",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "A_Rule_41_1",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_41_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_41_0",
+      "target": "A_Rule_41_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_41_0",
+      "target": "A_Rule_41_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_42_0",
+      "target": "CH_sound",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "A_Rule_42_1",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_42_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_42_0",
+      "target": "A_Rule_42_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_42_0",
+      "target": "A_Rule_42_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_43_0",
+      "target": "CH_sound",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "A_Rule_43_1",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_43_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_43_0",
+      "target": "A_Rule_43_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_43_0",
+      "target": "A_Rule_43_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_44_0",
+      "target": "CH_sound",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "A_Rule_44_1",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_44_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_44_0",
+      "target": "A_Rule_44_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_44_0",
+      "target": "A_Rule_44_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_45_0",
+      "target": "CH_sound",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "A_Rule_45_1",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_45_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_45_0",
+      "target": "A_Rule_45_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_45_0",
+      "target": "A_Rule_45_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_46_0",
+      "target": "CH_sound",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "A_Rule_46_1",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_46_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_46_0",
+      "target": "A_Rule_46_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_46_0",
+      "target": "A_Rule_46_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_47_0",
+      "target": "CH_sound",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "A_Rule_47_1",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_47_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_47_0",
+      "target": "A_Rule_47_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_47_0",
+      "target": "A_Rule_47_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_48_0",
+      "target": "CH_sound",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "A_Rule_48_1",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_48_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_48_0",
+      "target": "A_Rule_48_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_48_0",
+      "target": "A_Rule_48_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_49_0",
+      "target": "CH_sound",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "A_Rule_49_1",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_49_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_49_0",
+      "target": "A_Rule_49_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_49_0",
+      "target": "A_Rule_49_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_50_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_50_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_50_0",
+      "target": "A_Rule_50_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_51_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_51_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_51_0",
+      "target": "A_Rule_51_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_52_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_52_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_52_0",
+      "target": "A_Rule_52_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_53_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_53_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_53_0",
+      "target": "A_Rule_53_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_54_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_54_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_54_0",
+      "target": "A_Rule_54_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_55_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_55_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_55_0",
+      "target": "A_Rule_55_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_56_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_56_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_56_0",
+      "target": "A_Rule_56_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_57_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_57_0",
+      "target": "A_Rule_57_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_58_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_58_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_58_0",
+      "target": "A_Rule_58_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_59_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_59_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_59_0",
+      "target": "A_Rule_59_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_60_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_60_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_60_0",
+      "target": "A_Rule_60_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_61_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_61_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_61_0",
+      "target": "A_Rule_61_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_62_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_62_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_62_0",
+      "target": "A_Rule_62_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_63_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_63_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_63_0",
+      "target": "A_Rule_63_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_64_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_64_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_64_0",
+      "target": "A_Rule_64_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_65_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_65_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_65_0",
+      "target": "A_Rule_65_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_66_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_66_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_66_0",
+      "target": "A_Rule_66_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_67_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_67_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_67_0",
+      "target": "A_Rule_67_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_68_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_68_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_68_0",
+      "target": "A_Rule_68_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_69_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_69_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_69_0",
+      "target": "A_Rule_69_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_70_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_70_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_70_0",
+      "target": "A_Rule_70_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_71_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_71_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_71_0",
+      "target": "A_Rule_71_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_72_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_72_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_72_0",
+      "target": "A_Rule_72_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_73_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_73_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_73_0",
+      "target": "A_Rule_73_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_74_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_74_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_74_0",
+      "target": "A_Rule_74_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_75_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_75_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_75_0",
+      "target": "A_Rule_75_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_76_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_76_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_76_0",
+      "target": "A_Rule_76_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_77_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_77_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_77_0",
+      "target": "A_Rule_77_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_78_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_78_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_78_0",
+      "target": "A_Rule_78_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_79_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_79_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_79_0",
+      "target": "A_Rule_79_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_80_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_80_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_80_0",
+      "target": "A_Rule_80_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_81_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_81_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_81_0",
+      "target": "A_Rule_81_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_82_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_82_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_82_0",
+      "target": "A_Rule_82_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_83_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_83_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_83_0",
+      "target": "A_Rule_83_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_84_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_84_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_84_0",
+      "target": "A_Rule_84_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_85_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_85_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_85_0",
+      "target": "A_Rule_85_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_86_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_86_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_86_0",
+      "target": "A_Rule_86_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_87_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_87_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_87_0",
+      "target": "A_Rule_87_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_88_0",
+      "target": "CH_temperature",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_temperature",
+      "target": "T_Rule_88_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_88_0",
+      "target": "A_Rule_88_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_89_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_user_command",
+      "target": "T_Rule_89_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_89_0",
+      "target": "A_Rule_89_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_90_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_90_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_90_0",
+      "target": "A_Rule_90_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_91_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_91_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_91_0",
+      "target": "A_Rule_91_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_92_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_92_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_92_0",
+      "target": "A_Rule_92_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_93_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "A_Rule_93_1",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_93_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_93_0",
+      "target": "A_Rule_93_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_93_0",
+      "target": "A_Rule_93_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_94_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_94_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_94_0",
+      "target": "A_Rule_94_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_95_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_luminance",
+      "target": "T_Rule_95_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_95_0",
+      "target": "A_Rule_95_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_96_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_luminance",
+      "target": "T_Rule_96_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_96_1",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_96_0",
+      "target": "LOGIC_Rule_96_AND",
+      "type": "explicit",
+      "cost": null,
+      "stealth": null
+    },
+    {
+      "source": "T_Rule_96_1",
+      "target": "LOGIC_Rule_96_AND",
+      "type": "explicit",
+      "cost": null,
+      "stealth": null
+    },
+    {
+      "source": "LOGIC_Rule_96_AND",
+      "target": "A_Rule_96_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_97_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_97_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_97_0",
+      "target": "A_Rule_97_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_98_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_98_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_98_0",
+      "target": "A_Rule_98_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_99_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_99_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_99_0",
+      "target": "A_Rule_99_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_100_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_100_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_100_0",
+      "target": "A_Rule_100_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_101_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_101_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_101_0",
+      "target": "A_Rule_101_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_102_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_102_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_102_0",
+      "target": "A_Rule_102_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_103_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_103_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_103_0",
+      "target": "A_Rule_103_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_104_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_104_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_104_0",
+      "target": "A_Rule_104_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_105_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_105_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_105_0",
+      "target": "A_Rule_105_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_106_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_106_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_106_0",
+      "target": "A_Rule_106_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_107_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_107_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_107_0",
+      "target": "A_Rule_107_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_108_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_108_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_108_0",
+      "target": "A_Rule_108_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_109_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_109_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_109_0",
+      "target": "A_Rule_109_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_110_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_110_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_110_0",
+      "target": "A_Rule_110_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_111_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_111_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_111_0",
+      "target": "A_Rule_111_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_112_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_112_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_112_0",
+      "target": "A_Rule_112_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_113_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_113_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_113_0",
+      "target": "A_Rule_113_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_114_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_114_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_114_0",
+      "target": "A_Rule_114_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_115_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_115_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_115_0",
+      "target": "A_Rule_115_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_116_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_116_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_116_0",
+      "target": "A_Rule_116_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_117_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_117_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_117_0",
+      "target": "A_Rule_117_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_118_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_118_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_118_0",
+      "target": "A_Rule_118_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_119_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_119_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_119_0",
+      "target": "A_Rule_119_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_120_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_120_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_120_0",
+      "target": "A_Rule_120_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_121_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_121_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_121_0",
+      "target": "A_Rule_121_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_122_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_122_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_122_0",
+      "target": "A_Rule_122_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_123_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_123_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_123_0",
+      "target": "A_Rule_123_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_124_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_124_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_124_0",
+      "target": "A_Rule_124_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_125_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_125_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_125_0",
+      "target": "A_Rule_125_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_126_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_126_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_126_0",
+      "target": "A_Rule_126_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_127_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "A_Rule_127_1",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "A_Rule_127_2",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "CH_time",
+      "target": "T_Rule_127_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_127_1",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_127_0",
+      "target": "LOGIC_Rule_127_AND",
+      "type": "explicit",
+      "cost": null,
+      "stealth": null
+    },
+    {
+      "source": "T_Rule_127_1",
+      "target": "LOGIC_Rule_127_AND",
+      "type": "explicit",
+      "cost": null,
+      "stealth": null
+    },
+    {
+      "source": "LOGIC_Rule_127_AND",
+      "target": "A_Rule_127_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "LOGIC_Rule_127_AND",
+      "target": "A_Rule_127_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "LOGIC_Rule_127_AND",
+      "target": "A_Rule_127_2",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_128_0",
+      "target": "CH_luminance",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_128_0",
+      "target": "A_Rule_128_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_129_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_access_authentication",
+      "target": "T_Rule_129_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_129_0",
+      "target": "A_Rule_129_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_130_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_access_authentication",
+      "target": "T_Rule_130_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_130_0",
+      "target": "A_Rule_130_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_131_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_access_authentication",
+      "target": "T_Rule_131_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_131_0",
+      "target": "A_Rule_131_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_132_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_access_authentication",
+      "target": "T_Rule_132_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_132_0",
+      "target": "A_Rule_132_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_133_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_access_authentication",
+      "target": "T_Rule_133_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_133_0",
+      "target": "A_Rule_133_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_134_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_access_authentication",
+      "target": "T_Rule_134_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_134_0",
+      "target": "A_Rule_134_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_135_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_access_authentication",
+      "target": "T_Rule_135_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_135_0",
+      "target": "A_Rule_135_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_136_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_access_authentication",
+      "target": "T_Rule_136_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_136_0",
+      "target": "A_Rule_136_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_137_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_access_authentication",
+      "target": "T_Rule_137_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_137_0",
+      "target": "A_Rule_137_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_138_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_access_authentication",
+      "target": "T_Rule_138_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_138_0",
+      "target": "A_Rule_138_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_139_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_access_authentication",
+      "target": "T_Rule_139_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_139_0",
+      "target": "A_Rule_139_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_140_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "A_Rule_140_1",
+      "target": "CH_recording_status",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_140_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_140_0",
+      "target": "A_Rule_140_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_140_0",
+      "target": "A_Rule_140_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_141_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_141_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_141_0",
+      "target": "A_Rule_141_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_141_0",
+      "target": "A_Rule_141_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_142_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_142_0",
+      "target": "A_Rule_142_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_143_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_143_0",
+      "target": "A_Rule_143_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_144_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_144_0",
+      "target": "A_Rule_144_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_145_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_145_0",
+      "target": "A_Rule_145_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_146_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_146_0",
+      "target": "A_Rule_146_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_147_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_147_0",
+      "target": "A_Rule_147_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_148_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_148_0",
+      "target": "A_Rule_148_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_149_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_149_0",
+      "target": "A_Rule_149_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_150_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_150_0",
+      "target": "A_Rule_150_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_151_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_151_0",
+      "target": "A_Rule_151_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_152_0",
+      "target": "CH_door_lock",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_152_0",
+      "target": "A_Rule_152_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_153_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_door_lock",
+      "target": "T_Rule_153_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_153_0",
+      "target": "A_Rule_153_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_154_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_door_lock",
+      "target": "T_Rule_154_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_154_0",
+      "target": "A_Rule_154_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_155_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_155_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_155_0",
+      "target": "A_Rule_155_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_155_0",
+      "target": "A_Rule_155_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_156_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_alarm",
+      "target": "T_Rule_156_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_156_0",
+      "target": "A_Rule_156_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "T_Rule_156_0",
+      "target": "A_Rule_156_1",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "CH_time",
+      "target": "T_Rule_157_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_157_0",
+      "target": "A_Rule_157_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_158_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_158_0",
+      "target": "A_Rule_158_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_159_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_159_0",
+      "target": "A_Rule_159_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "CH_motion",
+      "target": "T_Rule_160_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_160_0",
+      "target": "A_Rule_160_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "CH_time",
+      "target": "T_Rule_161_0",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "T_Rule_161_0",
+      "target": "A_Rule_161_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_162_0",
+      "target": "CH_Temperature_ServerRoom",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_162_0",
+      "target": "A_Rule_162_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    },
+    {
+      "source": "A_Rule_163_0",
+      "target": "CH_alarm",
+      "type": "system_implicit",
+      "cost": 3,
+      "stealth": 2
+    },
+    {
+      "source": "CH_Temperature_ServerRoom",
+      "target": "T_Rule_163_0",
+      "type": "physical_implicit",
+      "cost": 5,
+      "stealth": 3
+    },
+    {
+      "source": "T_Rule_163_0",
+      "target": "A_Rule_163_0",
+      "type": "explicit",
+      "cost": 1,
+      "stealth": 1
+    }
+  ]
+}

@@ -1,0 +1,786 @@
+[
+  {
+    "identification": {
+      "device_name": "Room202_Temp_Sensor",
+      "type": "temperature_sensor"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "temperature",
+          "data_type": "num",
+          "units": "celsius"
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "temperature": []
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room203_Temp_Sensor",
+      "type": "temperature_sensor"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "temperature",
+          "data_type": "num",
+          "units": "celsius"
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "temperature": []
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room203_Humidity_Sensor",
+      "type": "humidity_sensor"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "relative_humidity",
+          "data_type": "num",
+          "units": "percent"
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "relative_humidity": []
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room203_Heater",
+      "type": "heater"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "power_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": [
+        {
+          "name": "turn_on",
+          "parameters": {},
+          "transition": {
+            "Room203_Heater": {
+              "power_status": "on"
+            }
+          }
+        },
+        {
+          "name": "turn_off",
+          "parameters": {},
+          "transition": {
+            "Room203_Heater": {
+              "power_status": "off"
+            }
+          }
+        }
+      ]
+    },
+    "status": {
+      "power_status": ["on", "off"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room204_Temp_Sensor",
+      "type": "temperature_sensor"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "temperature",
+          "data_type": "num",
+          "units": "celsius"
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "temperature": []
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room228_Temp_Sensor",
+      "type": "temperature_sensor"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "temperature",
+          "data_type": "num",
+          "units": "celsius"
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "temperature": []
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room228_Humidity_Sensor",
+      "type": "humidity_sensor"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "relative_humidity",
+          "data_type": "num",
+          "units": "percent"
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "relative_humidity": []
+    }
+  },
+  {
+    "identification": {
+      "device_name": "VAV1",
+      "type": "vav"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "damper_position",
+          "data_type": "num",
+          "units": "percent"
+        }
+      ],
+      "commands": [
+        {
+          "name": "set_damper_position",
+          "parameters": {
+            "percentage": "num"
+          },
+          "transition": {
+            "VAV1": {
+              "damper_position": "parameter:percentage"
+            }
+          }
+        }
+      ]
+    },
+    "status": {
+      "damper_position": []
+    }
+  },
+  {
+    "identification": {
+      "device_name": "VAV2",
+      "type": "vav"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "damper_position",
+          "data_type": "num",
+          "units": "percent"
+        }
+      ],
+      "commands": [
+        {
+          "name": "set_damper_position",
+          "parameters": {
+            "percentage": "num"
+          },
+          "transition": {
+            "VAV2": {
+              "damper_position": "parameter:percentage"
+            }
+          }
+        }
+      ]
+    },
+    "status": {
+      "damper_position": []
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room11_Luminare",
+      "type": "light"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "light_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": [
+        {
+          "name": "turn_on",
+          "parameters": {},
+          "transition": {
+            "Room11_Luminare": {
+              "light_status": "on"
+            }
+          }
+        },
+        {
+          "name": "turn_off",
+          "parameters": {},
+          "transition": {
+            "Room11_Luminare": {
+              "light_status": "off"
+            }
+          }
+        }
+      ]
+    },
+    "status": {
+      "light_status": ["on", "off"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room11_Occupancy_Sensor",
+      "type": "occupancy_sensor"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "occupancy_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "occupancy_status": ["occupied", "unoccupied"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room101_Luminare",
+      "type": "light"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "light_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": [
+        {
+          "name": "turn_on",
+          "parameters": {},
+          "transition": {
+            "Room101_Luminare": {
+              "light_status": "on"
+            }
+          }
+        },
+        {
+          "name": "turn_off",
+          "parameters": {},
+          "transition": {
+            "Room101_Luminare": {
+              "light_status": "off"
+            }
+          }
+        }
+      ]
+    },
+    "status": {
+      "light_status": ["on", "off"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room101_Occupancy_Sensor",
+      "type": "occupancy_sensor"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "occupancy_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "occupancy_status": ["occupied", "unoccupied"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room102_Luminare",
+      "type": "light"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "light_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": [
+        {
+          "name": "turn_on",
+          "parameters": {},
+          "transition": {
+            "Room102_Luminare": {
+              "light_status": "on"
+            }
+          }
+        },
+        {
+          "name": "turn_off",
+          "parameters": {},
+          "transition": {
+            "Room102_Luminare": {
+              "light_status": "off"
+            }
+          }
+        }
+      ]
+    },
+    "status": {
+      "light_status": ["on", "off"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room102_Light_Sensor",
+      "type": "light_sensor"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "illuminance",
+          "data_type": "num",
+          "units": "lux"
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "illuminance": []
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room501_Luminare",
+      "type": "light"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "light_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": [
+        {
+          "name": "turn_on",
+          "parameters": {},
+          "transition": {
+            "Room501_Luminare": {
+              "light_status": "on"
+            }
+          }
+        },
+        {
+          "name": "turn_off",
+          "parameters": {},
+          "transition": {
+            "Room501_Luminare": {
+              "light_status": "off"
+            }
+          }
+        }
+      ]
+    },
+    "status": {
+      "light_status": ["on", "off"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room11_Smoke_Detector",
+      "type": "smoke_detector"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "smoke_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "smoke_status": ["clear", "smoke_detected"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room101_Smoke_Detector",
+      "type": "smoke_detector"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "smoke_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "smoke_status": ["clear", "smoke_detected"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room205_Fire_Alarm_Strobe",
+      "type": "fire_alarm_strobe"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "alarm_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": [
+        {
+          "name": "activate",
+          "parameters": {},
+          "transition": {
+            "Room205_Fire_Alarm_Strobe": {
+              "alarm_status": "active"
+            }
+          }
+        },
+        {
+          "name": "deactivate",
+          "parameters": {},
+          "transition": {
+            "Room205_Fire_Alarm_Strobe": {
+              "alarm_status": "inactive"
+            }
+          }
+        }
+      ]
+    },
+    "status": {
+      "alarm_status": ["active", "inactive"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room206_Smoke_Detector",
+      "type": "smoke_detector"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "smoke_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "smoke_status": ["clear", "smoke_detected"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room228_Heat_Detector",
+      "type": "heat_detector"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "heat_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "heat_status": ["clear", "heat_detected"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room514_Smoke_Detector",
+      "type": "smoke_detector"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "smoke_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "smoke_status": ["clear", "smoke_detected"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Main_Entrance_Card_Reader",
+      "type": "card_reader"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "last_card_scan",
+          "data_type": "string",
+          "units": null
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "last_card_scan": []
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Main_Entrance_Electric_Strike",
+      "type": "door_lock"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "lock_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": [
+        {
+          "name": "unlock",
+          "parameters": {},
+          "transition": {
+            "Main_Entrance_Electric_Strike": {
+              "lock_status": "unlocked"
+            }
+          }
+        },
+        {
+          "name": "lock",
+          "parameters": {},
+          "transition": {
+            "Main_Entrance_Electric_Strike": {
+              "lock_status": "locked"
+            }
+          }
+        }
+      ]
+    },
+    "status": {
+      "lock_status": ["locked", "unlocked"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Main_Entrance_Door_Contact",
+      "type": "door_contact_sensor"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "door_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "door_status": ["open", "closed"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Main_Entrance_Push_Button",
+      "type": "push_button"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "button_press",
+          "data_type": "boolean",
+          "units": null
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "button_press": []
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room50_Card_Reader",
+      "type": "card_reader"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "last_card_scan",
+          "data_type": "string",
+          "units": null
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "last_card_scan": []
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room50_Electric_Strike",
+      "type": "door_lock"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "lock_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": [
+        {
+          "name": "unlock",
+          "parameters": {},
+          "transition": {
+            "Room50_Electric_Strike": {
+              "lock_status": "unlocked"
+            }
+          }
+        },
+        {
+          "name": "lock",
+          "parameters": {},
+          "transition": {
+            "Room50_Electric_Strike": {
+              "lock_status": "locked"
+            }
+          }
+        }
+      ]
+    },
+    "status": {
+      "lock_status": ["locked", "unlocked"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room50_Door_Contact",
+      "type": "door_contact_sensor"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "door_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "door_status": ["open", "closed"]
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room228_Card_Reader",
+      "type": "card_reader"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "last_card_scan",
+          "data_type": "string",
+          "units": null
+        }
+      ],
+      "commands": []
+    },
+    "status": {
+      "last_card_scan": []
+    }
+  },
+  {
+    "identification": {
+      "device_name": "Room228_Electric_Strike",
+      "type": "door_lock"
+    },
+    "capabilities": {
+      "measurable_attributes": [
+        {
+          "name": "lock_status",
+          "data_type": "enum",
+          "units": null
+        }
+      ],
+      "commands": [
+        {
+          "name": "unlock",
+          "parameters": {},
+          "transition": {
+            "Room228_Electric_Strike": {
+              "lock_status": "unlocked"
+            }
+          }
+        },
+        {
+          "name": "lock",
+          "parameters": {},
+          "transition": {
+            "Room228_Electric_Strike": {
+              "lock_status": "locked"
+            }
+          }
+        }
+      ]
+    },
+    "status": {
+      "lock_status": ["locked", "unlocked"]
+    }
+  }
+]

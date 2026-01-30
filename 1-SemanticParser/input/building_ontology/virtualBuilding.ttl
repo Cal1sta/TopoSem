@@ -1,0 +1,624 @@
+# -- PREFIXES --
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix brick: <https://brickschema.org/schema/1.4/Brick#> .
+@prefix bldg: <http://example.com/myVirtualBuilding#> .
+
+# -- BUILDING AND SPATIAL STRUCTURE (UNCHANGED) --
+bldg:MySmartBuilding a brick:Building ;
+    rdfs:label "My Smart Building" ;
+    brick:hasPart bldg:Floor_1,
+                  bldg:Floor_2,
+                  bldg:Floor_3,
+                  bldg:Roof . 
+
+# -- FLOOR 1 AND SPACES --
+bldg:Floor_1 a brick:Floor ;
+    rdfs:label "First Floor" ;
+    brick:isPartOf bldg:MySmartBuilding ;
+    brick:hasPart bldg:Main_Entrance,
+                  bldg:Lobby_1,
+                  bldg:Hallway_1,
+                  bldg:Office_1A,
+                  bldg:Office_1B,
+                  bldg:ConfRoom_1,
+                  bldg:Server_Room,
+                  bldg:Control_Room,
+                  bldg:Mechanical_Room_1 . 
+
+bldg:Main_Entrance a brick:Entrance ; rdfs:label "Main Entrance" ; brick:isPartOf bldg:Floor_1 .
+bldg:Lobby_1 a brick:Lobby ; rdfs:label "Main Lobby - Floor 1" ; brick:isPartOf bldg:Floor_1 .
+bldg:Hallway_1 a brick:Hallway ; rdfs:label "Hallway - Floor 1" ; brick:isPartOf bldg:Floor_1 .
+bldg:Office_1A a brick:Office ; rdfs:label "Office 1A" ; brick:isPartOf bldg:Floor_1 .
+bldg:Office_1B a brick:Office ; rdfs:label "Office 1B" ; brick:isPartOf bldg:Floor_1 .
+bldg:ConfRoom_1 a brick:Conference_Room ; rdfs:label "Conference Room 1" ; brick:isPartOf bldg:Floor_1 .
+bldg:Server_Room a brick:Server_Room ; rdfs:label "Server Room" ; brick:isPartOf bldg:Floor_1 .
+bldg:Control_Room a brick:Control_Room ; rdfs:label "Control Room" ; brick:isPartOf bldg:Floor_1 .
+bldg:Mechanical_Room_1 a brick:Mechanical_Room ; rdfs:label "Mechanical Room - Floor 1" ; brick:isPartOf bldg:Floor_1 .
+
+# -- FLOOR 2 AND SPACES --
+bldg:Floor_2 a brick:Floor ; rdfs:label "Second Floor" ; brick:isPartOf bldg:MySmartBuilding ;
+    brick:hasPart bldg:Hallway_2, bldg:Office_2A, bldg:Office_2B, bldg:Office_2C, bldg:ConfRoom_2 .
+bldg:Hallway_2 a brick:Hallway ; rdfs:label "Hallway - Floor 2" ; brick:isPartOf bldg:Floor_2 .
+bldg:Office_2A a brick:Office ; rdfs:label "Office 2A" ; brick:isPartOf bldg:Floor_2 .
+bldg:Office_2B a brick:Office ; rdfs:label "Office 2B" ; brick:isPartOf bldg:Floor_2 .
+bldg:Office_2C a brick:Office ; rdfs:label "Office 2C" ; brick:isPartOf bldg:Floor_2 .
+bldg:ConfRoom_2 a brick:Conference_Room ; rdfs:label "Conference Room 2" ; brick:isPartOf bldg:Floor_2 .
+
+# -- FLOOR 3 AND SPACES --
+bldg:Floor_3 a brick:Floor ; rdfs:label "Third Floor" ; brick:isPartOf bldg:MySmartBuilding ;
+    brick:hasPart bldg:Hallway_3, bldg:Office_3A, bldg:Office_3B, bldg:ConfRoom_3 .
+bldg:Hallway_3 a brick:Hallway ; rdfs:label "Hallway - Floor 3" ; brick:isPartOf bldg:Floor_3 .
+bldg:Office_3A a brick:Office ; rdfs:label "Office 3A" ; brick:isPartOf bldg:Floor_3 .
+bldg:Office_3B a brick:Office ; rdfs:label "Office 3B" ; brick:isPartOf bldg:Floor_3 .
+bldg:ConfRoom_3 a brick:Conference_Room ; rdfs:label "Conference Room 3" ; brick:isPartOf bldg:Floor_3 .
+
+# -- ROOF DEFINITION --
+bldg:Roof a brick:Rooftop ; rdfs:label "Roof" ; brick:isPartOf bldg:MySmartBuilding .
+
+
+# =======================================================
+# == HVAC EQUIPMENT ADDITIONS START HERE ==
+# =======================================================
+
+# -- CENTRAL HVAC EQUIPMENT (REVISED AND ENHANCED) --
+# These devices serve the entire building.
+bldg:Central_AHU a brick:AHU ;
+    rdfs:label "Central Air Handler Unit" ;
+    brick:isFedBy bldg:Main_Chiller, bldg:Main_Boiler . 
+bldg:Mechanical_Room_1 brick:isLocationOf bldg:Central_AHU .
+
+bldg:Main_Chiller a brick:Chiller ; 
+    rdfs:label "Main Chiller" ;
+    brick:isFedBy bldg:Main_CoolingTower . 
+bldg:Mechanical_Room_1 brick:isLocationOf bldg:Main_Chiller .
+
+bldg:Main_Boiler a brick:Boiler ; rdfs:label "Main Boiler" .
+bldg:Mechanical_Room_1 brick:isLocationOf bldg:Main_Boiler .
+
+bldg:Main_CoolingTower a brick:Cooling_Tower ; rdfs:label "Main Cooling Tower" .
+bldg:Roof brick:isLocationOf bldg:Main_CoolingTower .
+
+# Outdoor environment sensors associated with the AHU
+bldg:OAT_Sensor a brick:Outside_Air_Temperature_Sensor ; rdfs:label "Outside Air Temperature Sensor" .
+bldg:OARH_Sensor a brick:Outside_Air_Relative_Humidity_Sensor ; rdfs:label "Outside Air Relative Humidity Sensor" .
+bldg:Central_AHU brick:hasPoint bldg:OAT_Sensor, bldg:OARH_Sensor .
+bldg:MySmartBuilding brick:isLocationOf bldg:OAT_Sensor, bldg:OARH_Sensor .
+
+
+# -- ZONAL HVAC EQUIPMENT --
+
+# -- Floor 1 Equipment --
+# Office 1A
+bldg:VAV_1A a brick:VAV ; rdfs:label "VAV for Office 1A" ; brick:isFedBy bldg:Central_AHU ; brick:feeds bldg:Office_1A .
+bldg:TempSensor_1A a brick:Room_Air_Temperature_Sensor ; rdfs:label "Temperature Sensor for Office 1A" .
+bldg:Office_1A brick:isLocationOf bldg:VAV_1A, bldg:TempSensor_1A .
+bldg:VAV_1A brick:hasPoint bldg:TempSensor_1A .
+
+# Office 1B (similar setup)
+bldg:VAV_1B a brick:VAV ; rdfs:label "VAV for Office 1B" ; brick:isFedBy bldg:Central_AHU ; brick:feeds bldg:Office_1B .
+bldg:TempSensor_1B a brick:Room_Air_Temperature_Sensor ; rdfs:label "Temperature Sensor for Office 1B" .
+bldg:Office_1B brick:isLocationOf bldg:VAV_1B, bldg:TempSensor_1B .
+bldg:VAV_1B brick:hasPoint bldg:TempSensor_1B .
+
+# Conference Room 1 (with CO2 sensor)
+bldg:VAV_Conf1 a brick:VAV ; rdfs:label "VAV for Conf Room 1" ; brick:isFedBy bldg:Central_AHU ; brick:feeds bldg:ConfRoom_1 .
+bldg:TempSensor_Conf1 a brick:Room_Air_Temperature_Sensor ; rdfs:label "Temperature Sensor for Conf Room 1" .
+bldg:CO2Sensor_Conf1 a brick:CO2_Sensor ; rdfs:label "CO2 Sensor for Conf Room 1" .
+bldg:ConfRoom_1 brick:isLocationOf bldg:VAV_Conf1, bldg:TempSensor_Conf1, bldg:CO2Sensor_Conf1 .
+bldg:VAV_Conf1 brick:hasPoint bldg:TempSensor_Conf1, bldg:CO2Sensor_Conf1 .
+
+# Server Room (with humidity sensor for precise control)
+bldg:VAV_ServerRoom a brick:VAV ; rdfs:label "VAV for Server Room" ; brick:isFedBy bldg:Central_AHU ; brick:feeds bldg:Server_Room .
+bldg:TempSensor_ServerRoom a brick:Room_Air_Temperature_Sensor ; rdfs:label "Temperature Sensor for Server Room" .
+bldg:HumiditySensor_ServerRoom a brick:Relative_Humidity_Sensor ; rdfs:label "Humidity Sensor for Server Room" .
+bldg:Server_Room brick:isLocationOf bldg:VAV_ServerRoom, bldg:TempSensor_ServerRoom, bldg:HumiditySensor_ServerRoom .
+bldg:VAV_ServerRoom brick:hasPoint bldg:TempSensor_ServerRoom, bldg:HumiditySensor_ServerRoom .
+
+# -- Floor 2 Equipment (pattern repeats) --
+# Office 2A
+bldg:VAV_2A a brick:VAV ; rdfs:label "VAV for Office 2A" ; brick:isFedBy bldg:Central_AHU ; brick:feeds bldg:Office_2A .
+bldg:TempSensor_2A a brick:Room_Air_Temperature_Sensor ; rdfs:label "Temperature Sensor for Office 2A" .
+bldg:Office_2A brick:isLocationOf bldg:VAV_2A, bldg:TempSensor_2A .
+bldg:VAV_2A brick:hasPoint bldg:TempSensor_2A .
+
+# Office 2B
+bldg:VAV_2B a brick:VAV ; rdfs:label "VAV for Office 2B" ; brick:isFedBy bldg:Central_AHU ; brick:feeds bldg:Office_2B .
+bldg:TempSensor_2B a brick:Room_Air_Temperature_Sensor ; rdfs:label "Temperature Sensor for Office 2B" .
+bldg:Office_2B brick:isLocationOf bldg:VAV_2B, bldg:TempSensor_2B .
+bldg:VAV_2B brick:hasPoint bldg:TempSensor_2B .
+
+# Office 2C
+bldg:VAV_2C a brick:VAV ; rdfs:label "VAV for Office 2C" ; brick:isFedBy bldg:Central_AHU ; brick:feeds bldg:Office_2C .
+bldg:TempSensor_2C a brick:Room_Air_Temperature_Sensor ; rdfs:label "Temperature Sensor for Office 2C" .
+bldg:Office_2C brick:isLocationOf bldg:VAV_2C, bldg:TempSensor_2C .
+bldg:VAV_2C brick:hasPoint bldg:TempSensor_2C .
+
+# Conference Room 2 (with CO2 sensor)
+bldg:VAV_Conf2 a brick:VAV ; rdfs:label "VAV for Conf Room 2" ; brick:isFedBy bldg:Central_AHU ; brick:feeds bldg:ConfRoom_2 .
+bldg:TempSensor_Conf2 a brick:Room_Air_Temperature_Sensor ; rdfs:label "Temperature Sensor for Conf Room 2" .
+bldg:CO2Sensor_Conf2 a brick:CO2_Sensor ; rdfs:label "CO2 Sensor for Conf Room 2" .
+bldg:ConfRoom_2 brick:isLocationOf bldg:VAV_Conf2, bldg:TempSensor_Conf2, bldg:CO2Sensor_Conf2 .
+bldg:VAV_Conf2 brick:hasPoint bldg:TempSensor_Conf2, bldg:CO2Sensor_Conf2 .
+
+
+# -- Floor 3 Equipment (pattern repeats) --
+# Office 3A
+bldg:VAV_3A a brick:VAV ; rdfs:label "VAV for Office 3A" ; brick:isFedBy bldg:Central_AHU ; brick:feeds bldg:Office_3A .
+bldg:TempSensor_3A a brick:Room_Air_Temperature_Sensor ; rdfs:label "Temperature Sensor for Office 3A" .
+bldg:Office_3A brick:isLocationOf bldg:VAV_3A, bldg:TempSensor_3A .
+bldg:VAV_3A brick:hasPoint bldg:TempSensor_3A .
+
+# Office 3B
+bldg:VAV_3B a brick:VAV ; rdfs:label "VAV for Office 3B" ; brick:isFedBy bldg:Central_AHU ; brick:feeds bldg:Office_3B .
+bldg:TempSensor_3B a brick:Room_Air_Temperature_Sensor ; rdfs:label "Temperature Sensor for Office 3B" .
+bldg:Office_3B brick:isLocationOf bldg:VAV_3B, bldg:TempSensor_3B .
+bldg:VAV_3B brick:hasPoint bldg:TempSensor_3B .
+
+# Conference Room 3 (with CO2 sensor)
+bldg:VAV_Conf3 a brick:VAV ; rdfs:label "VAV for Conf Room 3" ; brick:isFedBy bldg:Central_AHU ; brick:feeds bldg:ConfRoom_3 .
+bldg:TempSensor_Conf3 a brick:Room_Air_Temperature_Sensor ; rdfs:label "Temperature Sensor for Conf Room 3" .
+bldg:CO2Sensor_Conf3 a brick:CO2_Sensor ; rdfs:label "CO2 Sensor for Conf Room 3" .
+bldg:ConfRoom_3 brick:isLocationOf bldg:VAV_Conf3, bldg:TempSensor_Conf3, bldg:CO2Sensor_Conf3 .
+bldg:VAV_Conf3 brick:hasPoint bldg:TempSensor_Conf3, bldg:CO2Sensor_Conf3 .
+
+# =======================================================
+# == CENTRAL LIGHTING CONTROL EQUIPMENT ==
+# =======================================================
+
+bldg:Main_Lighting_Panel a brick:Lighting_Control_Panel ;
+    rdfs:label "Main Lighting Control Panel" .
+# Assuming the Control_Room is defined elsewhere, we place the panel there.
+# bldg:Control_Room brick:isLocationOf bldg:Main_Lighting_Panel .
+
+# =======================================================
+# == FLOOR 1: LIGHTING EQUIPMENT DEPLOYMENT ==
+# =======================================================
+
+# -- Main Entrance --
+bldg:Luminaire_Main_Entrance a brick:Luminaire ; rdfs:label "Main Entrance Lights" .
+bldg:Switch_Main_Entrance a brick:Lighting_Switch ; rdfs:label "Main Entrance Light Switch" ; brick:controls bldg:Luminaire_Main_Entrance .
+bldg:Occupancy_Sensor_Main_Entrance a brick:Occupancy_Sensor ; rdfs:label "Main Entrance Occupancy Sensor" .
+bldg:Main_Entrance brick:hasPart bldg:Luminaire_Main_Entrance, bldg:Switch_Main_Entrance ; brick:hasPoint bldg:Occupancy_Sensor_Main_Entrance .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Main_Entrance .
+
+# -- Lobby 1 --
+bldg:Luminaire_Lobby_1 a brick:Luminaire ; rdfs:label "Lobby 1 Lights" .
+bldg:Switch_Lobby_1 a brick:Lighting_Switch ; rdfs:label "Lobby 1 Light Switch" ; brick:controls bldg:Luminaire_Lobby_1 .
+bldg:Dimmer_Lobby_1 a brick:Dimmer ; rdfs:label "Lobby 1 Dimmer" ; brick:controls bldg:Luminaire_Lobby_1 .
+bldg:Occupancy_Sensor_Lobby_1 a brick:Occupancy_Sensor ; rdfs:label "Lobby 1 Occupancy Sensor" .
+bldg:Luminance_Sensor_Lobby_1 a brick:Luminance_Sensor ; rdfs:label "Lobby 1 Luminance Sensor" .
+bldg:Lobby_1 brick:hasPart bldg:Luminaire_Lobby_1, bldg:Switch_Lobby_1, bldg:Dimmer_Lobby_1 ; brick:hasPoint bldg:Occupancy_Sensor_Lobby_1, bldg:Luminance_Sensor_Lobby_1 .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Lobby_1 .
+
+# -- Hallway 1 --
+bldg:Luminaire_Hallway_1 a brick:Luminaire ; rdfs:label "Hallway 1 Lights" .
+bldg:Switch_Hallway_1 a brick:Lighting_Switch ; rdfs:label "Hallway 1 Light Switch" ; brick:controls bldg:Luminaire_Hallway_1 .
+bldg:Occupancy_Sensor_Hallway_1 a brick:Occupancy_Sensor ; rdfs:label "Hallway 1 Occupancy Sensor" .
+bldg:Hallway_1 brick:hasPart bldg:Luminaire_Hallway_1, bldg:Switch_Hallway_1 ; brick:hasPoint bldg:Occupancy_Sensor_Hallway_1 .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Hallway_1 .
+
+# -- Office 1A --
+bldg:Luminaire_Office_1A a brick:Luminaire ; rdfs:label "Office 1A Lights" .
+bldg:Switch_Office_1A a brick:Lighting_Switch ; rdfs:label "Office 1A Light Switch" ; brick:controls bldg:Luminaire_Office_1A .
+bldg:Dimmer_Office_1A a brick:Dimmer ; rdfs:label "Office 1A Dimmer" ; brick:controls bldg:Luminaire_Office_1A .
+bldg:Occupancy_Sensor_Office_1A a brick:Occupancy_Sensor ; rdfs:label "Office 1A Occupancy Sensor" .
+bldg:Office_1A brick:hasPart bldg:Luminaire_Office_1A, bldg:Switch_Office_1A, bldg:Dimmer_Office_1A ; brick:hasPoint bldg:Occupancy_Sensor_Office_1A .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Office_1A .
+
+# -- Office 1B --
+bldg:Luminaire_Office_1B a brick:Luminaire ; rdfs:label "Office 1B Lights" .
+bldg:Switch_Office_1B a brick:Lighting_Switch ; rdfs:label "Office 1B Light Switch" ; brick:controls bldg:Luminaire_Office_1B .
+bldg:Dimmer_Office_1B a brick:Dimmer ; rdfs:label "Office 1B Dimmer" ; brick:controls bldg:Luminaire_Office_1B .
+bldg:Occupancy_Sensor_Office_1B a brick:Occupancy_Sensor ; rdfs:label "Office 1B Occupancy Sensor" .
+bldg:Office_1B brick:hasPart bldg:Luminaire_Office_1B, bldg:Switch_Office_1B, bldg:Dimmer_Office_1B ; brick:hasPoint bldg:Occupancy_Sensor_Office_1B .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Office_1B .
+
+# -- Conference Room 1 --
+bldg:Luminaire_ConfRoom_1 a brick:Luminaire ; rdfs:label "Conference Room 1 Lights" .
+bldg:Switch_ConfRoom_1 a brick:Lighting_Switch ; rdfs:label "Conference Room 1 Light Switch" ; brick:controls bldg:Luminaire_ConfRoom_1 .
+bldg:Dimmer_ConfRoom_1 a brick:Dimmer ; rdfs:label "Conference Room 1 Dimmer" ; brick:controls bldg:Luminaire_ConfRoom_1 .
+bldg:Occupancy_Sensor_ConfRoom_1 a brick:Occupancy_Sensor ; rdfs:label "Conference Room 1 Occupancy Sensor" .
+bldg:ConfRoom_1 brick:hasPart bldg:Luminaire_ConfRoom_1, bldg:Switch_ConfRoom_1, bldg:Dimmer_ConfRoom_1 ; brick:hasPoint bldg:Occupancy_Sensor_ConfRoom_1 .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_ConfRoom_1 .
+
+# -- Server Room --
+bldg:Luminaire_Server_Room a brick:Luminaire ; rdfs:label "Server Room Lights" .
+bldg:Switch_Server_Room a brick:Lighting_Switch ; rdfs:label "Server Room Light Switch" ; brick:controls bldg:Luminaire_Server_Room .
+bldg:Occupancy_Sensor_Server_Room a brick:Occupancy_Sensor ; rdfs:label "Server Room Occupancy Sensor" .
+bldg:Server_Room brick:hasPart bldg:Luminaire_Server_Room, bldg:Switch_Server_Room ; brick:hasPoint bldg:Occupancy_Sensor_Server_Room .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Server_Room .
+
+# -- Control Room --
+bldg:Luminaire_Control_Room a brick:Luminaire ; rdfs:label "Control Room Lights" .
+bldg:Switch_Control_Room a brick:Lighting_Switch ; rdfs:label "Control Room Light Switch" ; brick:controls bldg:Luminaire_Control_Room .
+bldg:Control_Room brick:hasPart bldg:Luminaire_Control_Room, bldg:Switch_Control_Room .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Control_Room .
+
+# -- Mechanical Room 1 --
+bldg:Luminaire_Mechanical_Room_1 a brick:Luminaire ; rdfs:label "Mechanical Room 1 Lights" .
+bldg:Switch_Mechanical_Room_1 a brick:Lighting_Switch ; rdfs:label "Mechanical Room 1 Light Switch" ; brick:controls bldg:Luminaire_Mechanical_Room_1 .
+bldg:Occupancy_Sensor_Mechanical_Room_1 a brick:Occupancy_Sensor ; rdfs:label "Mechanical Room 1 Occupancy Sensor" .
+bldg:Mechanical_Room_1 brick:hasPart bldg:Luminaire_Mechanical_Room_1, bldg:Switch_Mechanical_Room_1 ; brick:hasPoint bldg:Occupancy_Sensor_Mechanical_Room_1 .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Mechanical_Room_1 .
+
+
+# =======================================================
+# == FLOOR 2: LIGHTING EQUIPMENT DEPLOYMENT ==
+# =======================================================
+
+# -- Hallway 2 --
+bldg:Luminaire_Hallway_2 a brick:Luminaire ; rdfs:label "Hallway 2 Lights" .
+bldg:Switch_Hallway_2 a brick:Lighting_Switch ; rdfs:label "Hallway 2 Light Switch" ; brick:controls bldg:Luminaire_Hallway_2 .
+bldg:Occupancy_Sensor_Hallway_2 a brick:Occupancy_Sensor ; rdfs:label "Hallway 2 Occupancy Sensor" .
+bldg:Hallway_2 brick:hasPart bldg:Luminaire_Hallway_2, bldg:Switch_Hallway_2 ; brick:hasPoint bldg:Occupancy_Sensor_Hallway_2 .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Hallway_2 .
+
+# -- Office 2A --
+bldg:Luminaire_Office_2A a brick:Luminaire ; rdfs:label "Office 2A Lights" .
+bldg:Switch_Office_2A a brick:Lighting_Switch ; rdfs:label "Office 2A Light Switch" ; brick:controls bldg:Luminaire_Office_2A .
+bldg:Dimmer_Office_2A a brick:Dimmer ; rdfs:label "Office 2A Dimmer" ; brick:controls bldg:Luminaire_Office_2A .
+bldg:Occupancy_Sensor_Office_2A a brick:Occupancy_Sensor ; rdfs:label "Office 2A Occupancy Sensor" .
+bldg:Office_2A brick:hasPart bldg:Luminaire_Office_2A, bldg:Switch_Office_2A, bldg:Dimmer_Office_2A ; brick:hasPoint bldg:Occupancy_Sensor_Office_2A .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Office_2A .
+
+# -- Office 2B --
+bldg:Luminaire_Office_2B a brick:Luminaire ; rdfs:label "Office 2B Lights" .
+bldg:Switch_Office_2B a brick:Lighting_Switch ; rdfs:label "Office 2B Light Switch" ; brick:controls bldg:Luminaire_Office_2B .
+bldg:Dimmer_Office_2B a brick:Dimmer ; rdfs:label "Office 2B Dimmer" ; brick:controls bldg:Luminaire_Office_2B .
+bldg:Occupancy_Sensor_Office_2B a brick:Occupancy_Sensor ; rdfs:label "Office 2B Occupancy Sensor" .
+bldg:Office_2B brick:hasPart bldg:Luminaire_Office_2B, bldg:Switch_Office_2B, bldg:Dimmer_Office_2B ; brick:hasPoint bldg:Occupancy_Sensor_Office_2B .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Office_2B .
+
+# -- Office 2C --
+bldg:Luminaire_Office_2C a brick:Luminaire ; rdfs:label "Office 2C Lights" .
+bldg:Switch_Office_2C a brick:Lighting_Switch ; rdfs:label "Office 2C Light Switch" ; brick:controls bldg:Luminaire_Office_2C .
+bldg:Dimmer_Office_2C a brick:Dimmer ; rdfs:label "Office 2C Dimmer" ; brick:controls bldg:Luminaire_Office_2C .
+bldg:Occupancy_Sensor_Office_2C a brick:Occupancy_Sensor ; rdfs:label "Office 2C Occupancy Sensor" .
+bldg:Office_2C brick:hasPart bldg:Luminaire_Office_2C, bldg:Switch_Office_2C, bldg:Dimmer_Office_2C ; brick:hasPoint bldg:Occupancy_Sensor_Office_2C .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Office_2C .
+
+# -- Conference Room 2 --
+bldg:Luminaire_ConfRoom_2 a brick:Luminaire ; rdfs:label "Conference Room 2 Lights" .
+bldg:Switch_ConfRoom_2 a brick:Lighting_Switch ; rdfs:label "Conference Room 2 Light Switch" ; brick:controls bldg:Luminaire_ConfRoom_2 .
+bldg:Dimmer_ConfRoom_2 a brick:Dimmer ; rdfs:label "Conference Room 2 Dimmer" ; brick:controls bldg:Luminaire_ConfRoom_2 .
+bldg:Occupancy_Sensor_ConfRoom_2 a brick:Occupancy_Sensor ; rdfs:label "Conference Room 2 Occupancy Sensor" .
+bldg:ConfRoom_2 brick:hasPart bldg:Luminaire_ConfRoom_2, bldg:Switch_ConfRoom_2, bldg:Dimmer_ConfRoom_2 ; brick:hasPoint bldg:Occupancy_Sensor_ConfRoom_2 .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_ConfRoom_2 .
+
+
+# =======================================================
+# == FLOOR 3: LIGHTING EQUIPMENT DEPLOYMENT ==
+# =======================================================
+
+# -- Hallway 3 --
+bldg:Luminaire_Hallway_3 a brick:Luminaire ; rdfs:label "Hallway 3 Lights" .
+bldg:Switch_Hallway_3 a brick:Lighting_Switch ; rdfs:label "Hallway 3 Light Switch" ; brick:controls bldg:Luminaire_Hallway_3 .
+bldg:Occupancy_Sensor_Hallway_3 a brick:Occupancy_Sensor ; rdfs:label "Hallway 3 Occupancy Sensor" .
+bldg:Hallway_3 brick:hasPart bldg:Luminaire_Hallway_3, bldg:Switch_Hallway_3 ; brick:hasPoint bldg:Occupancy_Sensor_Hallway_3 .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Hallway_3 .
+
+# -- Office 3A --
+bldg:Luminaire_Office_3A a brick:Luminaire ; rdfs:label "Office 3A Lights" .
+bldg:Switch_Office_3A a brick:Lighting_Switch ; rdfs:label "Office 3A Light Switch" ; brick:controls bldg:Luminaire_Office_3A .
+bldg:Dimmer_Office_3A a brick:Dimmer ; rdfs:label "Office 3A Dimmer" ; brick:controls bldg:Luminaire_Office_3A .
+bldg:Occupancy_Sensor_Office_3A a brick:Occupancy_Sensor ; rdfs:label "Office 3A Occupancy Sensor" .
+bldg:Office_3A brick:hasPart bldg:Luminaire_Office_3A, bldg:Switch_Office_3A, bldg:Dimmer_Office_3A ; brick:hasPoint bldg:Occupancy_Sensor_Office_3A .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Office_3A .
+
+# -- Office 3B --
+bldg:Luminaire_Office_3B a brick:Luminaire ; rdfs:label "Office 3B Lights" .
+bldg:Switch_Office_3B a brick:Lighting_Switch ; rdfs:label "Office 3B Light Switch" ; brick:controls bldg:Luminaire_Office_3B .
+bldg:Dimmer_Office_3B a brick:Dimmer ; rdfs:label "Office 3B Dimmer" ; brick:controls bldg:Luminaire_Office_3B .
+bldg:Occupancy_Sensor_Office_3B a brick:Occupancy_Sensor ; rdfs:label "Office 3B Occupancy Sensor" .
+bldg:Office_3B brick:hasPart bldg:Luminaire_Office_3B, bldg:Switch_Office_3B, bldg:Dimmer_Office_3B ; brick:hasPoint bldg:Occupancy_Sensor_Office_3B .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Office_3B .
+
+# -- Conference Room 3 --
+bldg:Luminaire_ConfRoom_3 a brick:Luminaire ; rdfs:label "Conference Room 3 Lights" .
+bldg:Switch_ConfRoom_3 a brick:Lighting_Switch ; rdfs:label "Conference Room 3 Light Switch" ; brick:controls bldg:Luminaire_ConfRoom_3 .
+bldg:Dimmer_ConfRoom_3 a brick:Dimmer ; rdfs:label "Conference Room 3 Dimmer" ; brick:controls bldg:Luminaire_ConfRoom_3 .
+bldg:Occupancy_Sensor_ConfRoom_3 a brick:Occupancy_Sensor ; rdfs:label "Conference Room 3 Occupancy Sensor" .
+bldg:ConfRoom_3 brick:hasPart bldg:Luminaire_ConfRoom_3, bldg:Switch_ConfRoom_3, bldg:Dimmer_ConfRoom_3 ; brick:hasPoint bldg:Occupancy_Sensor_ConfRoom_3 .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_ConfRoom_3 .
+
+
+# =======================================================
+# == ROOF: LIGHTING EQUIPMENT DEPLOYMENT ==
+# =======================================================
+
+bldg:Luminaire_Roof a brick:Luminaire ; rdfs:label "Rooftop Utility Lights" .
+bldg:Switch_Roof a brick:Lighting_Switch ; rdfs:label "Rooftop Light Switch" ; brick:controls bldg:Luminaire_Roof .
+bldg:Roof brick:hasPart bldg:Luminaire_Roof, bldg:Switch_Roof .
+bldg:Main_Lighting_Panel brick:feeds bldg:Luminaire_Roof .
+
+# =======================================================
+# == CENTRAL FIRE SAFETY EQUIPMENT ==
+# =======================================================
+
+bldg:Main_FACP a brick:Fire_Alarm_Control_Panel ;
+    rdfs:label "Main Fire Alarm Control Panel" .
+bldg:Control_Room brick:isLocationOf bldg:Main_FACP .
+
+# =======================================================
+# == FLOOR 1: FIRE SAFETY EQUIPMENT DEPLOYMENT ==
+# =======================================================
+
+# -- Main Entrance & Lobby 1 --
+bldg:Smoke_Detector_Lobby_1 a brick:Smoke_Detector ; rdfs:label "Smoke Detector Lobby 1" .
+bldg:Pull_Station_Lobby_1 a brick:Manual_Pull_Station ; rdfs:label "Manual Pull Station Lobby 1" .
+bldg:Horn_Lobby_1 a brick:Horn ; rdfs:label "Fire Alarm Horn Lobby 1" .
+bldg:Strobe_Lobby_1 a brick:Strobe ; rdfs:label "Fire Alarm Strobe Lobby 1" .
+bldg:Sprinkler_Lobby_1 a brick:Sprinkler ; rdfs:label "Sprinkler in Lobby 1" .
+bldg:Lobby_1 brick:hasPoint bldg:Smoke_Detector_Lobby_1, bldg:Pull_Station_Lobby_1, bldg:Horn_Lobby_1, bldg:Strobe_Lobby_1 ;
+            brick:hasPart bldg:Sprinkler_Lobby_1 .
+bldg:Main_Entrance brick:hasPoint bldg:Pull_Station_Lobby_1 .
+
+# -- Hallway 1 --
+bldg:Smoke_Detector_Hallway_1 a brick:Smoke_Detector ; rdfs:label "Smoke Detector Hallway 1" .
+bldg:Horn_Hallway_1 a brick:Horn ; rdfs:label "Fire Alarm Horn Hallway 1" .
+bldg:Strobe_Hallway_1 a brick:Strobe ; rdfs:label "Fire Alarm Strobe Hallway 1" .
+bldg:Sprinkler_Hallway_1 a brick:Sprinkler ; rdfs:label "Sprinkler in Hallway 1" .
+bldg:Hallway_1 brick:hasPoint bldg:Smoke_Detector_Hallway_1, bldg:Horn_Hallway_1, bldg:Strobe_Hallway_1 ;
+              brick:hasPart bldg:Sprinkler_Hallway_1 .
+
+# -- Office 1A --
+bldg:Smoke_Detector_Office_1A a brick:Smoke_Detector ; rdfs:label "Smoke Detector Office 1A" .
+bldg:Strobe_Office_1A a brick:Strobe ; rdfs:label "Fire Alarm Strobe Office 1A" .
+bldg:Sprinkler_Office_1A a brick:Sprinkler ; rdfs:label "Sprinkler in Office 1A" .
+bldg:Office_1A brick:hasPoint bldg:Smoke_Detector_Office_1A, bldg:Strobe_Office_1A ;
+              brick:hasPart bldg:Sprinkler_Office_1A .
+
+# -- Office 1B --
+bldg:Smoke_Detector_Office_1B a brick:Smoke_Detector ; rdfs:label "Smoke Detector Office 1B" .
+bldg:Strobe_Office_1B a brick:Strobe ; rdfs:label "Fire Alarm Strobe Office 1B" .
+bldg:Sprinkler_Office_1B a brick:Sprinkler ; rdfs:label "Sprinkler in Office 1B" .
+bldg:Office_1B brick:hasPoint bldg:Smoke_Detector_Office_1B, bldg:Strobe_Office_1B ;
+              brick:hasPart bldg:Sprinkler_Office_1B .
+
+# -- Conference Room 1 --
+bldg:Smoke_Detector_ConfRoom_1 a brick:Smoke_Detector ; rdfs:label "Smoke Detector Conf Room 1" .
+bldg:Horn_ConfRoom_1 a brick:Horn ; rdfs:label "Fire Alarm Horn Conf Room 1" .
+bldg:Strobe_ConfRoom_1 a brick:Strobe ; rdfs:label "Fire Alarm Strobe Conf Room 1" .
+bldg:Sprinkler_ConfRoom_1 a brick:Sprinkler ; rdfs:label "Sprinkler in Conference Room 1" .
+bldg:ConfRoom_1 brick:hasPoint bldg:Smoke_Detector_ConfRoom_1, bldg:Horn_ConfRoom_1, bldg:Strobe_ConfRoom_1 ;
+               brick:hasPart bldg:Sprinkler_ConfRoom_1 .
+
+# -- Server Room (Special Case with Gas Suppression) --
+bldg:Heat_Detector_Server_Room a brick:Heat_Detector ; rdfs:label "Heat Detector Server Room" .
+bldg:Horn_Server_Room a brick:Horn ; rdfs:label "Fire Alarm Horn Server Room" .
+bldg:Strobe_Server_Room a brick:Strobe ; rdfs:label "Fire Alarm Strobe Server Room" .
+bldg:Sprinkler_Server_Room a brick:Sprinkler ; rdfs:label "Sprinkler in Server Room (Pre-action)" .
+bldg:Server_Room_Gas_Suppression a brick:Fire_Suppression_System ; rdfs:label "Gas Fire Suppression System for Server Room" .
+bldg:Server_Room brick:hasPoint bldg:Heat_Detector_Server_Room, bldg:Horn_Server_Room, bldg:Strobe_Server_Room ;
+                brick:hasPart bldg:Sprinkler_Server_Room, bldg:Server_Room_Gas_Suppression .
+
+# -- Control Room --
+bldg:Smoke_Detector_Control_Room a brick:Smoke_Detector ; rdfs:label "Smoke Detector Control Room" .
+bldg:Horn_Control_Room a brick:Horn ; rdfs:label "Fire Alarm Horn Control Room" .
+bldg:Strobe_Control_Room a brick:Strobe ; rdfs:label "Fire Alarm Strobe Control Room" .
+bldg:Sprinkler_Control_Room a brick:Sprinkler ; rdfs:label "Sprinkler in Control Room" .
+bldg:Control_Room brick:hasPoint bldg:Smoke_Detector_Control_Room, bldg:Horn_Control_Room, bldg:Strobe_Control_Room ;
+                 brick:hasPart bldg:Sprinkler_Control_Room .
+
+# -- Mechanical Room 1 --
+bldg:Heat_Detector_Mechanical_Room_1 a brick:Heat_Detector ; rdfs:label "Heat Detector Mechanical Room 1" .
+bldg:Horn_Mechanical_Room_1 a brick:Horn ; rdfs:label "Fire Alarm Horn Mechanical Room 1" .
+bldg:Strobe_Mechanical_Room_1 a brick:Strobe ; rdfs:label "Fire Alarm Strobe Mechanical Room 1" .
+bldg:Sprinkler_Mechanical_Room_1 a brick:Sprinkler ; rdfs:label "Sprinkler in Mechanical Room 1" .
+bldg:Mechanical_Room_1 brick:hasPoint bldg:Heat_Detector_Mechanical_Room_1, bldg:Horn_Mechanical_Room_1, bldg:Strobe_Mechanical_Room_1 ;
+                       brick:hasPart bldg:Sprinkler_Mechanical_Room_1 .
+
+# =======================================================
+# == FLOOR 2: FIRE SAFETY EQUIPMENT DEPLOYMENT ==
+# =======================================================
+
+# -- Hallway 2 --
+bldg:Smoke_Detector_Hallway_2 a brick:Smoke_Detector ; rdfs:label "Smoke Detector Hallway 2" .
+bldg:Horn_Hallway_2 a brick:Horn ; rdfs:label "Fire Alarm Horn Hallway 2" .
+bldg:Strobe_Hallway_2 a brick:Strobe ; rdfs:label "Fire Alarm Strobe Hallway 2" .
+bldg:Sprinkler_Hallway_2 a brick:Sprinkler ; rdfs:label "Sprinkler in Hallway 2" .
+bldg:Hallway_2 brick:hasPoint bldg:Smoke_Detector_Hallway_2, bldg:Horn_Hallway_2, bldg:Strobe_Hallway_2 ;
+              brick:hasPart bldg:Sprinkler_Hallway_2 .
+
+# -- Office 2A, 2B, 2C --
+bldg:Smoke_Detector_Office_2A a brick:Smoke_Detector ; rdfs:label "Smoke Detector Office 2A" .
+bldg:Strobe_Office_2A a brick:Strobe ; rdfs:label "Fire Alarm Strobe Office 2A" .
+bldg:Sprinkler_Office_2A a brick:Sprinkler ; rdfs:label "Sprinkler in Office 2A" .
+bldg:Office_2A brick:hasPoint bldg:Smoke_Detector_Office_2A, bldg:Strobe_Office_2A ;
+              brick:hasPart bldg:Sprinkler_Office_2A .
+
+bldg:Smoke_Detector_Office_2B a brick:Smoke_Detector ; rdfs:label "Smoke Detector Office 2B" .
+bldg:Strobe_Office_2B a brick:Strobe ; rdfs:label "Fire Alarm Strobe Office 2B" .
+bldg:Sprinkler_Office_2B a brick:Sprinkler ; rdfs:label "Sprinkler in Office 2B" .
+bldg:Office_2B brick:hasPoint bldg:Smoke_Detector_Office_2B, bldg:Strobe_Office_2B ;
+              brick:hasPart bldg:Sprinkler_Office_2B .
+
+bldg:Smoke_Detector_Office_2C a brick:Smoke_Detector ; rdfs:label "Smoke Detector Office 2C" .
+bldg:Strobe_Office_2C a brick:Strobe ; rdfs:label "Fire Alarm Strobe Office 2C" .
+bldg:Sprinkler_Office_2C a brick:Sprinkler ; rdfs:label "Sprinkler in Office 2C" .
+bldg:Office_2C brick:hasPoint bldg:Smoke_Detector_Office_2C, bldg:Strobe_Office_2C ;
+              brick:hasPart bldg:Sprinkler_Office_2C .
+
+# -- Conference Room 2 --
+bldg:Smoke_Detector_ConfRoom_2 a brick:Smoke_Detector ; rdfs:label "Smoke Detector Conf Room 2" .
+bldg:Horn_ConfRoom_2 a brick:Horn ; rdfs:label "Fire Alarm Horn Conf Room 2" .
+bldg:Strobe_ConfRoom_2 a brick:Strobe ; rdfs:label "Fire Alarm Strobe Conf Room 2" .
+bldg:Sprinkler_ConfRoom_2 a brick:Sprinkler ; rdfs:label "Sprinkler in Conference Room 2" .
+bldg:ConfRoom_2 brick:hasPoint bldg:Smoke_Detector_ConfRoom_2, bldg:Horn_ConfRoom_2, bldg:Strobe_ConfRoom_2 ;
+               brick:hasPart bldg:Sprinkler_ConfRoom_2 .
+
+# =======================================================
+# == FLOOR 3: FIRE SAFETY EQUIPMENT DEPLOYMENT ==
+# =======================================================
+
+# -- Hallway 3 --
+bldg:Smoke_Detector_Hallway_3 a brick:Smoke_Detector ; rdfs:label "Smoke Detector Hallway 3" .
+bldg:Horn_Hallway_3 a brick:Horn ; rdfs:label "Fire Alarm Horn Hallway 3" .
+bldg:Strobe_Hallway_3 a brick:Strobe ; rdfs:label "Fire Alarm Strobe Hallway 3" .
+bldg:Sprinkler_Hallway_3 a brick:Sprinkler ; rdfs:label "Sprinkler in Hallway 3" .
+bldg:Hallway_3 brick:hasPoint bldg:Smoke_Detector_Hallway_3, bldg:Horn_Hallway_3, bldg:Strobe_Hallway_3 ;
+              brick:hasPart bldg:Sprinkler_Hallway_3 .
+
+# -- Office 3A --
+bldg:Smoke_Detector_Office_3A a brick:Smoke_Detector ; rdfs:label "Smoke Detector Office 3A" .
+bldg:Strobe_Office_3A a brick:Strobe ; rdfs:label "Fire Alarm Strobe Office 3A" .
+bldg:Sprinkler_Office_3A a brick:Sprinkler ; rdfs:label "Sprinkler in Office 3A" .
+bldg:Office_3A brick:hasPoint bldg:Smoke_Detector_Office_3A, bldg:Strobe_Office_3A ;
+              brick:hasPart bldg:Sprinkler_Office_3A .
+
+# -- Office 3B --
+bldg:Smoke_Detector_Office_3B a brick:Smoke_Detector ; rdfs:label "Smoke Detector Office 3B" .
+bldg:Strobe_Office_3B a brick:Strobe ; rdfs:label "Fire Alarm Strobe Office 3B" .
+bldg:Sprinkler_Office_3B a brick:Sprinkler ; rdfs:label "Sprinkler in Office 3B" .
+bldg:Office_3B brick:hasPoint bldg:Smoke_Detector_Office_3B, bldg:Strobe_Office_3B ;
+              brick:hasPart bldg:Sprinkler_Office_3B .
+
+# -- Conference Room 3 --
+bldg:Smoke_Detector_ConfRoom_3 a brick:Smoke_Detector ; rdfs:label "Smoke Detector Conf Room 3" .
+bldg:Horn_ConfRoom_3 a brick:Horn ; rdfs:label "Fire Alarm Horn Conf Room 3" .
+bldg:Strobe_ConfRoom_3 a brick:Strobe ; rdfs:label "Fire Alarm Strobe Conf Room 3" .
+bldg:Sprinkler_ConfRoom_3 a brick:Sprinkler ; rdfs:label "Sprinkler in Conference Room 3" .
+bldg:ConfRoom_3 brick:hasPoint bldg:Smoke_Detector_ConfRoom_3, bldg:Horn_ConfRoom_3, bldg:Strobe_ConfRoom_3 ;
+               brick:hasPart bldg:Sprinkler_ConfRoom_3 .
+
+# =======================================================
+# == SECURITY - ACCESS CONTROL SYSTEM ==
+# =======================================================
+
+# -- Central Access Control Equipment --
+bldg:Main_Access_Control_Panel a brick:Access_Control_Panel ;
+    rdfs:label "Main Access Control Panel" .
+bldg:Control_Room brick:isLocationOf bldg:Main_Access_Control_Panel .
+
+# -- Deployed Access Control Devices --
+
+# 1. Main Entrance (Face Recognition + Card Reader)
+bldg:Reader_Main_Entrance a brick:Access_Reader ;
+    rdfs:label "Main Entrance Face and Card Reader" .
+bldg:Strike_Main_Entrance a brick:Electric_Strike ;
+    rdfs:label "Main Entrance Electric Strike" .
+bldg:Door_Sensor_Main_Entrance a brick:Door_Contact_Sensor ;
+    rdfs:label "Main Entrance Door Contact Sensor" .
+bldg:REX_Main_Entrance a brick:Request-to-Exit_Button ;
+    rdfs:label "Main Entrance Request-to-Exit Button" .
+bldg:Main_Entrance brick:hasPart bldg:Reader_Main_Entrance, bldg:Strike_Main_Entrance, bldg:REX_Main_Entrance ;
+                  brick:hasPoint bldg:Door_Sensor_Main_Entrance .
+bldg:Main_Access_Control_Panel brick:feeds bldg:Reader_Main_Entrance, bldg:Strike_Main_Entrance .
+
+# 2. Floor 1 Offices
+bldg:Reader_Office_1A a brick:Access_Reader ; rdfs:label "Office 1A Card Reader" .
+bldg:Strike_Office_1A a brick:Electric_Strike ; rdfs:label "Office 1A Electric Strike" .
+bldg:Door_Sensor_Office_1A a brick:Door_Contact_Sensor ; rdfs:label "Office 1A Door Contact Sensor" .
+bldg:REX_Office_1A a brick:Request-to-Exit_Button ; rdfs:label "Office 1A Request-to-Exit Button" .
+bldg:Office_1A brick:hasPart bldg:Reader_Office_1A, bldg:Strike_Office_1A, bldg:REX_Office_1A ;
+               brick:hasPoint bldg:Door_Sensor_Office_1A .
+bldg:Main_Access_Control_Panel brick:feeds bldg:Reader_Office_1A, bldg:Strike_Office_1A .
+
+bldg:Reader_Office_1B a brick:Access_Reader ; rdfs:label "Office 1B Card Reader" .
+bldg:Strike_Office_1B a brick:Electric_Strike ; rdfs:label "Office 1B Electric Strike" .
+bldg:Door_Sensor_Office_1B a brick:Door_Contact_Sensor ; rdfs:label "Office 1B Door Contact Sensor" .
+bldg:REX_Office_1B a brick:Request-to-Exit_Button ; rdfs:label "Office 1B Request-to-Exit Button" .
+bldg:Office_1B brick:hasPart bldg:Reader_Office_1B, bldg:Strike_Office_1B, bldg:REX_Office_1B ;
+               brick:hasPoint bldg:Door_Sensor_Office_1B .
+bldg:Main_Access_Control_Panel brick:feeds bldg:Reader_Office_1B, bldg:Strike_Office_1B .
+
+# 3. Floor 2 Offices
+bldg:Reader_Office_2A a brick:Access_Reader ; rdfs:label "Office 2A Card Reader" .
+bldg:Strike_Office_2A a brick:Electric_Strike ; rdfs:label "Office 2A Electric Strike" .
+bldg:Door_Sensor_Office_2A a brick:Door_Contact_Sensor ; rdfs:label "Office 2A Door Contact Sensor" .
+bldg:REX_Office_2A a brick:Request-to-Exit_Button ; rdfs:label "Office 2A Request-to-Exit Button" .
+bldg:Office_2A brick:hasPart bldg:Reader_Office_2A, bldg:Strike_Office_2A, bldg:REX_Office_2A ;
+               brick:hasPoint bldg:Door_Sensor_Office_2A .
+bldg:Main_Access_Control_Panel brick:feeds bldg:Reader_Office_2A, bldg:Strike_Office_2A .
+
+bldg:Reader_Office_2B a brick:Access_Reader ; rdfs:label "Office 2B Card Reader" .
+bldg:Strike_Office_2B a brick:Electric_Strike ; rdfs:label "Office 2B Electric Strike" .
+bldg:Door_Sensor_Office_2B a brick:Door_Contact_Sensor ; rdfs:label "Office 2B Door Contact Sensor" .
+bldg:REX_Office_2B a brick:Request-to-Exit_Button ; rdfs:label "Office 2B Request-to-Exit Button" .
+bldg:Office_2B brick:hasPart bldg:Reader_Office_2B, bldg:Strike_Office_2B, bldg:REX_Office_2B ;
+               brick:hasPoint bldg:Door_Sensor_Office_2B .
+bldg:Main_Access_Control_Panel brick:feeds bldg:Reader_Office_2B, bldg:Strike_Office_2B .
+
+bldg:Reader_Office_2C a brick:Access_Reader ; rdfs:label "Office 2C Card Reader" .
+bldg:Strike_Office_2C a brick:Electric_Strike ; rdfs:label "Office 2C Electric Strike" .
+bldg:Door_Sensor_Office_2C a brick:Door_Contact_Sensor ; rdfs:label "Office 2C Door Contact Sensor" .
+bldg:REX_Office_2C a brick:Request-to-Exit_Button ; rdfs:label "Office 2C Request-to-Exit Button" .
+bldg:Office_2C brick:hasPart bldg:Reader_Office_2C, bldg:Strike_Office_2C, bldg:REX_Office_2C ;
+               brick:hasPoint bldg:Door_Sensor_Office_2C .
+bldg:Main_Access_Control_Panel brick:feeds bldg:Reader_Office_2C, bldg:Strike_Office_2C .
+
+# 4. Floor 3 Offices
+bldg:Reader_Office_3A a brick:Access_Reader ; rdfs:label "Office 3A Card Reader" .
+bldg:Strike_Office_3A a brick:Electric_Strike ; rdfs:label "Office 3A Electric Strike" .
+bldg:Door_Sensor_Office_3A a brick:Door_Contact_Sensor ; rdfs:label "Office 3A Door Contact Sensor" .
+bldg:REX_Office_3A a brick:Request-to-Exit_Button ; rdfs:label "Office 3A Request-to-Exit Button" .
+bldg:Office_3A brick:hasPart bldg:Reader_Office_3A, bldg:Strike_Office_3A, bldg:REX_Office_3A ;
+               brick:hasPoint bldg:Door_Sensor_Office_3A .
+bldg:Main_Access_Control_Panel brick:feeds bldg:Reader_Office_3A, bldg:Strike_Office_3A .
+
+bldg:Reader_Office_3B a brick:Access_Reader ; rdfs:label "Office 3B Card Reader" .
+bldg:Strike_Office_3B a brick:Electric_Strike ; rdfs:label "Office 3B Electric Strike" .
+bldg:Door_Sensor_Office_3B a brick:Door_Contact_Sensor ; rdfs:label "Office 3B Door Contact Sensor" .
+bldg:REX_Office_3B a brick:Request-to-Exit_Button ; rdfs:label "Office 3B Request-to-Exit Button" .
+bldg:Office_3B brick:hasPart bldg:Reader_Office_3B, bldg:Strike_Office_3B, bldg:REX_Office_3B ;
+               brick:hasPoint bldg:Door_Sensor_Office_3B .
+bldg:Main_Access_Control_Panel brick:feeds bldg:Reader_Office_3B, bldg:Strike_Office_3B .
+
+# 5. Other Secure Areas
+bldg:Reader_Server_Room a brick:Access_Reader ; rdfs:label "Server Room Card Reader" .
+bldg:Strike_Server_Room a brick:Electric_Strike ; rdfs:label "Server Room Electric Strike" .
+bldg:Door_Sensor_Server_Room a brick:Door_Contact_Sensor ; rdfs:label "Server Room Door Contact Sensor" .
+bldg:REX_Server_Room a brick:Request-to-Exit_Button ; rdfs:label "Server Room Request-to-Exit Button" .
+bldg:Server_Room brick:hasPart bldg:Reader_Server_Room, bldg:Strike_Server_Room, bldg:REX_Server_Room ;
+               brick:hasPoint bldg:Door_Sensor_Server_Room .
+bldg:Main_Access_Control_Panel brick:feeds bldg:Reader_Server_Room, bldg:Strike_Server_Room .
+
+bldg:Reader_Mechanical_Room_1 a brick:Access_Reader ; rdfs:label "Mechanical Room Card Reader" .
+bldg:Strike_Mechanical_Room_1 a brick:Electric_Strike ; rdfs:label "Mechanical Room Electric Strike" .
+bldg:REX_Mechanical_Room_1 a brick:Request-to-Exit_Button ; rdfs:label "Mechanical Room Request-to-Exit Button" .
+bldg:Mechanical_Room_1 brick:hasPart bldg:Reader_Mechanical_Room_1, bldg:Strike_Mechanical_Room_1, bldg:REX_Mechanical_Room_1 .
+bldg:Main_Access_Control_Panel brick:feeds bldg:Reader_Mechanical_Room_1, bldg:Strike_Mechanical_Room_1 .
+
+bldg:Reader_Roof a brick:Access_Reader ; rdfs:label "Rooftop Access Card Reader" .
+bldg:Strike_Roof a brick:Electric_Strike ; rdfs:label "Rooftop Access Electric Strike" .
+bldg:REX_Roof a brick:Request-to-Exit_Button ; rdfs:label "Rooftop Access Request-to-Exit Button" .
+bldg:Roof brick:hasPart bldg:Reader_Roof, bldg:Strike_Roof, bldg:REX_Roof .
+bldg:Main_Access_Control_Panel brick:feeds bldg:Reader_Roof, bldg:Strike_Roof .
+
+# =======================================================
+# == SECURITY - VIDEO SURVEILLANCE SYSTEM ==
+# =======================================================
+
+# -- Central Surveillance Equipment --
+bldg:Main_NVR a brick:NVR ;
+    rdfs:label "Main Network Video Recorder" .
+bldg:Server_Room brick:isLocationOf bldg:Main_NVR .
+
+# -- Deployed Cameras --
+bldg:Camera_Lobby_1 a brick:Security_Camera ; rdfs:label "Lobby Camera" .
+bldg:Lobby_1 brick:hasPart bldg:Camera_Lobby_1 .
+
+bldg:Camera_Hallway_1 a brick:Security_Camera ; rdfs:label "Hallway 1 Camera" .
+bldg:Hallway_1 brick:hasPart bldg:Camera_Hallway_1 .
+
+bldg:Camera_Hallway_2 a brick:Security_Camera ; rdfs:label "Hallway 2 Camera" .
+bldg:Hallway_2 brick:hasPart bldg:Camera_Hallway_2 .
+
+bldg:Camera_Hallway_3 a brick:Security_Camera ; rdfs:label "Hallway 3 Camera" .
+bldg:Hallway_3 brick:hasPart bldg:Camera_Hallway_3 .
+
+bldg:Camera_Server_Room_Exterior a brick:Security_Camera ; rdfs:label "Camera Outside Server Room" .
+bldg:Hallway_1 brick:hasPart bldg:Camera_Server_Room_Exterior . # Assuming it's in the hallway outside the room
+
+bldg:Camera_Roof_PTZ a brick:PTZ_Camera ; rdfs:label "Rooftop PTZ Camera" .
+bldg:Roof brick:hasPart bldg:Camera_Roof_PTZ .
+
+# All cameras are fed by the NVR
+bldg:Main_NVR brick:feeds bldg:Camera_Lobby_1,
+                        bldg:Camera_Hallway_1,
+                        bldg:Camera_Hallway_2,
+                        bldg:Camera_Hallway_3,
+                        bldg:Camera_Server_Room_Exterior,
+                        bldg:Camera_Roof_PTZ .

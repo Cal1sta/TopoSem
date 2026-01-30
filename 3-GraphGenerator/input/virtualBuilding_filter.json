@@ -1,0 +1,6990 @@
+[
+  {
+    "rule_id": "Rule_1",
+    "description": "If the temperature in Office 1A rises above 24°C, the system automatically increases the cool air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "TempSensor_1A",
+          "attribute": "temperature",
+          "operator": ">",
+          "value": 24,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_1A",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "temperature"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "TempSensor_1A",
+          "location": "Office 1A"
+        },
+        {
+          "device_name": "VAV_1A",
+          "location": "Office 1A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_2",
+    "description": "if the temperature in Office 1A drops below 21°C, it increases the warm air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "TempSensor_1A",
+          "attribute": "temperature",
+          "operator": "<",
+          "value": 21,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_1A",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "temperature"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "TempSensor_1A",
+          "location": "Office 1A"
+        },
+        {
+          "device_name": "VAV_1A",
+          "location": "Office 1A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_3",
+    "description": "If the temperature in Office 1B rises above 24°C, the system automatically increases the cool air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "TempSensor_1B",
+          "attribute": "temperature",
+          "operator": ">",
+          "value": 24,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_1B",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "temperature"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "TempSensor_1B",
+          "location": "Office 1B"
+        },
+        {
+          "device_name": "VAV_1B",
+          "location": "Office 1B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_4",
+    "description": "if the temperature in Office 1B drops below 21°C, it increases the warm air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "TempSensor_1B",
+          "attribute": "temperature",
+          "operator": "<",
+          "value": 21,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_1B",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "temperature"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "TempSensor_1B",
+          "location": "Office 1B"
+        },
+        {
+          "device_name": "VAV_1B",
+          "location": "Office 1B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_5",
+    "description": "If the temperature in Office 2A rises above 24°C, the system automatically increases the cool air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "TempSensor_2A",
+          "attribute": "temperature",
+          "operator": ">",
+          "value": 24,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_2A",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "temperature"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "TempSensor_2A",
+          "location": "Office 2A"
+        },
+        {
+          "device_name": "VAV_2A",
+          "location": "Office 2A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_6",
+    "description": "if the temperature in Office 2A drops below 21°C, it increases the warm air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "TempSensor_2A",
+          "attribute": "temperature",
+          "operator": "<",
+          "value": 21,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_2A",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "temperature"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "TempSensor_2A",
+          "location": "Office 2A"
+        },
+        {
+          "device_name": "VAV_2A",
+          "location": "Office 2A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_7",
+    "description": "If the temperature in Office 2B rises above 24°C, the system automatically increases the cool air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "TempSensor_2B",
+          "attribute": "temperature",
+          "operator": ">",
+          "value": 24,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_2B",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "temperature"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "TempSensor_2B",
+          "location": "Office 2B"
+        },
+        {
+          "device_name": "VAV_2B",
+          "location": "Office 2B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_8",
+    "description": "if the temperature in Office 2B drops below 21°C, it increases the warm air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "TempSensor_2B",
+          "attribute": "temperature",
+          "operator": "<",
+          "value": 21,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_2B",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "temperature"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "TempSensor_2B",
+          "location": "Office 2B"
+        },
+        {
+          "device_name": "VAV_2B",
+          "location": "Office 2B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_9",
+    "description": "If the temperature in Office 2C rises above 24°C, the system automatically increases the cool air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "TempSensor_2C",
+          "attribute": "temperature",
+          "operator": ">",
+          "value": 24,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_2C",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "temperature"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2C"
+      ],
+      "device_locations": [
+        {
+          "device_name": "TempSensor_2C",
+          "location": "Office 2C"
+        },
+        {
+          "device_name": "VAV_2C",
+          "location": "Office 2C"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_10",
+    "description": "if the temperature in Office 2C drops below 21°C, it increases the warm air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "TempSensor_2C",
+          "attribute": "temperature",
+          "operator": "<",
+          "value": 21,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_2C",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "temperature"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2C"
+      ],
+      "device_locations": [
+        {
+          "device_name": "TempSensor_2C",
+          "location": "Office 2C"
+        },
+        {
+          "device_name": "VAV_2C",
+          "location": "Office 2C"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_11",
+    "description": "If the temperature in Office 3A rises above 24°C, the system automatically increases the cool air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "TempSensor_3A",
+          "attribute": "temperature",
+          "operator": ">",
+          "value": 24,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_3A",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "temperature"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "TempSensor_3A",
+          "location": "Office 3A"
+        },
+        {
+          "device_name": "VAV_3A",
+          "location": "Office 3A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_12",
+    "description": "if the temperature in Office 3A drops below 21°C, it increases the warm air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "TempSensor_3A",
+          "attribute": "temperature",
+          "operator": "<",
+          "value": 21,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_3A",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "temperature"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "TempSensor_3A",
+          "location": "Office 3A"
+        },
+        {
+          "device_name": "VAV_3A",
+          "location": "Office 3A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_13",
+    "description": "If the temperature in Office 3B rises above 24°C, the system automatically increases the cool air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "TempSensor_3B",
+          "attribute": "temperature",
+          "operator": ">",
+          "value": 24,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_3B",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "temperature"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "TempSensor_3B",
+          "location": "Office 3B"
+        },
+        {
+          "device_name": "VAV_3B",
+          "location": "Office 3B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_14",
+    "description": "if the temperature in Office 3B drops below 21°C, it increases the warm air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "TempSensor_3B",
+          "attribute": "temperature",
+          "operator": "<",
+          "value": 21,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_3B",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "temperature"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "TempSensor_3B",
+          "location": "Office 3B"
+        },
+        {
+          "device_name": "VAV_3B",
+          "location": "Office 3B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_15",
+    "description": "If the CO2 concentration in Conference Room 1 exceeds 1000 ppm, the system will override temperature settings to increase the fresh air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "CO2Sensor_Conf1",
+          "attribute": "co2_concentration",
+          "operator": ">",
+          "value": 1000,
+          "implicit_physical_channel": "CO2"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_Conf1",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "CO2"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Conference Room 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "CO2Sensor_Conf1",
+          "location": "Conference Room 1"
+        },
+        {
+          "device_name": "VAV_Conf1",
+          "location": "Conference Room 1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_16",
+    "description": "If the CO2 concentration in Conference Room 2 exceeds 1000 ppm, the system will override temperature settings to increase the fresh air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "CO2Sensor_Conf2",
+          "attribute": "co2_concentration",
+          "operator": ">",
+          "value": 1000,
+          "implicit_physical_channel": "CO2"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_Conf2",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "CO2"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Conference Room 2"
+      ],
+      "device_locations": [
+        {
+          "device_name": "CO2Sensor_Conf2",
+          "location": "Conference Room 2"
+        },
+        {
+          "device_name": "VAV_Conf2",
+          "location": "Conference Room 2"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_17",
+    "description": "If the CO2 concentration in Conference Room 3 exceeds 1000 ppm, the system will override temperature settings to increase the fresh air supply.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "CO2Sensor_Conf3",
+          "attribute": "co2_concentration",
+          "operator": ">",
+          "value": 1000,
+          "implicit_physical_channel": "CO2"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_Conf3",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "CO2"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Conference Room 3"
+      ],
+      "device_locations": [
+        {
+          "device_name": "CO2Sensor_Conf3",
+          "location": "Conference Room 3"
+        },
+        {
+          "device_name": "VAV_Conf3",
+          "location": "Conference Room 3"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_18",
+    "description": "If the relative humidity in the Server Room exceeds 60%, the system automatically increases the supply of dehumidified air.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "HumiditySensor_ServerRoom",
+          "attribute": "relative_humidity",
+          "operator": ">",
+          "value": 60,
+          "implicit_physical_channel": "humidity"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "VAV_ServerRoom",
+        "attribute": "damper_position",
+        "command": "set_damper_position",
+        "value": 100,
+        "implicit_physical_channel": "humidity"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Server Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "HumiditySensor_ServerRoom",
+          "location": "Server Room"
+        },
+        {
+          "device_name": "VAV_ServerRoom",
+          "location": "Server Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_19",
+    "description": "When the Time_Mode_Controller enters WORK_HOURS mode during the SUMMER season, the system automatically starts the central cooling plant.",
+    "triggers": {
+      "logical_operator": "AND",
+      "conditions": [
+        {
+          "device_name": "Time_Mode_Controller",
+          "attribute": "day_profile",
+          "operator": "==",
+          "value": "WORK_HOURS",
+          "implicit_system_channel": "time"
+        },
+        {
+          "device_name": "Time_Mode_Controller",
+          "attribute": "season_profile",
+          "operator": "==",
+          "value": "SUMMER",
+          "implicit_system_channel": "time"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_Chiller",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON"
+      },
+      {
+        "device_name": "Main_CoolingTower",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON"
+      },
+      {
+        "device_name": "Central_AHU",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Mechanical Room - Floor 1",
+        "Roof"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Time_Mode_Controller",
+          "location": null
+        },
+        {
+          "device_name": "Main_Chiller",
+          "location": "Mechanical Room - Floor 1"
+        },
+        {
+          "device_name": "Main_CoolingTower",
+          "location": "Roof"
+        },
+        {
+          "device_name": "Central_AHU",
+          "location": "Mechanical Room - Floor 1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_20",
+    "description": "When the Time_Mode_Controller enters WORK_HOURS mode during the WINTER season, the system automatically starts the central heating plant.",
+    "triggers": {
+      "logical_operator": "AND",
+      "conditions": [
+        {
+          "device_name": "Time_Mode_Controller",
+          "attribute": "day_profile",
+          "operator": "==",
+          "value": "WORK_HOURS",
+          "implicit_system_channel": "time"
+        },
+        {
+          "device_name": "Time_Mode_Controller",
+          "attribute": "season_profile",
+          "operator": "==",
+          "value": "WINTER",
+          "implicit_system_channel": "time"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_Boiler",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON"
+      },
+      {
+        "device_name": "Central_AHU",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Mechanical Room - Floor 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Time_Mode_Controller",
+          "location": null
+        },
+        {
+          "device_name": "Main_Boiler",
+          "location": "Mechanical Room - Floor 1"
+        },
+        {
+          "device_name": "Central_AHU",
+          "location": "Mechanical Room - Floor 1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_21",
+    "description": "When the Time_Mode_Controller's day_profile transitions to OFF_HOURS, the system automatically shuts down all central HVAC plant equipment.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Time_Mode_Controller",
+          "attribute": "day_profile",
+          "operator": "==",
+          "value": "OFF_HOURS",
+          "implicit_system_channel": "time"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Central_AHU",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF"
+      },
+      {
+        "device_name": "Main_Chiller",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF"
+      },
+      {
+        "device_name": "Main_Boiler",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF"
+      },
+      {
+        "device_name": "Main_CoolingTower",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Mechanical Room - Floor 1",
+        "Roof"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Time_Mode_Controller",
+          "location": null
+        },
+        {
+          "device_name": "Central_AHU",
+          "location": "Mechanical Room - Floor 1"
+        },
+        {
+          "device_name": "Main_Chiller",
+          "location": "Mechanical Room - Floor 1"
+        },
+        {
+          "device_name": "Main_Boiler",
+          "location": "Mechanical Room - Floor 1"
+        },
+        {
+          "device_name": "Main_CoolingTower",
+          "location": "Roof"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_22",
+    "description": "If the smoke detector in Lobby 1 is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Smoke_Detector_Lobby_1",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "smoke"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "value_to_set",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Main Lobby - Floor 1",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Smoke_Detector_Lobby_1",
+          "location": "Main Lobby - Floor 1"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_23",
+    "description": "If the smoke detector in Hallway 1 is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Smoke_Detector_Hallway_1",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "smoke"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "value_to_set",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway - Floor 1",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Smoke_Detector_Hallway_1",
+          "location": "Hallway - Floor 1"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_24",
+    "description": "If the smoke detector in Office 1A is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Smoke_Detector_Office_1A",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "smoke"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "value_to_set",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1A",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Smoke_Detector_Office_1A",
+          "location": "Office 1A"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_25",
+    "description": "If the smoke detector in Office 1B is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Smoke_Detector_Office_1B",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "smoke"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "value_to_set",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1B",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Smoke_Detector_Office_1B",
+          "location": "Office 1B"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_26",
+    "description": "If the smoke detector in Conference Room 1 is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Smoke_Detector_ConfRoom_1",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "smoke"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "value_to_set",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Conference Room 1",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Smoke_Detector_ConfRoom_1",
+          "location": "Conference Room 1"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_27",
+    "description": "If the smoke detector in the Control Room is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Smoke_Detector_Control_Room",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "smoke"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "value_to_set",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Smoke_Detector_Control_Room",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_28",
+    "description": "If the smoke detector in Hallway 2 is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Smoke_Detector_Hallway_2",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "smoke"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "value_to_set",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway - Floor 2",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Smoke_Detector_Hallway_2",
+          "location": "Hallway - Floor 2"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_29",
+    "description": "If the smoke detector in Office 2A is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Smoke_Detector_Office_2A",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "smoke"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "value_to_set",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2A",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Smoke_Detector_Office_2A",
+          "location": "Office 2A"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_30",
+    "description": "If the smoke detector in Office 2B is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Smoke_Detector_Office_2B",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "smoke"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "set_value",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2B",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Smoke_Detector_Office_2B",
+          "location": "Office 2B"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_31",
+    "description": "If the smoke detector in Office 2C is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Smoke_Detector_Office_2C",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "smoke"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "set_value",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2C",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Smoke_Detector_Office_2C",
+          "location": "Office 2C"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_32",
+    "description": "If the smoke detector in Conference Room 2 is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Smoke_Detector_ConfRoom_2",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "smoke"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "set_value",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Conference Room 2",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Smoke_Detector_ConfRoom_2",
+          "location": "Conference Room 2"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_33",
+    "description": "If the smoke detector in Hallway 3 is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Smoke_Detector_Hallway_3",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "smoke"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "set_value",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway 3",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Smoke_Detector_Hallway_3",
+          "location": "Hallway 3"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_34",
+    "description": "If the smoke detector in Office 3A is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Smoke_Detector_Office_3A",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "smoke"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "set_value",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3A",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Smoke_Detector_Office_3A",
+          "location": "Office 3A"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_35",
+    "description": "If the smoke detector in Office 3B is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Smoke_Detector_Office_3B",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "smoke"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "set_value",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3B",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Smoke_Detector_Office_3B",
+          "location": "Office 3B"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_36",
+    "description": "If the smoke detector in Conference Room 3 is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Smoke_Detector_ConfRoom_3",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "smoke"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "set_value",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Conference Room 3",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Smoke_Detector_ConfRoom_3",
+          "location": "Conference Room 3"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_37",
+    "description": "If the heat detector in the Server Room is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Heat_Detector_Server_Room",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "set_value",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Server Room",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Heat_Detector_Server_Room",
+          "location": "Server Room"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_38",
+    "description": "If the heat detector in Mechanical Room 1 is triggered, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Heat_Detector_Mechanical_Room_1",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "set_value",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Mechanical Room 1",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Heat_Detector_Mechanical_Room_1",
+          "location": "Mechanical Room 1"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_39",
+    "description": "If the manual pull station in Lobby 1 is activated, the main fire alarm system will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Pull_Station_Lobby_1",
+          "attribute": "activation_status",
+          "operator": "==",
+          "value": true
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "set_value",
+        "value": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Lobby 1",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Pull_Station_Lobby_1",
+          "location": "Lobby 1"
+        },
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_40",
+    "description": "When the main fire alarm system is active, the horn and strobe in Lobby 1 will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Horn_Lobby_1",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "sound"
+      },
+      {
+        "device_name": "Strobe_Lobby_1",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Lobby 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Horn_Lobby_1",
+          "location": "Lobby 1"
+        },
+        {
+          "device_name": "Strobe_Lobby_1",
+          "location": "Lobby 1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_41",
+    "description": "When the main fire alarm system is active, the horn and strobe in Hallway 1 will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Horn_Hallway_1",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "sound"
+      },
+      {
+        "device_name": "Strobe_Hallway_1",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Hallway 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Horn_Hallway_1",
+          "location": "Hallway 1"
+        },
+        {
+          "device_name": "Strobe_Hallway_1",
+          "location": "Hallway 1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_42",
+    "description": "When the main fire alarm system is active, the horn and strobe in Conference Room 1 will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Horn_ConfRoom_1",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "sound"
+      },
+      {
+        "device_name": "Strobe_ConfRoom_1",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Conference Room 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Horn_ConfRoom_1",
+          "location": "Conference Room 1"
+        },
+        {
+          "device_name": "Strobe_ConfRoom_1",
+          "location": "Conference Room 1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_43",
+    "description": "When the main fire alarm system is active, the horn and strobe in the Server Room will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Horn_Server_Room",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "sound"
+      },
+      {
+        "device_name": "Strobe_Server_Room",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Server Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Horn_Server_Room",
+          "location": "Server Room"
+        },
+        {
+          "device_name": "Strobe_Server_Room",
+          "location": "Server Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_44",
+    "description": "When the main fire alarm system is active, the horn and strobe in the Control Room will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Horn_Control_Room",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "sound"
+      },
+      {
+        "device_name": "Strobe_Control_Room",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Horn_Control_Room",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Strobe_Control_Room",
+          "location": "Control Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_45",
+    "description": "When the main fire alarm system is active, the horn and strobe in Mechanical Room 1 will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Horn_Mechanical_Room_1",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "sound"
+      },
+      {
+        "device_name": "Strobe_Mechanical_Room_1",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Mechanical Room 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Horn_Mechanical_Room_1",
+          "location": "Mechanical Room 1"
+        },
+        {
+          "device_name": "Strobe_Mechanical_Room_1",
+          "location": "Mechanical Room 1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_46",
+    "description": "When the main fire alarm system is active, the horn and strobe in Hallway 2 will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Horn_Hallway_2",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "sound"
+      },
+      {
+        "device_name": "Strobe_Hallway_2",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Hallway 2"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Horn_Hallway_2",
+          "location": "Hallway 2"
+        },
+        {
+          "device_name": "Strobe_Hallway_2",
+          "location": "Hallway 2"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_47",
+    "description": "When the main fire alarm system is active, the horn and strobe in Conference Room 2 will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Horn_ConfRoom_2",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "sound"
+      },
+      {
+        "device_name": "Strobe_ConfRoom_2",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Conference Room 2"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Horn_ConfRoom_2",
+          "location": "Conference Room 2"
+        },
+        {
+          "device_name": "Strobe_ConfRoom_2",
+          "location": "Conference Room 2"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_48",
+    "description": "When the main fire alarm system is active, the horn and strobe in Hallway 3 will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Horn_Hallway_3",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "sound"
+      },
+      {
+        "device_name": "Strobe_Hallway_3",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Hallway 3"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Horn_Hallway_3",
+          "location": "Hallway 3"
+        },
+        {
+          "device_name": "Strobe_Hallway_3",
+          "location": "Hallway 3"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_49",
+    "description": "When the main fire alarm system is active, the horn and strobe in Conference Room 3 will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Horn_ConfRoom_3",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "sound"
+      },
+      {
+        "device_name": "Strobe_ConfRoom_3",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Conference Room 3"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Horn_ConfRoom_3",
+          "location": "Conference Room 3"
+        },
+        {
+          "device_name": "Strobe_ConfRoom_3",
+          "location": "Conference Room 3"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_50",
+    "description": "When the main fire alarm system is active, the strobe in Office 1A will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strobe_Office_1A",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Office 1A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Strobe_Office_1A",
+          "location": "Office 1A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_51",
+    "description": "When the main fire alarm system is active, the strobe in Office 1B will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strobe_Office_1B",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Office 1B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Strobe_Office_1B",
+          "location": "Office 1B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_52",
+    "description": "When the main fire alarm system is active, the strobe in Office 2A will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strobe_Office_2A",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Office 2A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Strobe_Office_2A",
+          "location": "Office 2A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_53",
+    "description": "When the main fire alarm system is active, the strobe in Office 2B will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strobe_Office_2B",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Office 2B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Strobe_Office_2B",
+          "location": "Office 2B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_54",
+    "description": "When the main fire alarm system is active, the strobe in Office 2C will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strobe_Office_2C",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Office 2C"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Strobe_Office_2C",
+          "location": "Office 2C"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_55",
+    "description": "When the main fire alarm system is active, the strobe in Office 3A will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strobe_Office_3A",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Office 3A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Strobe_Office_3A",
+          "location": "Office 3A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_56",
+    "description": "When the main fire alarm system is active, the strobe in Office 3B will activate.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strobe_Office_3B",
+        "attribute": "activation_status",
+        "command": "activate",
+        "value": "",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Office 3B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Strobe_Office_3B",
+          "location": "Office 3B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_57",
+    "description": "When the main fire alarm system is active, the central air handler unit for the entire building will shut down.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Central_AHU",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Mechanical Room 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Central_AHU",
+          "location": "Mechanical Room 1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_58",
+    "description": "When the main fire alarm system is active, the electric lock on the Main Entrance will be unlocked.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Main_Entrance",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Main Entrance"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Strike_Main_Entrance",
+          "location": "Main Entrance"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_59",
+    "description": "When the main fire alarm system is active, the electric lock on the door to Office 1A will be unlocked.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_1A",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room",
+        "Office 1A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control Room"
+        },
+        {
+          "device_name": "Strike_Office_1A",
+          "location": "Office 1A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_60",
+    "description": "When the main fire alarm system is active, the electric lock on the door to Office 1B will be unlocked.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_1B",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "UNLOCKED",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1B",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Strike_Office_1B",
+          "location": "Office_1B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_61",
+    "description": "When the main fire alarm system is active, the electric lock on the door to Office 2A will be unlocked.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_2A",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "UNLOCKED",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2A",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Strike_Office_2A",
+          "location": "Office_2A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_62",
+    "description": "When the main fire alarm system is active, the electric lock on the door to Office 2B will be unlocked.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_2B",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "UNLOCKED",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2B",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Strike_Office_2B",
+          "location": "Office_2B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_63",
+    "description": "When the main fire alarm system is active, the electric lock on the door to Office 2C will be unlocked.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_2C",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "UNLOCKED",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2C",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Strike_Office_2C",
+          "location": "Office_2C"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_64",
+    "description": "When the main fire alarm system is active, the electric lock on the door to Office 3A will be unlocked.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_3A",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "UNLOCKED",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3A",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Strike_Office_3A",
+          "location": "Office_3A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_65",
+    "description": "When the main fire alarm system is active, the electric lock on the door to Office 3B will be unlocked.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_3B",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "UNLOCKED",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3B",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Strike_Office_3B",
+          "location": "Office_3B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_66",
+    "description": "When the main fire alarm system is active, the electric lock on the door to the Server Room will be unlocked.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Server_Room",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "UNLOCKED",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Server Room",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Strike_Server_Room",
+          "location": "Server_Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_67",
+    "description": "When the main fire alarm system is active, the electric lock on the door to the Mechanical Room will be unlocked.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Mechanical_Room_1",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "UNLOCKED",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Mechanical Room 1",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Strike_Mechanical_Room_1",
+          "location": "Mechanical_Room_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_68",
+    "description": "When the main fire alarm system is active, the electric lock on the door to the Roof will be unlocked.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Roof",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "UNLOCKED",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Roof",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Strike_Roof",
+          "location": "Roof"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_69",
+    "description": "When the main fire alarm system is active, the lights in the Main Entrance will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Main_Entrance",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Main Entrance",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Main_Entrance",
+          "location": "Main_Entrance"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_70",
+    "description": "When the main fire alarm system is active, the lights in Lobby 1 will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Lobby_1",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Lobby 1",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Lobby_1",
+          "location": "Lobby_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_71",
+    "description": "When the main fire alarm system is active, the lights in Hallway 1 will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Hallway_1",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway 1",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Hallway_1",
+          "location": "Hallway_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_72",
+    "description": "When the main fire alarm system is active, the lights in Office 1A will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_1A",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1A",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Office_1A",
+          "location": "Office_1A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_73",
+    "description": "When the main fire alarm system is active, the lights in Office 1B will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_1B",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1B",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Office_1B",
+          "location": "Office_1B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_74",
+    "description": "When the main fire alarm system is active, the lights in Conference Room 1 will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_ConfRoom_1",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Conference Room 1",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_ConfRoom_1",
+          "location": "ConfRoom_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_75",
+    "description": "When the main fire alarm system is active, the lights in the Server Room will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Server_Room",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Server Room",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Server_Room",
+          "location": "Server_Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_76",
+    "description": "When the main fire alarm system is active, the lights in the Control Room will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Control_Room",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Control_Room",
+          "location": "Control_Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_77",
+    "description": "When the main fire alarm system is active, the lights in Mechanical Room 1 will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Mechanical_Room_1",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Mechanical Room 1",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Mechanical_Room_1",
+          "location": "Mechanical_Room_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_78",
+    "description": "When the main fire alarm system is active, the lights in Hallway 2 will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Hallway_2",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway 2",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Hallway_2",
+          "location": "Hallway_2"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_79",
+    "description": "When the main fire alarm system is active, the lights in Office 2A will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_2A",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2A",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Office_2A",
+          "location": "Office_2A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_80",
+    "description": "When the main fire alarm system is active, the lights in Office 2B will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_2B",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2B",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Office_2B",
+          "location": "Office_2B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_81",
+    "description": "When the main fire alarm system is active, the lights in Office 2C will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_2C",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2C",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Office_2C",
+          "location": "Office_2C"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_82",
+    "description": "When the main fire alarm system is active, the lights in Conference Room 2 will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_ConfRoom_2",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Conference Room 2",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_ConfRoom_2",
+          "location": "ConfRoom_2"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_83",
+    "description": "When the main fire alarm system is active, the lights in Hallway 3 will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Hallway_3",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway 3",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Hallway_3",
+          "location": "Hallway_3"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_84",
+    "description": "When the main fire alarm system is active, the lights in Office 3A will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_3A",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3A",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Office_3A",
+          "location": "Office_3A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_85",
+    "description": "When the main fire alarm system is active, the lights in Office 3B will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_3B",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3B",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Office_3B",
+          "location": "Office_3B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_86",
+    "description": "When the main fire alarm system is active, the lights in Conference Room 3 will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_ConfRoom_3",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Conference Room 3",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_ConfRoom_3",
+          "location": "ConfRoom_3"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_87",
+    "description": "When the main fire alarm system is active, the lights on the Roof will turn on to 100% brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "==",
+          "value": "ALARM",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Roof",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": 100,
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Roof",
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        },
+        {
+          "device_name": "Luminaire_Roof",
+          "location": "Roof"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_88",
+    "description": "If the heat detector in the Server Room is triggered, the gas fire suppression system for that room will discharge after a 30-second delay.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Heat_Detector_Server_Room",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": true,
+          "implicit_physical_channel": "temperature"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Server_Room_Gas_Suppression",
+        "attribute": "system_status",
+        "command": "discharge",
+        "value": "DISCHARGED",
+        "implicit_physical_channel": "temperature"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Server Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Heat_Detector_Server_Room",
+          "location": "Server_Room"
+        },
+        {
+          "device_name": "Server_Room_Gas_Suppression",
+          "location": "Server_Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_89",
+    "description": "An authorized user can silence all audible horns and visible strobes from the main fire alarm control panel.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "user_interaction",
+          "operator": "==",
+          "value": "silence_command_issued",
+          "implicit_system_channel": "user_command"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "silence_alarm",
+        "value": "SILENCED",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_90",
+    "description": "An authorized user can reset the entire fire alarm system from the main fire alarm control panel after an event is cleared.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Main_FACP",
+          "attribute": "system_status",
+          "operator": "!=",
+          "value": "NORMAL",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_FACP",
+        "attribute": "system_status",
+        "command": "reset_system",
+        "value": "NORMAL",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Control Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Main_FACP",
+          "location": "Control_Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_91",
+    "description": "If occupancy is detected in the Main Entrance, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Main_Entrance",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Main_Entrance",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Main_Entrance"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Main_Entrance",
+          "location": "Main_Entrance"
+        },
+        {
+          "device_name": "Luminaire_Main_Entrance",
+          "location": "Main_Entrance"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_92",
+    "description": "If the Main Entrance is unoccupied for 5 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Main_Entrance",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Main_Entrance",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Main_Entrance"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Main_Entrance",
+          "location": "Main_Entrance"
+        },
+        {
+          "device_name": "Luminaire_Main_Entrance",
+          "location": "Main_Entrance"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_93",
+    "description": "If occupancy is detected in Lobby 1, the lights will automatically turn on to a default brightness.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Lobby_1",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Lobby_1",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      },
+      {
+        "device_name": "Luminaire_Lobby_1",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": "100",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Lobby_1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Lobby_1",
+          "location": "Lobby_1"
+        },
+        {
+          "device_name": "Luminaire_Lobby_1",
+          "location": "Lobby_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_94",
+    "description": "If Lobby 1 is unoccupied for 15 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Lobby_1",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Lobby_1",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Lobby_1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Lobby_1",
+          "location": "Lobby_1"
+        },
+        {
+          "device_name": "Luminaire_Lobby_1",
+          "location": "Lobby_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_95",
+    "description": "If the natural light level in Lobby 1 is high, the lights will automatically dim to a lower level to save energy.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Luminance_Sensor_Lobby_1",
+          "attribute": "illuminance",
+          "operator": ">",
+          "value": "750",
+          "implicit_physical_channel": "luminance"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Lobby_1",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": "30",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Lobby_1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Luminance_Sensor_Lobby_1",
+          "location": "Lobby_1"
+        },
+        {
+          "device_name": "Luminaire_Lobby_1",
+          "location": "Lobby_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_96",
+    "description": "If the natural light level in Lobby 1 is low while it is occupied, the lights will automatically brighten to ensure adequate illumination.",
+    "triggers": {
+      "logical_operator": "AND",
+      "conditions": [
+        {
+          "device_name": "Luminance_Sensor_Lobby_1",
+          "attribute": "illuminance",
+          "operator": "<",
+          "value": "300",
+          "implicit_physical_channel": "luminance"
+        },
+        {
+          "device_name": "Occupancy_Sensor_Lobby_1",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Lobby_1",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": "100",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Lobby_1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Luminance_Sensor_Lobby_1",
+          "location": "Lobby_1"
+        },
+        {
+          "device_name": "Occupancy_Sensor_Lobby_1",
+          "location": "Lobby_1"
+        },
+        {
+          "device_name": "Luminaire_Lobby_1",
+          "location": "Lobby_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_97",
+    "description": "If occupancy is detected in Hallway 1, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Hallway_1",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Hallway_1",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway_1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Hallway_1",
+          "location": "Hallway_1"
+        },
+        {
+          "device_name": "Luminaire_Hallway_1",
+          "location": "Hallway_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_98",
+    "description": "If Hallway 1 is unoccupied for 5 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Hallway_1",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Hallway_1",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway_1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Hallway_1",
+          "location": "Hallway_1"
+        },
+        {
+          "device_name": "Luminaire_Hallway_1",
+          "location": "Hallway_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_99",
+    "description": "If occupancy is detected in Hallway 2, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Hallway_2",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Hallway_2",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway_2"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Hallway_2",
+          "location": "Hallway_2"
+        },
+        {
+          "device_name": "Luminaire_Hallway_2",
+          "location": "Hallway_2"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_100",
+    "description": "If Hallway 2 is unoccupied for 5 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Hallway_2",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Hallway_2",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway_2"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Hallway_2",
+          "location": "Hallway_2"
+        },
+        {
+          "device_name": "Luminaire_Hallway_2",
+          "location": "Hallway_2"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_101",
+    "description": "If occupancy is detected in Hallway 3, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Hallway_3",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Hallway_3",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway_3"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Hallway_3",
+          "location": "Hallway_3"
+        },
+        {
+          "device_name": "Luminaire_Hallway_3",
+          "location": "Hallway_3"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_102",
+    "description": "If Hallway 3 is unoccupied for 5 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Hallway_3",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Hallway_3",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway_3"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Hallway_3",
+          "location": "Hallway_3"
+        },
+        {
+          "device_name": "Luminaire_Hallway_3",
+          "location": "Hallway_3"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_103",
+    "description": "If occupancy is detected in Office 1A, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Office_1A",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_1A",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Office_1A",
+          "location": "Office 1A"
+        },
+        {
+          "device_name": "Luminaire_Office_1A",
+          "location": "Office 1A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_104",
+    "description": "If Office 1A is unoccupied for 10 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Office_1A",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_1A",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Office_1A",
+          "location": "Office 1A"
+        },
+        {
+          "device_name": "Luminaire_Office_1A",
+          "location": "Office 1A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_105",
+    "description": "If occupancy is detected in Office 1B, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Office_1B",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_1B",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Office_1B",
+          "location": "Office 1B"
+        },
+        {
+          "device_name": "Luminaire_Office_1B",
+          "location": "Office 1B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_106",
+    "description": "If Office 1B is unoccupied for 10 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Office_1B",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_1B",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Office_1B",
+          "location": "Office 1B"
+        },
+        {
+          "device_name": "Luminaire_Office_1B",
+          "location": "Office 1B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_107",
+    "description": "If occupancy is detected in Office 2A, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Office_2A",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_2A",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Office_2A",
+          "location": "Office 2A"
+        },
+        {
+          "device_name": "Luminaire_Office_2A",
+          "location": "Office 2A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_108",
+    "description": "If Office 2A is unoccupied for 10 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Office_2A",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_2A",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Office_2A",
+          "location": "Office 2A"
+        },
+        {
+          "device_name": "Luminaire_Office_2A",
+          "location": "Office 2A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_109",
+    "description": "If occupancy is detected in Office 2B, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Office_2B",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_2B",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Office_2B",
+          "location": "Office 2B"
+        },
+        {
+          "device_name": "Luminaire_Office_2B",
+          "location": "Office 2B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_110",
+    "description": "If Office 2B is unoccupied for 10 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Office_2B",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_2B",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Office_2B",
+          "location": "Office 2B"
+        },
+        {
+          "device_name": "Luminaire_Office_2B",
+          "location": "Office 2B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_111",
+    "description": "If occupancy is detected in Office 2C, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Office_2C",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_2C",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2C"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Office_2C",
+          "location": "Office 2C"
+        },
+        {
+          "device_name": "Luminaire_Office_2C",
+          "location": "Office 2C"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_112",
+    "description": "If Office 2C is unoccupied for 10 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Office_2C",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_2C",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2C"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Office_2C",
+          "location": "Office 2C"
+        },
+        {
+          "device_name": "Luminaire_Office_2C",
+          "location": "Office 2C"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_113",
+    "description": "If occupancy is detected in Office 3A, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Office_3A",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_3A",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Office_3A",
+          "location": "Office 3A"
+        },
+        {
+          "device_name": "Luminaire_Office_3A",
+          "location": "Office 3A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_114",
+    "description": "If Office 3A is unoccupied for 10 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Office_3A",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_3A",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Office_3A",
+          "location": "Office 3A"
+        },
+        {
+          "device_name": "Luminaire_Office_3A",
+          "location": "Office 3A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_115",
+    "description": "If occupancy is detected in Office 3B, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Office_3B",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_3B",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Office_3B",
+          "location": "Office 3B"
+        },
+        {
+          "device_name": "Luminaire_Office_3B",
+          "location": "Office 3B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_116",
+    "description": "If Office 3B is unoccupied for 10 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Office_3B",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_3B",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Office_3B",
+          "location": "Office 3B"
+        },
+        {
+          "device_name": "Luminaire_Office_3B",
+          "location": "Office 3B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_117",
+    "description": "If occupancy is detected in Conference Room 1, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_ConfRoom_1",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_ConfRoom_1",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Conference Room 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_ConfRoom_1",
+          "location": "Conference Room 1"
+        },
+        {
+          "device_name": "Luminaire_ConfRoom_1",
+          "location": "Conference Room 1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_118",
+    "description": "If Conference Room 1 is unoccupied for 15 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_ConfRoom_1",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_ConfRoom_1",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Conference Room 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_ConfRoom_1",
+          "location": "Conference Room 1"
+        },
+        {
+          "device_name": "Luminaire_ConfRoom_1",
+          "location": "Conference Room 1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_119",
+    "description": "If occupancy is detected in Conference Room 2, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_ConfRoom_2",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_ConfRoom_2",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Conference Room 2"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_ConfRoom_2",
+          "location": "Office 1A"
+        },
+        {
+          "device_name": "Luminaire_ConfRoom_2",
+          "location": "Office 1A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_120",
+    "description": "If Conference Room 2 is unoccupied for 15 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_ConfRoom_2",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_ConfRoom_2",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Conference Room 2"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_ConfRoom_2",
+          "location": "Conference Room 2"
+        },
+        {
+          "device_name": "Luminaire_ConfRoom_2",
+          "location": "Conference Room 2"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_121",
+    "description": "If occupancy is detected in Conference Room 3, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_ConfRoom_3",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_ConfRoom_3",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Conference Room 3"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_ConfRoom_3",
+          "location": "Conference Room 3"
+        },
+        {
+          "device_name": "Luminaire_ConfRoom_3",
+          "location": "Conference Room 3"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_122",
+    "description": "If Conference Room 3 is unoccupied for 15 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_ConfRoom_3",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_ConfRoom_3",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Conference Room 3"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_ConfRoom_3",
+          "location": "Conference Room 3"
+        },
+        {
+          "device_name": "Luminaire_ConfRoom_3",
+          "location": "Conference Room 3"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_123",
+    "description": "If occupancy is detected in the Server Room, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Server_Room",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Server_Room",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Server Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Server_Room",
+          "location": "Server Room"
+        },
+        {
+          "device_name": "Luminaire_Server_Room",
+          "location": "Server Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_124",
+    "description": "If the Server Room is unoccupied for 5 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Server_Room",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Server_Room",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Server Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Server_Room",
+          "location": "Server Room"
+        },
+        {
+          "device_name": "Luminaire_Server_Room",
+          "location": "Server Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_125",
+    "description": "If occupancy is detected in the Mechanical Room, the lights will automatically turn on.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Mechanical_Room_1",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Mechanical_Room_1",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "ON",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Mechanical Room - Floor 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Mechanical_Room_1",
+          "location": "Mechanical Room - Floor 1"
+        },
+        {
+          "device_name": "Luminaire_Mechanical_Room_1",
+          "location": "Mechanical Room - Floor 1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_126",
+    "description": "If the Mechanical Room is unoccupied for 5 minutes, the lights will automatically turn off.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Occupancy_Sensor_Mechanical_Room_1",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "UNOCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Mechanical_Room_1",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "OFF",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Mechanical Room - Floor 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Occupancy_Sensor_Mechanical_Room_1",
+          "location": "Mechanical Room - Floor 1"
+        },
+        {
+          "device_name": "Luminaire_Mechanical_Room_1",
+          "location": "Mechanical Room - Floor 1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_127",
+    "description": "During off-hours, the automatic turn-on brightness for all Hallways will be reduced to 50% for energy saving.",
+    "triggers": {
+      "logical_operator": "AND",
+      "conditions": [
+        {
+          "device_name": "Time_Mode_Controller",
+          "attribute": "day_profile",
+          "operator": "==",
+          "value": "OFF_HOURS",
+          "implicit_system_channel": "time"
+        },
+        {
+          "device_name": "Occupancy_Sensor_Hallway_1, Occupancy_Sensor_Hallway_2, Occupancy_Sensor_Hallway_3",
+          "attribute": "occupancy_status",
+          "operator": "==",
+          "value": "OCCUPIED",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Hallway_1",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": "50",
+        "implicit_physical_channel": "luminance"
+      },
+      {
+        "device_name": "Luminaire_Hallway_2",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": "50",
+        "implicit_physical_channel": "luminance"
+      },
+      {
+        "device_name": "Luminaire_Hallway_3",
+        "attribute": "brightness",
+        "command": "set_brightness",
+        "value": "50",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway - Floor 1",
+        "Hallway - Floor 2",
+        "Hallway - Floor 3"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Time_Mode_Controller",
+          "location": "My Smart Building"
+        },
+        {
+          "device_name": "Occupancy_Sensor_Hallway_1",
+          "location": "Hallway - Floor 1"
+        },
+        {
+          "device_name": "Luminaire_Hallway_1",
+          "location": "Hallway - Floor 1"
+        },
+        {
+          "device_name": "Occupancy_Sensor_Hallway_2",
+          "location": "Hallway - Floor 2"
+        },
+        {
+          "device_name": "Luminaire_Hallway_2",
+          "location": "Hallway - Floor 2"
+        },
+        {
+          "device_name": "Occupancy_Sensor_Hallway_3",
+          "location": "Hallway - Floor 3"
+        },
+        {
+          "device_name": "Luminaire_Hallway_3",
+          "location": "Hallway - Floor 3"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_128",
+    "description": "Using a manual light switch in any room will override the current automated lighting state for that room.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Switch_Office_1A",
+          "attribute": "switch_status",
+          "operator": "!=",
+          "value": null
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Luminaire_Office_1A",
+        "attribute": "power_status",
+        "command": "set_power",
+        "value": "follow_switch",
+        "implicit_physical_channel": "luminance"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Switch_Office_1A",
+          "location": "Office 1A"
+        },
+        {
+          "device_name": "Luminaire_Office_1A",
+          "location": "Office 1A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_129",
+    "description": "If an authorized face or card is presented at the Main Entrance, the door will unlock for 5 seconds.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Reader_Main_Entrance",
+          "attribute": "last_scan_result",
+          "operator": "==",
+          "value": "SUCCESS",
+          "implicit_system_channel": "access_authentication"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Main_Entrance",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Main Entrance"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Reader_Main_Entrance",
+          "location": "Main Entrance"
+        },
+        {
+          "device_name": "Strike_Main_Entrance",
+          "location": "Main Entrance"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_130",
+    "description": "If an authorized card is presented at the door to Office 1A, the door will unlock for 5 seconds.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Reader_Office_1A",
+          "attribute": "last_scan_result",
+          "operator": "==",
+          "value": "SUCCESS",
+          "implicit_system_channel": "access_authentication"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_1A",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Reader_Office_1A",
+          "location": "Office 1A"
+        },
+        {
+          "device_name": "Strike_Office_1A",
+          "location": "Office 1A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_131",
+    "description": "If an authorized card is presented at the door to Office 1B, the door will unlock for 5 seconds.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Reader_Office_1B",
+          "attribute": "last_scan_result",
+          "operator": "==",
+          "value": "SUCCESS",
+          "implicit_system_channel": "access_authentication"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_1B",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Reader_Office_1B",
+          "location": "Office 1B"
+        },
+        {
+          "device_name": "Strike_Office_1B",
+          "location": "Office 1B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_132",
+    "description": "If an authorized card is presented at the door to Office 2A, the door will unlock for 5 seconds.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Reader_Office_2A",
+          "attribute": "last_scan_result",
+          "operator": "==",
+          "value": "SUCCESS",
+          "implicit_system_channel": "access_authentication"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_2A",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Reader_Office_2A",
+          "location": "Office 2A"
+        },
+        {
+          "device_name": "Strike_Office_2A",
+          "location": "Office 2A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_133",
+    "description": "If an authorized card is presented at the door to Office 2B, the door will unlock for 5 seconds.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Reader_Office_2B",
+          "attribute": "last_scan_result",
+          "operator": "==",
+          "value": "SUCCESS",
+          "implicit_system_channel": "access_authentication"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_2B",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Reader_Office_2B",
+          "location": "Office 2B"
+        },
+        {
+          "device_name": "Strike_Office_2B",
+          "location": "Office 2B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_134",
+    "description": "If an authorized card is presented at the door to Office 2C, the door will unlock for 5 seconds.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Reader_Office_2C",
+          "attribute": "last_scan_result",
+          "operator": "==",
+          "value": "SUCCESS",
+          "implicit_system_channel": "access_authentication"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_2C",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2C"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Reader_Office_2C",
+          "location": "Office 2C"
+        },
+        {
+          "device_name": "Strike_Office_2C",
+          "location": "Office 2C"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_135",
+    "description": "If an authorized card is presented at the door to Office 3A, the door will unlock for 5 seconds.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Reader_Office_3A",
+          "attribute": "last_scan_result",
+          "operator": "==",
+          "value": "SUCCESS",
+          "implicit_system_channel": "access_authentication"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_3A",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Reader_Office_3A",
+          "location": "Office 3A"
+        },
+        {
+          "device_name": "Strike_Office_3A",
+          "location": "Office 3A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_136",
+    "description": "If an authorized card is presented at the door to Office 3B, the door will unlock for 5 seconds.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Reader_Office_3B",
+          "attribute": "last_scan_result",
+          "operator": "==",
+          "value": "SUCCESS",
+          "implicit_system_channel": "access_authentication"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_3B",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Reader_Office_3B",
+          "location": "Office 3B"
+        },
+        {
+          "device_name": "Strike_Office_3B",
+          "location": "Office 3B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_137",
+    "description": "If an authorized card is presented at the door to the Server Room, the door will unlock for 5 seconds.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Reader_Server_Room",
+          "attribute": "last_scan_result",
+          "operator": "==",
+          "value": "SUCCESS",
+          "implicit_system_channel": "access_authentication"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Server_Room",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Server Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Reader_Server_Room",
+          "location": "Server Room"
+        },
+        {
+          "device_name": "Strike_Server_Room",
+          "location": "Server Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_138",
+    "description": "If an authorized card is presented at the door to the Mechanical Room, the door will unlock for 5 seconds.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Reader_Mechanical_Room_1",
+          "attribute": "last_scan_result",
+          "operator": "==",
+          "value": "SUCCESS",
+          "implicit_system_channel": "access_authentication"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Mechanical_Room_1",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Mechanical Room - Floor 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Reader_Mechanical_Room_1",
+          "location": "Mechanical Room - Floor 1"
+        },
+        {
+          "device_name": "Strike_Mechanical_Room_1",
+          "location": "Mechanical Room - Floor 1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_139",
+    "description": "If an authorized card is presented at the door to the Roof, the door will unlock for 5 seconds.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Reader_Roof",
+          "attribute": "last_scan_result",
+          "operator": "==",
+          "value": "SUCCESS",
+          "implicit_system_channel": "access_authentication"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Roof",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Roof"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Reader_Roof",
+          "location": "Roof"
+        },
+        {
+          "device_name": "Strike_Roof",
+          "location": "Roof"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_140",
+    "description": "If an unauthorized card is presented at the Main Entrance, access will be denied and the camera in Lobby 1 will record a 30-second video clip.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Reader_Main_Entrance",
+          "attribute": "last_scan_result",
+          "operator": "==",
+          "value": "FAIL",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Main_Entrance",
+        "attribute": "lock_status",
+        "command": "lock",
+        "value": "",
+        "implicit_system_channel": "door_lock"
+      },
+      {
+        "device_name": "Main_NVR",
+        "attribute": "recording_status",
+        "command": "start_recording",
+        "value": "{\"camera_id\": \"Camera_Lobby_1\"}",
+        "implicit_system_channel": "recording_status"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Main Entrance",
+        "Main Lobby - Floor 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Reader_Main_Entrance",
+          "location": "Main Entrance"
+        },
+        {
+          "device_name": "Strike_Main_Entrance",
+          "location": "Main Entrance"
+        },
+        {
+          "device_name": "Main_NVR",
+          "location": "Server Room"
+        },
+        {
+          "device_name": "Camera_Lobby_1",
+          "location": "Main Lobby - Floor 1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_141",
+    "description": "If an unauthorized card is presented at the Server Room door, access will be denied and the camera outside the Server Room will record a 30-second video clip.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Reader_Server_Room",
+          "attribute": "last_scan_result",
+          "operator": "==",
+          "value": "FAIL",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Server_Room",
+        "attribute": "lock_status",
+        "command": "lock",
+        "value": "",
+        "implicit_system_channel": "door_lock"
+      },
+      {
+        "device_name": "Main_NVR",
+        "attribute": "recording_status",
+        "command": "start_recording",
+        "value": "{\"camera_id\": \"Camera_Server_Room_Exterior\"}"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Server Room",
+        "Hallway - Floor 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Reader_Server_Room",
+          "location": "Server Room"
+        },
+        {
+          "device_name": "Strike_Server_Room",
+          "location": "Server Room"
+        },
+        {
+          "device_name": "Main_NVR",
+          "location": "Server Room"
+        },
+        {
+          "device_name": "Camera_Server_Room_Exterior",
+          "location": "Hallway - Floor 1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_142",
+    "description": "If the request-to-exit button inside the Main Entrance is pressed, the door will unlock.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "REX_Main_Entrance",
+          "attribute": "button_pressed",
+          "operator": "==",
+          "value": "true"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Main_Entrance",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Main Entrance"
+      ],
+      "device_locations": [
+        {
+          "device_name": "REX_Main_Entrance",
+          "location": "Main Entrance"
+        },
+        {
+          "device_name": "Strike_Main_Entrance",
+          "location": "Main Entrance"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_143",
+    "description": "If the request-to-exit button inside Office 1A is pressed, the door will unlock.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "REX_Office_1A",
+          "attribute": "button_pressed",
+          "operator": "==",
+          "value": "true"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_1A",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "REX_Office_1A",
+          "location": "Office 1A"
+        },
+        {
+          "device_name": "Strike_Office_1A",
+          "location": "Office 1A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_144",
+    "description": "If the request-to-exit button inside Office 1B is pressed, the door will unlock.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "REX_Office_1B",
+          "attribute": "button_pressed",
+          "operator": "==",
+          "value": "true"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_1B",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 1B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "REX_Office_1B",
+          "location": "Office 1B"
+        },
+        {
+          "device_name": "Strike_Office_1B",
+          "location": "Office 1B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_145",
+    "description": "If the request-to-exit button inside Office 2A is pressed, the door will unlock.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "REX_Office_2A",
+          "attribute": "button_pressed",
+          "operator": "==",
+          "value": "true"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_2A",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "REX_Office_2A",
+          "location": "Office 2A"
+        },
+        {
+          "device_name": "Strike_Office_2A",
+          "location": "Office 2A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_146",
+    "description": "If the request-to-exit button inside Office 2B is pressed, the door will unlock.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "REX_Office_2B",
+          "attribute": "button_pressed",
+          "operator": "==",
+          "value": "true"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_2B",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "REX_Office_2B",
+          "location": "Office 2B"
+        },
+        {
+          "device_name": "Strike_Office_2B",
+          "location": "Office 2B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_147",
+    "description": "If the request-to-exit button inside Office 2C is pressed, the door will unlock.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "REX_Office_2C",
+          "attribute": "button_pressed",
+          "operator": "==",
+          "value": "true"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_2C",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 2C"
+      ],
+      "device_locations": [
+        {
+          "device_name": "REX_Office_2C",
+          "location": "Office 2C"
+        },
+        {
+          "device_name": "Strike_Office_2C",
+          "location": "Office 2C"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_148",
+    "description": "If the request-to-exit button inside Office 3A is pressed, the door will unlock.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "REX_Office_3A",
+          "attribute": "button_pressed",
+          "operator": "==",
+          "value": "true"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_3A",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3A"
+      ],
+      "device_locations": [
+        {
+          "device_name": "REX_Office_3A",
+          "location": "Office 3A"
+        },
+        {
+          "device_name": "Strike_Office_3A",
+          "location": "Office 3A"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_149",
+    "description": "If the request-to-exit button inside Office 3B is pressed, the door will unlock.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "REX_Office_3B",
+          "attribute": "button_pressed",
+          "operator": "==",
+          "value": "true"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Office_3B",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "{\"duration_seconds\": 5}",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Office 3B"
+      ],
+      "device_locations": [
+        {
+          "device_name": "REX_Office_3B",
+          "location": "Office 3B"
+        },
+        {
+          "device_name": "Strike_Office_3B",
+          "location": "Office 3B"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_150",
+    "description": "If the request-to-exit button inside the Server Room is pressed, the door will unlock.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "REX_Server_Room",
+          "attribute": "button_pressed",
+          "operator": "==",
+          "value": "true"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Server_Room",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "UNLOCKED",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Server Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "REX_Server_Room",
+          "location": "Server_Room"
+        },
+        {
+          "device_name": "Strike_Server_Room",
+          "location": "Server_Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_151",
+    "description": "If the request-to-exit button inside the Mechanical Room is pressed, the door will unlock.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "REX_Mechanical_Room_1",
+          "attribute": "button_pressed",
+          "operator": "==",
+          "value": "true"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Mechanical_Room_1",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "UNLOCKED",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Mechanical Room - Floor 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "REX_Mechanical_Room_1",
+          "location": "Mechanical_Room_1"
+        },
+        {
+          "device_name": "Strike_Mechanical_Room_1",
+          "location": "Mechanical_Room_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_152",
+    "description": "If the request-to-exit button inside the Roof access is pressed, the door will unlock.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "REX_Roof",
+          "attribute": "button_pressed",
+          "operator": "==",
+          "value": "true"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Strike_Roof",
+        "attribute": "lock_status",
+        "command": "unlock",
+        "value": "UNLOCKED",
+        "implicit_system_channel": "door_lock"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Roof"
+      ],
+      "device_locations": [
+        {
+          "device_name": "REX_Roof",
+          "location": "Roof"
+        },
+        {
+          "device_name": "Strike_Roof",
+          "location": "Roof"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_153",
+    "description": "If the Main Entrance door is held open for more than 60 seconds, a \"door propped open\" alarm will be generated.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Door_Sensor_Main_Entrance",
+          "attribute": "door_state_held_open",
+          "operator": ">",
+          "value": "60",
+          "implicit_system_channel": "door_lock"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_Access_Control_Panel",
+        "attribute": "alarm_status",
+        "command": "generate_alarm",
+        "value": "door_propped_open",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Main Entrance"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Door_Sensor_Main_Entrance",
+          "location": "Main_Entrance"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_154",
+    "description": "If the Server Room door is held open for more than 30 seconds, a \"door propped open\" alarm will be generated.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Door_Sensor_Server_Room",
+          "attribute": "door_state_held_open",
+          "operator": ">",
+          "value": "30",
+          "implicit_system_channel": "door_lock"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_Access_Control_Panel",
+        "attribute": "alarm_status",
+        "command": "generate_alarm",
+        "value": "door_propped_open",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Server Room"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Door_Sensor_Server_Room",
+          "location": "Server_Room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_155",
+    "description": "If the Main Entrance door is opened without authorization, a \"door forced open\" alarm will be generated and the camera in Lobby 1 will begin recording.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Door_Sensor_Main_Entrance",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": "FORCED_OPEN",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_Access_Control_Panel",
+        "attribute": "alarm_status",
+        "command": "generate_alarm",
+        "value": "door_forced_open",
+        "implicit_system_channel": "alarm"
+      },
+      {
+        "device_name": "Main_NVR",
+        "attribute": "recording_status",
+        "command": "start_recording",
+        "value": "Camera_Lobby_1"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Main Entrance",
+        "Main Lobby - Floor 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Door_Sensor_Main_Entrance",
+          "location": "Main_Entrance"
+        },
+        {
+          "device_name": "Camera_Lobby_1",
+          "location": "Lobby_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_156",
+    "description": "If the Server Room door is opened without authorization, a \"door forced open\" alarm will be generated and the camera outside the Server Room will begin recording.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Door_Sensor_Server_Room",
+          "attribute": "alarm_status",
+          "operator": "==",
+          "value": "FORCED_OPEN",
+          "implicit_system_channel": "alarm"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_Access_Control_Panel",
+        "attribute": "alarm_status",
+        "command": "generate_alarm",
+        "value": "door_forced_open",
+        "implicit_system_channel": "alarm"
+      },
+      {
+        "device_name": "Main_NVR",
+        "attribute": "recording_status",
+        "command": "start_recording",
+        "value": "Camera_Server_Room_Exterior"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Server Room",
+        "Hallway - Floor 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Door_Sensor_Server_Room",
+          "location": "Server_Room"
+        },
+        {
+          "device_name": "Camera_Server_Room_Exterior",
+          "location": "Hallway_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_157",
+    "description": "The camera in Lobby 1 will record continuously during work hours.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Time_Mode_Controller",
+          "attribute": "day_profile",
+          "operator": "==",
+          "value": "WORK_HOURS",
+          "implicit_system_channel": "time"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_NVR",
+        "attribute": "recording_status",
+        "command": "start_recording",
+        "value": "Camera_Lobby_1"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Main Lobby - Floor 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Time_Mode_Controller",
+          "location": "MySmartBuilding"
+        },
+        {
+          "device_name": "Camera_Lobby_1",
+          "location": "Lobby_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_158",
+    "description": "The camera in Hallway 1 will automatically begin recording for one minute when it detects motion.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Camera_Hallway_1",
+          "attribute": "motion_detected",
+          "operator": "==",
+          "value": "true",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_NVR",
+        "attribute": "recording_status",
+        "command": "start_recording_for_duration",
+        "value": "{\"camera_id\": \"Camera_Hallway_1\", \"duration_seconds\": 60}"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway - Floor 1"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Camera_Hallway_1",
+          "location": "Hallway_1"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_159",
+    "description": "The camera in Hallway 2 will automatically begin recording for one minute when it detects motion.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Camera_Hallway_2",
+          "attribute": "motion_detected",
+          "operator": "==",
+          "value": "true",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_NVR",
+        "attribute": "recording_status",
+        "command": "start_recording_for_duration",
+        "value": "{\"camera_id\": \"Camera_Hallway_2\", \"duration_seconds\": 60}"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway - Floor 2"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Camera_Hallway_2",
+          "location": "Hallway_2"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_160",
+    "description": "The camera in Hallway 3 will automatically begin recording for one minute when it detects motion.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Camera_Hallway_3",
+          "attribute": "motion_detected",
+          "operator": "==",
+          "value": "true",
+          "implicit_physical_channel": "motion"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Main_NVR",
+        "attribute": "recording_status",
+        "command": "start_recording_for_duration",
+        "value": "{\"camera_id\": \"Camera_Hallway_3\", \"duration_seconds\": 60}"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Hallway - Floor 3"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Camera_Hallway_3",
+          "location": "Hallway_3"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_161",
+    "description": "The PTZ camera on the Roof will automatically patrol a pre-defined tour during off-hours.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "Time_Mode_Controller",
+          "attribute": "day_profile",
+          "operator": "==",
+          "value": "OFF_HOURS",
+          "implicit_system_channel": "time"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Camera_Roof_PTZ",
+        "attribute": "patrol_status",
+        "command": "start_patrol_tour",
+        "value": null
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "Roof"
+      ],
+      "device_locations": [
+        {
+          "device_name": "Time_Mode_Controller",
+          "location": "MySmartBuilding"
+        },
+        {
+          "device_name": "Camera_Roof_PTZ",
+          "location": "Roof"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_162",
+    "description": "IF the main outdoor temperature sensor reports a temperature below 5°C, THEN increase the HVAC heating power in the server room area.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "main_outdoor_temperature_sensor",
+          "attribute": "temperature",
+          "operator": "<",
+          "value": 5
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "server_room_HVAC",
+        "attribute": "heating_power",
+        "command": "increase",
+        "value": null,
+        "implicit_physical_channel": "Temperature_ServerRoom"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "server_room",
+        "building_exterior"
+      ],
+      "device_locations": [
+        {
+          "device_name": "main_outdoor_temperature_sensor",
+          "location": "building_exterior"
+        },
+        {
+          "device_name": "server_room_HVAC",
+          "location": "server_room"
+        }
+      ]
+    }
+  },
+  {
+    "rule_id": "Rule_163",
+    "description": "IF the rate-of-rise heat detector in the server room senses the ambient temperature rising more than 8°C per minute, THEN trigger the fire alarm for the entire building.",
+    "triggers": {
+      "logical_operator": null,
+      "conditions": [
+        {
+          "device_name": "server_room_rate_of_rise_heat_detector",
+          "attribute": "temperature_rise_rate",
+          "operator": ">",
+          "value": 8,
+          "implicit_physical_channel": "Temperature_ServerRoom"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "device_name": "Fire_Controller",
+        "attribute": "system_status",
+        "command": "ALARM",
+        "implicit_system_channel": "alarm"
+      }
+    ],
+    "context": {
+      "derived_from_ontology": true,
+      "involved_locations": [
+        "server_room",
+        "whole_building"
+      ],
+      "device_locations": [
+        {
+          "device_name": "server_room_rate_of_rise_heat_detector",
+          "location": "server_room"
+        },
+        {
+          "device_name": "building_fire_alarm",
+          "location": "whole_building"
+        }
+      ]
+    }
+  }
+]

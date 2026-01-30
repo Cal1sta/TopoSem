@@ -1,0 +1,120 @@
+Path,Total Cost,Average Stealth,Path Length,Path Criticality
+"['CH_smoke', 'T_Rule_22_0', 'A_Rule_22_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",13,1.8,5,0.0014222621453701635
+"['CH_smoke', 'T_Rule_23_0', 'A_Rule_23_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",13,1.8,5,0.0014222621453701635
+"['CH_smoke', 'T_Rule_24_0', 'A_Rule_24_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",13,1.8,5,0.0014222621453701635
+"['CH_smoke', 'T_Rule_25_0', 'A_Rule_25_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",13,1.8,5,0.0014222621453701635
+"['CH_smoke', 'T_Rule_26_0', 'A_Rule_26_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",13,1.8,5,0.0014222621453701635
+"['CH_smoke', 'T_Rule_27_0', 'A_Rule_27_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",13,1.8,5,0.0014222621453701635
+"['CH_smoke', 'T_Rule_28_0', 'A_Rule_28_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",13,1.8,5,0.0014222621453701635
+"['CH_smoke', 'T_Rule_29_0', 'A_Rule_29_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",13,1.8,5,0.0014222621453701635
+"['CH_smoke', 'T_Rule_30_0', 'A_Rule_30_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",13,1.8,5,0.0014222621453701635
+"['CH_smoke', 'T_Rule_31_0', 'A_Rule_31_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",13,1.8,5,0.0014222621453701635
+"['CH_smoke', 'T_Rule_32_0', 'A_Rule_32_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",13,1.8,5,0.0014222621453701635
+"['CH_smoke', 'T_Rule_33_0', 'A_Rule_33_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",13,1.8,5,0.0014222621453701635
+"['CH_smoke', 'T_Rule_34_0', 'A_Rule_34_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",13,1.8,5,0.0014222621453701635
+"['CH_smoke', 'T_Rule_35_0', 'A_Rule_35_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",13,1.8,5,0.0014222621453701635
+"['CH_smoke', 'T_Rule_36_0', 'A_Rule_36_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",13,1.8,5,0.0014222621453701635
+"['T_Rule_1_0', 'A_Rule_1_0', 'CH_temperature', 'T_Rule_37_0', 'A_Rule_37_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_2_0', 'A_Rule_2_0', 'CH_temperature', 'T_Rule_37_0', 'A_Rule_37_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_3_0', 'A_Rule_3_0', 'CH_temperature', 'T_Rule_37_0', 'A_Rule_37_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_4_0', 'A_Rule_4_0', 'CH_temperature', 'T_Rule_37_0', 'A_Rule_37_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_5_0', 'A_Rule_5_0', 'CH_temperature', 'T_Rule_37_0', 'A_Rule_37_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_6_0', 'A_Rule_6_0', 'CH_temperature', 'T_Rule_37_0', 'A_Rule_37_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_7_0', 'A_Rule_7_0', 'CH_temperature', 'T_Rule_37_0', 'A_Rule_37_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_8_0', 'A_Rule_8_0', 'CH_temperature', 'T_Rule_37_0', 'A_Rule_37_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_9_0', 'A_Rule_9_0', 'CH_temperature', 'T_Rule_37_0', 'A_Rule_37_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_10_0', 'A_Rule_10_0', 'CH_temperature', 'T_Rule_37_0', 'A_Rule_37_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_11_0', 'A_Rule_11_0', 'CH_temperature', 'T_Rule_37_0', 'A_Rule_37_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_12_0', 'A_Rule_12_0', 'CH_temperature', 'T_Rule_37_0', 'A_Rule_37_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_13_0', 'A_Rule_13_0', 'CH_temperature', 'T_Rule_37_0', 'A_Rule_37_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_14_0', 'A_Rule_14_0', 'CH_temperature', 'T_Rule_37_0', 'A_Rule_37_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_88_0', 'A_Rule_88_0', 'CH_temperature', 'T_Rule_37_0', 'A_Rule_37_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_1_0', 'A_Rule_1_0', 'CH_temperature', 'T_Rule_38_0', 'A_Rule_38_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_2_0', 'A_Rule_2_0', 'CH_temperature', 'T_Rule_38_0', 'A_Rule_38_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_3_0', 'A_Rule_3_0', 'CH_temperature', 'T_Rule_38_0', 'A_Rule_38_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_4_0', 'A_Rule_4_0', 'CH_temperature', 'T_Rule_38_0', 'A_Rule_38_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_5_0', 'A_Rule_5_0', 'CH_temperature', 'T_Rule_38_0', 'A_Rule_38_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_6_0', 'A_Rule_6_0', 'CH_temperature', 'T_Rule_38_0', 'A_Rule_38_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_7_0', 'A_Rule_7_0', 'CH_temperature', 'T_Rule_38_0', 'A_Rule_38_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_8_0', 'A_Rule_8_0', 'CH_temperature', 'T_Rule_38_0', 'A_Rule_38_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_9_0', 'A_Rule_9_0', 'CH_temperature', 'T_Rule_38_0', 'A_Rule_38_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_10_0', 'A_Rule_10_0', 'CH_temperature', 'T_Rule_38_0', 'A_Rule_38_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_11_0', 'A_Rule_11_0', 'CH_temperature', 'T_Rule_38_0', 'A_Rule_38_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_12_0', 'A_Rule_12_0', 'CH_temperature', 'T_Rule_38_0', 'A_Rule_38_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_13_0', 'A_Rule_13_0', 'CH_temperature', 'T_Rule_38_0', 'A_Rule_38_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_14_0', 'A_Rule_14_0', 'CH_temperature', 'T_Rule_38_0', 'A_Rule_38_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_88_0', 'A_Rule_88_0', 'CH_temperature', 'T_Rule_38_0', 'A_Rule_38_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.016303615540085338
+"['T_Rule_39_0', 'A_Rule_39_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",8,1.5,4,0.0014222621453701635
+"['CH_user_command', 'T_Rule_89_0', 'A_Rule_89_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",11,1.6,5,0.001976195823040648
+"['T_Rule_90_0', 'A_Rule_90_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",8,1.5,4,0.0014222621453701635
+"['T_Rule_59_0', 'A_Rule_59_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_60_0', 'A_Rule_60_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_61_0', 'A_Rule_61_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_62_0', 'A_Rule_62_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_63_0', 'A_Rule_63_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_64_0', 'A_Rule_64_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_65_0', 'A_Rule_65_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_66_0', 'A_Rule_66_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_67_0', 'A_Rule_67_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_68_0', 'A_Rule_68_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_129_0', 'A_Rule_129_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_130_0', 'A_Rule_130_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_131_0', 'A_Rule_131_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_132_0', 'A_Rule_132_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_133_0', 'A_Rule_133_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_134_0', 'A_Rule_134_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_135_0', 'A_Rule_135_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_136_0', 'A_Rule_136_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_137_0', 'A_Rule_137_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_138_0', 'A_Rule_138_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_139_0', 'A_Rule_139_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['T_Rule_140_0', 'A_Rule_140_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_141_0', 'A_Rule_141_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_142_0', 'A_Rule_142_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_143_0', 'A_Rule_143_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_144_0', 'A_Rule_144_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_145_0', 'A_Rule_145_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_146_0', 'A_Rule_146_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_147_0', 'A_Rule_147_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_148_0', 'A_Rule_148_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_149_0', 'A_Rule_149_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_150_0', 'A_Rule_150_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_151_0', 'A_Rule_151_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_152_0', 'A_Rule_152_0', 'CH_door_lock', 'T_Rule_153_0', 'A_Rule_153_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_59_0', 'A_Rule_59_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_60_0', 'A_Rule_60_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_61_0', 'A_Rule_61_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_62_0', 'A_Rule_62_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_63_0', 'A_Rule_63_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_64_0', 'A_Rule_64_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_65_0', 'A_Rule_65_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_66_0', 'A_Rule_66_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_67_0', 'A_Rule_67_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_68_0', 'A_Rule_68_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_129_0', 'A_Rule_129_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_130_0', 'A_Rule_130_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_131_0', 'A_Rule_131_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_132_0', 'A_Rule_132_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_133_0', 'A_Rule_133_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_134_0', 'A_Rule_134_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_135_0', 'A_Rule_135_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_136_0', 'A_Rule_136_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_137_0', 'A_Rule_137_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_138_0', 'A_Rule_138_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['CH_access_authentication', 'T_Rule_139_0', 'A_Rule_139_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",18,1.625,8,0.03524215884422487
+"['T_Rule_140_0', 'A_Rule_140_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_141_0', 'A_Rule_141_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_142_0', 'A_Rule_142_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_143_0', 'A_Rule_143_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_144_0', 'A_Rule_144_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_145_0', 'A_Rule_145_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_146_0', 'A_Rule_146_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_147_0', 'A_Rule_147_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_148_0', 'A_Rule_148_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_149_0', 'A_Rule_149_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_150_0', 'A_Rule_150_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_151_0', 'A_Rule_151_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_152_0', 'A_Rule_152_0', 'CH_door_lock', 'T_Rule_154_0', 'A_Rule_154_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",15,1.571,7,0.03524215884422487
+"['T_Rule_155_0', 'A_Rule_155_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",8,1.5,4,0.0023579609252189536
+"['T_Rule_156_0', 'A_Rule_156_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",8,1.5,4,0.0023579609252189536
+"['T_Rule_162_0', 'A_Rule_162_0', 'CH_Temperature_ServerRoom', 'T_Rule_163_0', 'A_Rule_163_0', 'CH_alarm', 'T_Rule_58_0', 'A_Rule_58_0']",19,1.857,7,0.003952391646081296

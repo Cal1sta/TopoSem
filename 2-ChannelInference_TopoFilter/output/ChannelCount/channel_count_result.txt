@@ -1,0 +1,46 @@
+全部 system_channel 统计:
+time: 8
+device_switch: 51
+alarm: 77
+door_lock: 37
+user_command: 1
+access_authentication: 11
+recording_status: 1
+
+全部 physical_channel 统计:
+temperature: 32
+CO2: 6
+humidity: 2
+smoke: 15
+sound: 10
+luminance: 79
+motion: 39
+
+triggers 中 system_channel 统计:
+time: 8
+device_switch: 13
+alarm: 53
+user_command: 1
+access_authentication: 11
+door_lock: 2
+
+triggers 中 physical_channel 统计:
+temperature: 17
+CO2: 3
+humidity: 1
+smoke: 15
+motion: 39
+luminance: 2
+
+actions 中 system_channel 统计:
+device_switch: 38
+alarm: 24
+door_lock: 35
+recording_status: 1
+
+actions 中 physical_channel 统计:
+temperature: 15
+CO2: 3
+humidity: 1
+sound: 10
+luminance: 77

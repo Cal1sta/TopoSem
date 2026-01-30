@@ -1,0 +1,107 @@
+When occupancy is detected in Room 101, turn on the lights in Room 101.
+If Room 101 is unoccupied for 10 minutes, turn off the lights.
+At sunset, turn on the lights in the Main Entrance Lobby.
+At sunrise, turn off the lights in the Main Entrance Lobby.
+If the temperature in Room 203 drops below 20°C, turn on the heater.
+If the temperature in Room 203 rises above 22°C, turn off the heater.
+If a valid card is scanned at the Main Entrance, unlock the door.
+If the exit button in the Main Entrance Lobby is pressed, unlock the Main Entrance door.
+Every night at 10 PM, lock the Main Entrance door.
+If smoke is detected in Room 206, activate the fire alarm in Room 205.
+When the door to Room 228 is unlocked, turn on the lights in Room 228.
+If smoke is detected anywhere, shut down the HVAC system for Zone 1.
+If any smoke detector is triggered, unlock all access-controlled doors.
+If the temperature in Room 204 rises above 25°C, activate VAV1 to cool the zone.
+If the temperature in Room 202 rises above 25°C, activate VAV2 to cool its zone.
+If the illuminance in Room 102 drops below 100 lux, turn on the light in Room 102.
+When the exit button at the main entrance is pressed, briefly turn off the lobby lights.
+If occupancy is detected in Room 11, turn on the lights in Room 11.
+If Room 11 has been unoccupied for 5 minutes, turn off the lights.
+At 7 AM every weekday, turn on the lights in Room 501.
+At 9 PM every weekday, turn off the lights in Room 501.
+If heat is detected in Room 228, activate the fire alarm in Room 205.
+If a valid card is scanned at Room 228, unlock its door.
+Every day at 8 PM, lock the door to Room 228.
+If a valid card is scanned at Room 50, unlock its door.
+Every day at 8 PM, lock the door to Room 50.
+If the Main Entrance door is held open for more than 1 minute, activate the alarm in Room 205.
+If smoke is detected in Room 11, unlock the Main Entrance door.
+If smoke is detected in Room 514, turn on all lights on Floor 5.
+If the temperature in Room 204 drops below 19°C, command VAV1 to heat the zone.
+If the temperature in Room 202 drops below 19°C, command VAV2 to heat its zone.
+At midnight, ensure all lights in the building are turned off.
+If the humidity in Room 203 exceeds 60%, command VAV1 to dehumidify.
+If an invalid card is scanned three times at the Main Entrance, lock the door for 5 minutes.
+When the light in Room 102 is on, and illuminance is still below 100 lux, turn on light in Room 101.
+If smoke is detected in Room 101, turn off the heater in Room 203.
+If the temperature in Room 228 is below 18°C, activate heater in Room 203.
+At sunset, turn on the lights in Room 101.
+At sunrise, turn off the lights in Room 101.
+At sunset, turn on the lights in Room 11.
+At sunrise, turn off the lights in Room 11.
+Every day at 6 PM, turn on the light in Room 102.
+Every day at 11 PM, turn off the light in Room 102.
+If smoke is detected, turn on all lights in the building.
+If the fire alarm is active, ensure all doors are unlocked.
+If Room 101 is unoccupied, ensure its light is off.
+If Room 11 is unoccupied, ensure its light is off.
+If the door to Room 50 is opened, turn on the heater in Room 203.
+If the Main Entrance door is unlocked, set VAV1 to 50%.
+At noon, if Room 101 is occupied, turn off its light to save energy.
+If heat is detected in Room 228, lock the door to Room 50.
+If smoke is detected in Room 206, shut down VAV2.
+If the humidity in Room 228 is below 30%, turn on the heater in Room 203.
+If the exit button is pressed, log the event and unlock Room 228.
+On weekends at 1 AM, unlock the Main Entrance door.
+If the light in Room 101 is on, turn off the light in Room 102.
+If the light in Room 102 is on, turn off the light in Room 101.
+If the temperature in Room 202 is above 26°C, turn on the lights in Room 11.
+If the door to Room 50 is closed, ensure the heater in Room 203 is off.
+If an invalid card is used at Room 228, turn on the fire alarm.
+Turn on the heater in Room 203 every day at 5 AM.
+Turn off the heater in Room 203 every day at 9 AM.
+If Room 203 heater is on, set VAV1 damper to 20%.
+When the fire alarm is on, if the Main Entrance door is closed, unlock it.
+If occupancy is detected in Room 101, unlock Room 50.
+If the illuminance in Room 102 is high (>500 lux), turn off VAV2.
+If the temperature in Room 204 is exactly 21°C, unlock the Main Entrance.
+At 3:33 AM, turn on all lights and unlock all doors.
+If smoke is detected in Room 514, shut down VAV1 and VAV2.
+After a door is unlocked, re-lock it after 30 seconds.
+If the door to Room 228 has been open for 5 minutes, lock it.
+If heat is detected in Room 228, turn off all lights on Floor 2.
+At sunset, if Room 101 is occupied, turn on its light.
+Turn on Room 11 light every hour.
+Turn off Room 11 light every hour at 30 minutes past.
+If temperature in Room 203 is high, and humidity is high, activate VAV1.
+When a valid card is used at the main entrance, turn on the lobby light.
+When the main entrance door closes, wait 5 seconds and turn off the lobby light.
+If smoke is detected in Room 11, activate alarm and unlock Room 50.
+If the temperature in Room 202 is less than 15°C, turn heater in Room 203 on.
+During work hours (9am-5pm), if Room 101 is unoccupied, dim its lights to 20%.
+During work hours, if Room 101 becomes occupied, set lights to 100%.
+After 6 PM, if occupancy is detected in Room 11, lock the main entrance.
+If the fire alarm is active, disable all card readers.
+If the humidity in Room 228 is very high (>75%), unlock the door to Room 228.
+If the light in Room 501 is on, turn off the heater in Room 203.
+If no motion is detected in the building for 1 hour, set all VAVs to minimum.
+At 5 PM, if the main entrance door is open, activate the alarm.
+If smoke is detected on Floor 2, unlock all doors on Floor 0.
+If the heater in Room 203 is on for more than 2 hours, turn it off.
+If VAV1 is at 100%, and VAV2 is at 100%, turn off the heater in Room 203.
+When the building is locked, if motion is detected in Room 11, activate the alarm.
+If the illuminance in Room 102 is very bright (>1000 lux), activate VAV1.
+If the temperature in Room 203 and 204 are both low (<19), turn heater on.
+If the exit button is pushed, and the door contact shows the door is still closed after 5s, re-lock the door.
+If smoke is detected in Room 206, but not in Room 11, turn on the light only in Room 206.
+At sunrise, if the temperature outside is low (<10C), turn on the heater in Room 203.
+If an authorized user double-taps their card at the main entrance, unlock all internal doors.
+If the fire alarm is activated, and then deactivated, re-lock all doors after 1 minute.
+Every Friday at 4 PM, turn off all VAVs and lock all internal doors for the weekend.
+After the main entrance is used, make sure the lobby is lit for a minute, then lock it back up.
+A fire alarm was triggered on the 5th floor. As a result, unlock all doors on that level and the one below it.
+When the last person leaves Room 101 for the day, kill all the lights and make sure the door is secure.
+It's movie time in Room 501, so dim the lights but keep the HVAC running so it doesn't get uncomfortable.
+Unless a fire is detected, lock the door to Room 228 at midnight, but only if no one is inside.
+If someone tries to enter Room 50 with an invalid card, don't unlock the door; instead, turn on the lights in Room 11 to signal security.
+The heater in Room 203 shouldn't be on if the window is open. If you find it in this state, turn the heater off.

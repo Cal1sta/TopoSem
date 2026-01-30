@@ -1,0 +1,5916 @@
+{
+    "devices": [
+        {
+            "identification": {
+                "device_name": "Access_Control_Doors",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Access_Control_Panel",
+                "type": "access_control_panel"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "system_status",
+                        "data_type": "num",
+                        "units": "NORMAL/ALARM"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Action_Valve",
+                "type": "valve"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Action_Valve": {
+                                "position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Air_Curtain_Main",
+                "type": "curtain"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Air_Curtain_Main": {
+                                "position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Alarm_2A",
+                "type": "alarm"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "active",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Alarm_2B",
+                "type": "alarm"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "active",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Alarm_2C",
+                "type": "alarm"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "active",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Alarm_2D",
+                "type": "alarm"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "active",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Alarm_Fire_Main",
+                "type": "alarm"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "active",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Alarm_Hallway_2",
+                "type": "alarm"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "active",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Alarm_Security_Global",
+                "type": "alarm"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "active",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "All_Blinds_Conf_2E",
+                "type": "blinds"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "All_Blinds_Conf_2E": {
+                                "position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "All_Blinds_Conf_2F",
+                "type": "blinds"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "All_Blinds_Conf_2F": {
+                                "position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Ambient_Light",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Ambient_Light_Sensor_Exterior",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Audio_System_Conf_1C",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Automatic_Blinds_Conf_1C",
+                "type": "blinds"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Automatic_Blinds_Conf_1C": {
+                                "position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Automatic_Blinds_Lobby_1",
+                "type": "blinds"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Automatic_Blinds_Lobby_1": {
+                                "position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Backup_Pump",
+                "type": "pump"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Battery_Level",
+                "type": "battery_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "level",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Battery_Status",
+                "type": "battery_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "level",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Blinds_Conf_2E",
+                "type": "blinds"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Blinds_Conf_2E": {
+                                "position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Blinds_Conf_2F",
+                "type": "blinds"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Blinds_Conf_2F": {
+                                "position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "CO2_Lobby_1",
+                "type": "co2_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "co2_concentration",
+                        "data_type": "num",
+                        "units": "ppm"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "CO2_Lobby_2",
+                "type": "co2_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "co2_concentration",
+                        "data_type": "num",
+                        "units": "ppm"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Camera_Control_Room",
+                "type": "security_camera"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "recording_status",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Camera_Hallway_1",
+                "type": "security_camera"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "recording_status",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Camera_Lobby_1",
+                "type": "security_camera"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "recording_status",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Camera_Lobby_2",
+                "type": "security_camera"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "recording_status",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Camera_Main_Entrance",
+                "type": "security_camera"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "recording_status",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Control_Room_Display",
+                "type": "display_screen"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "message",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Cool_Building",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Dedicated_Cooling_System",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Dehumidifier_Server_Room",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Door_Ajar_Alarm_Main",
+                "type": "alarm"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "active",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Door_Conf_1C",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Door_Lock_Main",
+                "type": "door_lock"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "lock_status",
+                        "data_type": "num",
+                        "units": "LOCKED/UNLOCKED"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_lock",
+                        "parameters": {
+                            "status": "string"
+                        },
+                        "transition": {
+                            "Door_Lock_Main": {
+                                "lock_status": "<status>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Door_Lock_Office_1A",
+                "type": "door_lock"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "lock_status",
+                        "data_type": "num",
+                        "units": "LOCKED/UNLOCKED"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_lock",
+                        "parameters": {
+                            "status": "string"
+                        },
+                        "transition": {
+                            "Door_Lock_Office_1A": {
+                                "lock_status": "<status>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Door_Lock_Office_1B",
+                "type": "door_lock"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "lock_status",
+                        "data_type": "num",
+                        "units": "LOCKED/UNLOCKED"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_lock",
+                        "parameters": {
+                            "status": "string"
+                        },
+                        "transition": {
+                            "Door_Lock_Office_1B": {
+                                "lock_status": "<status>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Door_Lock_Office_2A",
+                "type": "door_lock"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "lock_status",
+                        "data_type": "num",
+                        "units": "LOCKED/UNLOCKED"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_lock",
+                        "parameters": {
+                            "status": "string"
+                        },
+                        "transition": {
+                            "Door_Lock_Office_2A": {
+                                "lock_status": "<status>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Door_Lock_Office_2B",
+                "type": "door_lock"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "lock_status",
+                        "data_type": "num",
+                        "units": "LOCKED/UNLOCKED"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_lock",
+                        "parameters": {
+                            "status": "string"
+                        },
+                        "transition": {
+                            "Door_Lock_Office_2B": {
+                                "lock_status": "<status>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Door_Lock_Office_2C",
+                "type": "door_lock"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "lock_status",
+                        "data_type": "num",
+                        "units": "LOCKED/UNLOCKED"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_lock",
+                        "parameters": {
+                            "status": "string"
+                        },
+                        "transition": {
+                            "Door_Lock_Office_2C": {
+                                "lock_status": "<status>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Door_Lock_Office_2D",
+                "type": "door_lock"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "lock_status",
+                        "data_type": "num",
+                        "units": "LOCKED/UNLOCKED"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_lock",
+                        "parameters": {
+                            "status": "string"
+                        },
+                        "transition": {
+                            "Door_Lock_Office_2D": {
+                                "lock_status": "<status>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Door_Lock_Server_Room",
+                "type": "door_lock"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "lock_status",
+                        "data_type": "num",
+                        "units": "LOCKED/UNLOCKED"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_lock",
+                        "parameters": {
+                            "status": "string"
+                        },
+                        "transition": {
+                            "Door_Lock_Server_Room": {
+                                "lock_status": "<status>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Elevator_Lobby_1",
+                "type": "elevator"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "floor",
+                        "data_type": "num",
+                        "units": "num"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Elevator_Stuck",
+                "type": "elevator"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "floor",
+                        "data_type": "num",
+                        "units": "num"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Emergency_Exit_Door_L2",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Emergency_Generator",
+                "type": "generator"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Exterior_Canopy_Lights",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Exterior_Pathway_Lights",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Filter_Status",
+                "type": "filter_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "CLEAN/DIRTY"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Fire_Curtain_Lobby_1",
+                "type": "curtain"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Fire_Curtain_Lobby_1": {
+                                "position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Fire_Doors_Hallway_1",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Fire_Doors_Lobby_2",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Fire_Pump_Running",
+                "type": "pump"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Fresh_Air_Damper",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Fuel_Level",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Gas_Suppression_System",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Generator_Running",
+                "type": "generator"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "HVAC_Chiller",
+                "type": "chiller"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "power_status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "HVAC_Conf_1C",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Heat_Building",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Humidifier_Server_Room",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Humidity_Server_Room",
+                "type": "humidity_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "relative_humidity",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Janitor_Call_Button",
+                "type": "button"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "pressed",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Conf_1C",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Conf_1C": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Conf_2E",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Conf_2E": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Conf_2F",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Conf_2F": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Control_Room",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Control_Room": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Hallway_1",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Hallway_1": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Hallway_2",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Hallway_2": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Lobby_1",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Lobby_1": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Lobby_2",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Lobby_2": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Main_Entrance",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Main_Entrance": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Mechanical_Room",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Mechanical_Room": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Office_1A",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Office_1A": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Office_1B",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Office_1B": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Office_2A",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Office_2A": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Office_2B",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Office_2B": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Office_2C",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Office_2C": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Office_2D",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Office_2D": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Lights_Server_Room",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Lights_Server_Room": {
+                                "brightness": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Local_Siren",
+                "type": "siren"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "active",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Main_Water_Valve_Lobby",
+                "type": "valve"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Main_Water_Valve_Lobby": {
+                                "position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Main_Water_Valve_Server",
+                "type": "valve"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Main_Water_Valve_Server": {
+                                "position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Maintenance_Switch_Elevator",
+                "type": "lighting_switch"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "switch_status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Mechanical_Room_Exhaust_Fan",
+                "type": "fan"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "speed",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "Mechanical_Room_Exhaust_Fan": {
+                                "speed": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Minimum_Airflow",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Outdoor_Temp",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Power_Main_Failure",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rain_Sensor",
+                "type": "rain_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "is_raining",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_1",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_10",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_100",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_101",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_102",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_103",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_104",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_105",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_106",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_107",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_108",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_109",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_11",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_110",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_111",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_112",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_113",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_114",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_115",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_116",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_117",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_118",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_119",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_12",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_120",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_121",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_122",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_123",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_124",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_125",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_126",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_127",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_128",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_129",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_13",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_130",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_131",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_132",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_133",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_134",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_135",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_136",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_137",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_138",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_139",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_14",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_140",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_141",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_142",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_143",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_144",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_145",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_146",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_147",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_148",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_149",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_15",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_150",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_151",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_152",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_153",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_154",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_155",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_156",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_157",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_158",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_159",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_16",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_160",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_161",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_162",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_163",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_164",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_165",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_166",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_167",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_168",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_169",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_17",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_170",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_171",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_172",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_173",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_174",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_175",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_176",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_177",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_178",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_179",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_18",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_180",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_181",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_182",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_183",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_184",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_185",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_186",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_187",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_188",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_189",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_19",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_190",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_191",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_192",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_193",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_194",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_195",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_196",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_197",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_198",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_199",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_2",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_20",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_200",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_201",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_202",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_203",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_204",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_205",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_206",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_207",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_208",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_209",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_21",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_210",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_22",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_23",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_24",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_25",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_26",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_27",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_28",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_29",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_3",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_30",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_31",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_32",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_33",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_34",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_35",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_36",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_37",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_38",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_39",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_4",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_40",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_41",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_42",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_43",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_44",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_45",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_46",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_47",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_48",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_49",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_5",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_50",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_51",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_52",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_53",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_54",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_55",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_56",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_57",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_58",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_59",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_6",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_60",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_61",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_62",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_63",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_64",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_65",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_66",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_67",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_68",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_69",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_7",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_70",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_71",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_72",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_73",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_74",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_75",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_76",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_77",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_78",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_79",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_8",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_80",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_81",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_82",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_83",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_84",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_85",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_86",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_87",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_88",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_89",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_9",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_90",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_91",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_92",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_93",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_94",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_95",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_96",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_97",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_98",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Rule_99",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Security_Alarm_Global",
+                "type": "alarm"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "active",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Security_Alarm_Main",
+                "type": "alarm"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "active",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Server_Shutdown_Script",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Siren_Lobby_1",
+                "type": "siren"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "active",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Smoke_Detector_Lobby_1",
+                "type": "smoke_detector"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "alarm_status",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Sprinkler_Flow_Hallway_1",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Sprinkler_Flow_Lobby_1",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Sprinkler_Flow_Office_1A",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Sprinkler_Flow_Office_2A",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Sprinkler_Flow_Server_Room",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Sump_Pump",
+                "type": "pump"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Temp_Server_Room",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Time_Mode_Controller",
+                "type": "time_mode_controller"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "day_profile",
+                        "data_type": "num",
+                        "units": "enum"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "UPS_Battery",
+                "type": "ups"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "battery_level",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "VAV_Conf_1C",
+                "type": "variable_air_volume_unit"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "damper_position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "VAV_Conf_1C": {
+                                "damper_position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "VAV_Conf_2E",
+                "type": "variable_air_volume_unit"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "damper_position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "VAV_Conf_2E": {
+                                "damper_position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "VAV_Conf_2F",
+                "type": "variable_air_volume_unit"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "damper_position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "VAV_Conf_2F": {
+                                "damper_position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "VAV_Hallway_1",
+                "type": "variable_air_volume_unit"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "damper_position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "VAV_Hallway_1": {
+                                "damper_position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "VAV_Lobby_1",
+                "type": "variable_air_volume_unit"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "damper_position",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_value",
+                        "parameters": {
+                            "value": "num"
+                        },
+                        "transition": {
+                            "VAV_Lobby_1": {
+                                "damper_position": "<value>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Warm_Air_Supply",
+                "type": "generic_device"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "status",
+                        "data_type": "num",
+                        "units": "string"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Water_Leak_Pantry_L2",
+                "type": "water_leak_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "leak_detected",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Water_Leak_Sensor",
+                "type": "water_leak_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "leak_detected",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Wind_Speed",
+                "type": "wind_speed_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "speed",
+                        "data_type": "num",
+                        "units": "km/h"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Window_Contact_2A",
+                "type": "window_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "contact_status",
+                        "data_type": "num",
+                        "units": "OPEN/CLOSED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Window_Contact_2B",
+                "type": "window_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "contact_status",
+                        "data_type": "num",
+                        "units": "OPEN/CLOSED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Window_Contact_2C",
+                "type": "window_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "contact_status",
+                        "data_type": "num",
+                        "units": "OPEN/CLOSED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Window_Contact_2D",
+                "type": "window_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "contact_status",
+                        "data_type": "num",
+                        "units": "OPEN/CLOSED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Window_Contact_Conf_2E",
+                "type": "window_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "contact_status",
+                        "data_type": "num",
+                        "units": "OPEN/CLOSED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Window_Contact_Conf_2F",
+                "type": "window_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "contact_status",
+                        "data_type": "num",
+                        "units": "OPEN/CLOSED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Window_Contact_Office_1A",
+                "type": "window_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "contact_status",
+                        "data_type": "num",
+                        "units": "OPEN/CLOSED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Window_Contact_Office_1B",
+                "type": "window_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "contact_status",
+                        "data_type": "num",
+                        "units": "OPEN/CLOSED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Window_Contact_Office_2A",
+                "type": "window_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "contact_status",
+                        "data_type": "num",
+                        "units": "OPEN/CLOSED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Window_Contact_Office_2B",
+                "type": "window_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "contact_status",
+                        "data_type": "num",
+                        "units": "OPEN/CLOSED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Window_Contact_Office_2C",
+                "type": "window_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "contact_status",
+                        "data_type": "num",
+                        "units": "OPEN/CLOSED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Window_Contact_Office_2D",
+                "type": "window_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "contact_status",
+                        "data_type": "num",
+                        "units": "OPEN/CLOSED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Window_Sensor_Office_1A",
+                "type": "window_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "contact_status",
+                        "data_type": "num",
+                        "units": "OPEN/CLOSED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Window_Sensor_Office_1B",
+                "type": "window_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "contact_status",
+                        "data_type": "num",
+                        "units": "OPEN/CLOSED"
+                    }
+                ],
+                "commands": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,147 @@
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rice: <http://rice.edu/building#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rice:RICE a brick:Building ;
+    brick:hasPart rice:HVAC_System,
+        rice:Lighting_System,
+        rice:Fire_Safety_System,
+        rice:Access_Control_System .
+
+rice:HVAC_System a brick:HVAC_System ;
+    brick:isPartOf rice:RICE .
+
+rice:Lighting_System a brick:Lighting_System ;
+    brick:isPartOf rice:RICE .
+
+rice:Fire_Safety_System a brick:Fire_Safety_System ;
+    brick:isPartOf rice:RICE .
+
+rice:Access_Control_System a brick:Access_Control_System ;
+    brick:isPartOf rice:RICE .
+
+# --- HVAC Devices ---
+rice:Room202_Temp_Sensor a brick:Temperature_Sensor ; brick:isPartOf rice:HVAC_System .
+rice:Room203_Temp_Sensor a brick:Temperature_Sensor ; brick:isPartOf rice:HVAC_System .
+rice:Room203_Humidity_Sensor a brick:Humidity_Sensor ; brick:isPartOf rice:HVAC_System .
+rice:Room203_Heater a brick:Heater ; brick:isPartOf rice:HVAC_System .
+rice:Room204_Temp_Sensor a brick:Temperature_Sensor ; brick:isPartOf rice:HVAC_System .
+rice:Room228_Temp_Sensor a brick:Temperature_Sensor ; brick:isPartOf rice:HVAC_System .
+rice:Room228_Humidity_Sensor a brick:Humidity_Sensor ; brick:isPartOf rice:HVAC_System .
+
+# --- Lighting Devices ---
+rice:Room11_Luminare a brick:Luminare ; brick:isPartOf rice:Lighting_System .
+rice:Room11_Occupancy_Sensor a brick:Occupancy_Sensor ; brick:isPartOf rice:Lighting_System .
+rice:Room101_Luminare a brick:Luminare ; brick:isPartOf rice:Lighting_System .
+rice:Room101_Occupancy_Sensor a brick:Occupancy_Sensor ; brick:isPartOf rice:Lighting_System .
+rice:Room102_Luminare a brick:Luminare ; brick:isPartOf rice:Lighting_System .
+rice:Room102_Light_Sensor a brick:Light_Sensor ; brick:isPartOf rice:Lighting_System .
+rice:Room501_Luminare a brick:Luminare ; brick:isPartOf rice:Lighting_System .
+
+# --- Fire Safety Devices ---
+rice:Room11_Smoke_Detector a brick:Smoke_Detector ; brick:isPartOf rice:Fire_Safety_System .
+rice:Room101_Smoke_Detector a brick:Smoke_Detector ; brick:isPartOf rice:Fire_Safety_System .
+rice:Room205_Fire_Alarm_Strobe a brick:Fire_Alarm ; brick:isPartOf rice:Fire_Safety_System .
+rice:Room206_Smoke_Detector a brick:Smoke_Detector ; brick:isPartOf rice:Fire_Safety_System .
+rice:Room228_Heat_Detector a brick:Heat_Detector ; brick:isPartOf rice:Fire_Safety_System .
+rice:Room514_Smoke_Detector a brick:Smoke_Detector ; brick:isPartOf rice:Fire_Safety_System .
+
+# --- Access Control Devices ---
+rice:Main_Entrance_Card_Reader a brick:Card_Reader ; brick:isPartOf rice:Access_Control_System .
+rice:Main_Entrance_Electric_Strike a brick:Electric_Strike ; brick:isPartOf rice:Access_Control_System .
+rice:Main_Entrance_Door_Contact a brick:Door_Contact_Sensor ; brick:isPartOf rice:Access_Control_System .
+rice:Main_Entrance_Push_Button a brick:Push_Button ; brick:isPartOf rice:Access_Control_System .
+rice:Room50_Card_Reader a brick:Card_Reader ; brick:isPartOf rice:Access_Control_System .
+rice:Room50_Electric_Strike a brick:Electric_Strike ; brick:isPartOf rice:Access_Control_System .
+rice:Room50_Door_Contact a brick:Door_Contact_Sensor ; brick:isPartOf rice:Access_Control_System .
+rice:Room228_Card_Reader a brick:Card_Reader ; brick:isPartOf rice:Access_Control_System .
+rice:Room228_Electric_Strike a brick:Electric_Strike ; brick:isPartOf rice:Access_Control_System .
+
+rice:Floor_0 a brick:Floor ; brick:isPartOf rice:RICE ;
+    brick:hasPart rice:Main_Entrance_Lobby, rice:Room7, rice:Room11, rice:Room13, rice:Room15, rice:Room17, rice:Room19, rice:Room20, rice:Room24, rice:Room32, rice:Room50, rice:Room52, rice:Room54, rice:Room57, rice:Room58, rice:Room59 .
+
+rice:Floor_1 a brick:Floor ; brick:isPartOf rice:RICE ;
+    brick:hasPart rice:Room101, rice:Room102, rice:Room103, rice:Room104, rice:Room105, rice:Room106, rice:Room107, rice:Room108, rice:Room122, rice:Room128, rice:Room150, rice:Room154, rice:Room156, rice:Room160 .
+
+rice:Floor_2 a brick:Floor ; brick:isPartOf rice:RICE ;
+    brick:hasPart rice:Room201, rice:Room202, rice:Room203, rice:Room204, rice:Room205, rice:Room206, rice:Room207, rice:Room208, rice:Room209, rice:Room210, rice:Room211, rice:Room212, rice:Room220, rice:Room222, rice:Room224, rice:Room226, rice:Room228, rice:Room230, rice:Room232, rice:Room242, rice:Room252, rice:Room259, rice:Room276 .
+
+rice:Floor_3 a brick:Floor ; brick:isPartOf rice:RICE ;
+    brick:hasPart rice:Room305, rice:Room306, rice:Room308, rice:Room322, rice:Room324, rice:Room326 .
+
+rice:Floor_4 a brick:Floor ; brick:isPartOf rice:RICE .
+
+rice:Floor_5 a brick:Floor ; brick:isPartOf rice:RICE ;
+    brick:hasPart rice:Room501, rice:Room502, rice:Room503, rice:Room504, rice:Room505, rice:Room506, rice:Room507, rice:Room508, rice:Room509, rice:Room511, rice:Room512, rice:Room513, rice:Room514, rice:Room516, rice:Room521, rice:Room522, rice:Room524, rice:Room526, rice:Room527, rice:Room528, rice:Room530, rice:Room532, rice:Room534, rice:Room536, rice:Room542, rice:Room552, rice:Room557, rice:Room561 .
+
+
+rice:HVAC_Zone1 a brick:HVAC_Zone ;
+    brick:hasPart rice:Room203, rice:Room204 .
+
+
+rice:HVAC_Zone2 a brick:HVAC_Zone ;
+    brick:hasPart rice:Room202 .
+
+
+rice:VAV1 a brick:VAV ; brick:feeds rice:HVAC_Zone1 ; brick:isPartOf rice:HVAC_System .
+rice:VAV2 a brick:VAV ; brick:feeds rice:HVAC_Zone2 ; brick:isPartOf rice:HVAC_System .
+
+# --- Floor 0 Rooms ---
+rice:Main_Entrance_Lobby a brick:Lobby ;
+    brick:hasPoint rice:Main_Entrance_Card_Reader, rice:Main_Entrance_Electric_Strike, rice:Main_Entrance_Door_Contact, rice:Main_Entrance_Push_Button ;
+    brick:isLocationOf rice:Main_Entrance_Card_Reader, rice:Main_Entrance_Electric_Strike, rice:Main_Entrance_Door_Contact, rice:Main_Entrance_Push_Button .
+
+rice:Room11 a brick:Room ;
+    brick:hasPoint rice:Room11_Luminare, rice:Room11_Occupancy_Sensor, rice:Room11_Smoke_Detector ;
+    brick:isLocationOf rice:Room11_Luminare, rice:Room11_Occupancy_Sensor, rice:Room11_Smoke_Detector .
+
+rice:Room50 a brick:Room ;
+    brick:hasPoint rice:Room50_Card_Reader, rice:Room50_Electric_Strike, rice:Room50_Door_Contact ;
+    brick:isLocationOf rice:Room50_Card_Reader, rice:Room50_Electric_Strike, rice:Room50_Door_Contact .
+
+# --- Floor 1 Rooms ---
+rice:Room101 a brick:Room ;
+    brick:hasPoint rice:Room101_Luminare, rice:Room101_Occupancy_Sensor, rice:Room101_Smoke_Detector ;
+    brick:isLocationOf rice:Room101_Luminare, rice:Room101_Occupancy_Sensor, rice:Room101_Smoke_Detector .
+
+rice:Room102 a brick:Room ;
+    brick:hasPoint rice:Room102_Luminare, rice:Room102_Light_Sensor ;
+    brick:isLocationOf rice:Room102_Luminare, rice:Room102_Light_Sensor .
+
+# --- Floor 2 Rooms ---
+rice:Room202 a brick:Room ;
+    brick:hasPoint rice:Room202_Temp_Sensor ;
+    brick:isLocationOf rice:Room202_Temp_Sensor .
+
+rice:Room203 a brick:Room ;
+    brick:hasPoint rice:Room203_Temp_Sensor, rice:Room203_Humidity_Sensor, rice:Room203_Heater ;
+    brick:isLocationOf rice:Room203_Temp_Sensor, rice:Room203_Humidity_Sensor, rice:Room203_Heater .
+
+rice:Room204 a brick:Room ;
+    brick:hasPoint rice:Room204_Temp_Sensor ;
+    brick:isLocationOf rice:Room204_Temp_Sensor .
+
+rice:Room205 a brick:Room ;
+    brick:hasPoint rice:Room205_Fire_Alarm_Strobe ;
+    brick:isLocationOf rice:Room205_Fire_Alarm_Strobe .
+
+rice:Room206 a brick:Room ;
+    brick:hasPoint rice:Room206_Smoke_Detector ;
+    brick:isLocationOf rice:Room206_Smoke_Detector .
+
+rice:Room228 a brick:Room ;
+    brick:hasPoint rice:Room228_Temp_Sensor, rice:Room228_Humidity_Sensor, rice:Room228_Heat_Detector, rice:Room228_Card_Reader, rice:Room228_Electric_Strike ;
+    brick:isLocationOf rice:Room228_Temp_Sensor, rice:Room228_Humidity_Sensor, rice:Room228_Heat_Detector, rice:Room228_Card_Reader, rice:Room228_Electric_Strike .
+
+# --- Floor 5 Rooms ---
+rice:Room501 a brick:Room ;
+    brick:hasPoint rice:Room501_Luminare ;
+    brick:isLocationOf rice:Room501_Luminare .
+
+rice:Room514 a brick:Room ;
+    brick:hasPoint rice:Room514_Smoke_Detector ;
+    brick:isLocationOf rice:Room514_Smoke_Detector .
+

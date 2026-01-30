@@ -1,0 +1,1596 @@
+========================================
+Starting IoTSemVer TopologyFilter
+Reading interactions from: ./2-ChannelInference_TopoFilter/output/interaction/interactions.json
+========================================
+
+---> Analyzing Interaction 'interaction_1':
+     Office_1A --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_2':
+     Office_1A --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_3':
+     Office_1A --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_4':
+     Office_1A --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_5':
+     Office_1A --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_6':
+     Office_1A --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_7':
+     Office_1A --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_8':
+     Office_1A --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_9':
+     Office_1A --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_10':
+     Office_1A --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_11':
+     Office_1A --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_12':
+     Office_1A --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_13':
+     Office_1A --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_14':
+     Office_1A --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_15':
+     Office_1A --(temperature)--> Mechanical_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_16':
+     Office_1A --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_17':
+     Office_1A --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_18':
+     Office_1A --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_19':
+     Office_1A --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_20':
+     Office_1A --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_21':
+     Office_1A --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_22':
+     Office_1A --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_23':
+     Office_1A --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_24':
+     Office_1A --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_25':
+     Office_1A --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_26':
+     Office_1A --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_27':
+     Office_1A --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_28':
+     Office_1A --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_29':
+     Office_1A --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_30':
+     Office_1A --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_31':
+     Office_1A --(temperature)--> Mechanical_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_32':
+     Office_1A --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_33':
+     Office_1B --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_34':
+     Office_1B --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_35':
+     Office_1B --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_36':
+     Office_1B --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_37':
+     Office_1B --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_38':
+     Office_1B --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_39':
+     Office_1B --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_40':
+     Office_1B --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_41':
+     Office_1B --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_42':
+     Office_1B --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_43':
+     Office_1B --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_44':
+     Office_1B --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_45':
+     Office_1B --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_46':
+     Office_1B --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_47':
+     Office_1B --(temperature)--> Mechanical_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_48':
+     Office_1B --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_49':
+     Office_1B --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_50':
+     Office_1B --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_51':
+     Office_1B --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_52':
+     Office_1B --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_53':
+     Office_1B --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_54':
+     Office_1B --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_55':
+     Office_1B --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_56':
+     Office_1B --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_57':
+     Office_1B --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_58':
+     Office_1B --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_59':
+     Office_1B --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_60':
+     Office_1B --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_61':
+     Office_1B --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_62':
+     Office_1B --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_63':
+     Office_1B --(temperature)--> Mechanical_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_64':
+     Office_1B --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_65':
+     Office_2A --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_66':
+     Office_2A --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_67':
+     Office_2A --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_68':
+     Office_2A --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_69':
+     Office_2A --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_70':
+     Office_2A --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_71':
+     Office_2A --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_72':
+     Office_2A --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_73':
+     Office_2A --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_74':
+     Office_2A --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_75':
+     Office_2A --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_76':
+     Office_2A --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_77':
+     Office_2A --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_78':
+     Office_2A --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_79':
+     Office_2A --(temperature)--> Mechanical_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_80':
+     Office_2A --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_81':
+     Office_2A --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_82':
+     Office_2A --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_83':
+     Office_2A --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_84':
+     Office_2A --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_85':
+     Office_2A --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_86':
+     Office_2A --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_87':
+     Office_2A --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_88':
+     Office_2A --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_89':
+     Office_2A --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_90':
+     Office_2A --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_91':
+     Office_2A --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_92':
+     Office_2A --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_93':
+     Office_2A --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_94':
+     Office_2A --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_95':
+     Office_2A --(temperature)--> Mechanical_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_96':
+     Office_2A --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_97':
+     Office_2B --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_98':
+     Office_2B --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_99':
+     Office_2B --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_100':
+     Office_2B --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_101':
+     Office_2B --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_102':
+     Office_2B --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_103':
+     Office_2B --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_104':
+     Office_2B --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_105':
+     Office_2B --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_106':
+     Office_2B --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_107':
+     Office_2B --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_108':
+     Office_2B --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_109':
+     Office_2B --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_110':
+     Office_2B --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_111':
+     Office_2B --(temperature)--> Mechanical_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_112':
+     Office_2B --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_113':
+     Office_2B --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_114':
+     Office_2B --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_115':
+     Office_2B --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_116':
+     Office_2B --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_117':
+     Office_2B --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_118':
+     Office_2B --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_119':
+     Office_2B --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_120':
+     Office_2B --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_121':
+     Office_2B --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_122':
+     Office_2B --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_123':
+     Office_2B --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_124':
+     Office_2B --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_125':
+     Office_2B --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_126':
+     Office_2B --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_127':
+     Office_2B --(temperature)--> Mechanical_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_128':
+     Office_2B --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_129':
+     Office_2C --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_130':
+     Office_2C --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_131':
+     Office_2C --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_132':
+     Office_2C --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_133':
+     Office_2C --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_134':
+     Office_2C --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_135':
+     Office_2C --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_136':
+     Office_2C --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_137':
+     Office_2C --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_138':
+     Office_2C --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_139':
+     Office_2C --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_140':
+     Office_2C --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_141':
+     Office_2C --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_142':
+     Office_2C --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_143':
+     Office_2C --(temperature)--> Mechanical_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_144':
+     Office_2C --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_145':
+     Office_2C --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_146':
+     Office_2C --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_147':
+     Office_2C --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_148':
+     Office_2C --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_149':
+     Office_2C --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_150':
+     Office_2C --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_151':
+     Office_2C --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_152':
+     Office_2C --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_153':
+     Office_2C --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_154':
+     Office_2C --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_155':
+     Office_2C --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_156':
+     Office_2C --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_157':
+     Office_2C --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_158':
+     Office_2C --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_159':
+     Office_2C --(temperature)--> Mechanical_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_160':
+     Office_2C --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_161':
+     Office_3A --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_162':
+     Office_3A --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_163':
+     Office_3A --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_164':
+     Office_3A --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_165':
+     Office_3A --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_166':
+     Office_3A --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_167':
+     Office_3A --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_168':
+     Office_3A --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_169':
+     Office_3A --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_170':
+     Office_3A --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_171':
+     Office_3A --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_172':
+     Office_3A --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_173':
+     Office_3A --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_174':
+     Office_3A --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_175':
+     Office_3A --(temperature)--> Mechanical_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_176':
+     Office_3A --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_177':
+     Office_3A --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_178':
+     Office_3A --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_179':
+     Office_3A --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_180':
+     Office_3A --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_181':
+     Office_3A --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_182':
+     Office_3A --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_183':
+     Office_3A --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_184':
+     Office_3A --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_185':
+     Office_3A --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_186':
+     Office_3A --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_187':
+     Office_3A --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_188':
+     Office_3A --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_189':
+     Office_3A --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_190':
+     Office_3A --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_191':
+     Office_3A --(temperature)--> Mechanical_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_192':
+     Office_3A --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_193':
+     Office_3B --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_194':
+     Office_3B --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_195':
+     Office_3B --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_196':
+     Office_3B --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_197':
+     Office_3B --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_198':
+     Office_3B --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_199':
+     Office_3B --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_200':
+     Office_3B --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_201':
+     Office_3B --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_202':
+     Office_3B --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_203':
+     Office_3B --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_204':
+     Office_3B --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_205':
+     Office_3B --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_206':
+     Office_3B --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_207':
+     Office_3B --(temperature)--> Mechanical_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_208':
+     Office_3B --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_209':
+     Office_3B --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_210':
+     Office_3B --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_211':
+     Office_3B --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_212':
+     Office_3B --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_213':
+     Office_3B --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_214':
+     Office_3B --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_215':
+     Office_3B --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_216':
+     Office_3B --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_217':
+     Office_3B --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_218':
+     Office_3B --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_219':
+     Office_3B --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_220':
+     Office_3B --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_2_3).
+
+---> Analyzing Interaction 'interaction_221':
+     Office_3B --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_222':
+     Office_3B --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_223':
+     Office_3B --(temperature)--> Mechanical_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_224':
+     Office_3B --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_225':
+     Conference_Room_1 --(CO2)--> Conference_Room_2
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_226':
+     Conference_Room_1 --(CO2)--> Conference_Room_3
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_227':
+     Conference_Room_2 --(CO2)--> Conference_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_228':
+     Conference_Room_2 --(CO2)--> Conference_Room_3
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_229':
+     Conference_Room_3 --(CO2)--> Conference_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_230':
+     Conference_Room_3 --(CO2)--> Conference_Room_2
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1302':
+     Lobby_1 --(luminance)--> Lobby_1
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_1303':
+     Lobby_1 --(luminance)--> Lobby_1
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_1304':
+     Hallway_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1305':
+     Hallway_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1306':
+     Conference_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1307':
+     Conference_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1308':
+     Server_Room --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1309':
+     Server_Room --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1310':
+     Control_Room --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1311':
+     Control_Room --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1312':
+     Mechanical_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1313':
+     Mechanical_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1314':
+     Hallway_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1315':
+     Hallway_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1316':
+     Conference_Room_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1317':
+     Conference_Room_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1318':
+     Hallway_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1319':
+     Hallway_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1320':
+     Conference_Room_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1321':
+     Conference_Room_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1322':
+     Office_1A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1323':
+     Office_1A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1324':
+     Office_1B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1325':
+     Office_1B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1326':
+     Office_2A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1327':
+     Office_2A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1328':
+     Office_2B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1329':
+     Office_2B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1330':
+     Office_2C --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1331':
+     Office_2C --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1332':
+     Office_3A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1333':
+     Office_3A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1334':
+     Office_3B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1335':
+     Office_3B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1371':
+     Main_Entrance --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1372':
+     Main_Entrance --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1373':
+     Lobby_1 --(luminance)--> Lobby_1
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_1374':
+     Lobby_1 --(luminance)--> Lobby_1
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_1375':
+     Hallway_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1376':
+     Hallway_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1377':
+     Office_1A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1378':
+     Office_1A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1379':
+     Office_1B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1380':
+     Office_1B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1381':
+     Conference_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1382':
+     Conference_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1383':
+     Server_Room --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1384':
+     Server_Room --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1385':
+     Control_Room --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1386':
+     Control_Room --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1387':
+     Mechanical_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1388':
+     Mechanical_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1389':
+     Hallway_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1390':
+     Hallway_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1391':
+     Office_2A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1392':
+     Office_2A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1393':
+     Office_2B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1394':
+     Office_2B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1395':
+     Office_2C --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1396':
+     Office_2C --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1397':
+     Conference_Room_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1398':
+     Conference_Room_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1399':
+     Hallway_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1400':
+     Hallway_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1401':
+     Office_3A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1402':
+     Office_3A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1403':
+     Office_3B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1404':
+     Office_3B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1405':
+     Conference_Room_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1406':
+     Conference_Room_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1407':
+     Roof --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1408':
+     Roof --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1409':
+     Server_Room --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_1410':
+     Server_Room --(temperature)--> Office_1A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_1411':
+     Server_Room --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_1412':
+     Server_Room --(temperature)--> Office_1B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:AHU_Floor_1).
+
+---> Analyzing Interaction 'interaction_1413':
+     Server_Room --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_1414':
+     Server_Room --(temperature)--> Office_2A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_1415':
+     Server_Room --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_1416':
+     Server_Room --(temperature)--> Office_2B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_1417':
+     Server_Room --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_1418':
+     Server_Room --(temperature)--> Office_2C
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_1419':
+     Server_Room --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_1420':
+     Server_Room --(temperature)--> Office_3A
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_1421':
+     Server_Room --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_1422':
+     Server_Room --(temperature)--> Office_3B
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R2 (HVAC-Mediated): Locations are connected by the same AHU (bldg:normal).
+
+---> Analyzing Interaction 'interaction_1423':
+     Server_Room --(temperature)--> Server_Room
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_1424':
+     Server_Room --(temperature)--> Mechanical_Room_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1530':
+     Main_Entrance --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1531':
+     Main_Entrance --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1532':
+     Main_Entrance --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1533':
+     Main_Entrance --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1534':
+     Lobby_1 --(luminance)--> Lobby_1
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_1535':
+     Lobby_1 --(luminance)--> Lobby_1
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_1536':
+     Lobby_1 --(luminance)--> Lobby_1
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_1537':
+     Lobby_1 --(luminance)--> Lobby_1
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_1538':
+     Lobby_1 --(luminance)--> Lobby_1
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_1539':
+     Lobby_1 --(luminance)--> Lobby_1
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_1540':
+     Lobby_1 --(luminance)--> Lobby_1
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_1541':
+     Lobby_1 --(luminance)--> Lobby_1
+     [+] VERDICT: PLAUSIBLE. Reason: Rule R1 (Intra-Space): Devices are in the same location.
+
+---> Analyzing Interaction 'interaction_1542':
+     Hallway_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1543':
+     Hallway_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1544':
+     Hallway_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1545':
+     Hallway_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1546':
+     Hallway_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1547':
+     Hallway_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1548':
+     Hallway_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1549':
+     Hallway_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1550':
+     Hallway_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1551':
+     Hallway_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1565':
+     Hallway_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1566':
+     Hallway_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1580':
+     Office_1A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1581':
+     Office_1A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1595':
+     Office_1A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1596':
+     Office_1A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1610':
+     Office_1B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1611':
+     Office_1B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1625':
+     Office_1B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1626':
+     Office_1B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1640':
+     Office_2A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1641':
+     Office_2A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1655':
+     Office_2A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1656':
+     Office_2A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1670':
+     Office_2B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1671':
+     Office_2B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1685':
+     Office_2B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1686':
+     Office_2B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1700':
+     Office_2C --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1701':
+     Office_2C --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1715':
+     Office_2C --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1716':
+     Office_2C --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1730':
+     Office_3A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1731':
+     Office_3A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1745':
+     Office_3A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1746':
+     Office_3A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1760':
+     Office_3B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1761':
+     Office_3B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1775':
+     Office_3B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1776':
+     Office_3B --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1790':
+     Conference_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1791':
+     Conference_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1805':
+     Conference_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1806':
+     Conference_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1820':
+     Office_1A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1821':
+     Office_1A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1835':
+     Conference_Room_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1836':
+     Conference_Room_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1850':
+     Conference_Room_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1851':
+     Conference_Room_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1852':
+     Conference_Room_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1853':
+     Conference_Room_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1854':
+     Server_Room --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1855':
+     Server_Room --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1856':
+     Server_Room --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1857':
+     Server_Room --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1858':
+     Mechanical_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1859':
+     Mechanical_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1860':
+     Mechanical_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1861':
+     Mechanical_Room_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1862':
+     Hallway_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1863':
+     Hallway_1 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1864':
+     Hallway_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1865':
+     Hallway_2 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1866':
+     Hallway_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1867':
+     Hallway_3 --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1868':
+     Office_1A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.
+
+---> Analyzing Interaction 'interaction_1869':
+     Office_1A --(luminance)--> Lobby_1
+     [-] VERDICT: PRUNED. Reason: Rule R4 (Spatially Separated): No plausible physical path found.

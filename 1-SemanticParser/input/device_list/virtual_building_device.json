@@ -1,0 +1,1188 @@
+{
+    "devices": [
+        {
+            "identification": {
+                "device_name": "Time_Mode_Controller",
+                "type": "time_mode_controller"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "day_profile",
+                        "data_type": "enum",
+                        "units": "WORK_HOURS/OFF_HOURS/HOLIDAY"
+                    },
+                    {
+                        "name": "day_type",
+                        "data_type": "enum",
+                        "units": "WEEKDAY/WEEKEND"
+                    },
+                    {
+                        "name": "season_profile",
+                        "data_type": "enum",
+                        "units": "SUMMER/WINTER/TRANSITION"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "force_mode",
+                        "parameters": {
+                            "profile_to_force": "<string>",
+                            "new_state": "<string>",
+                            "duration_hours": "<num>"
+                        },
+                        "transition": {
+                            "bldg:Time_Mode_Controller": {
+                                "<profile_to_force>": "<new_state>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Central_AHU",
+                "type": "air_handler_unit"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "power_status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    },
+                    {
+                        "name": "fan_speed",
+                        "data_type": "num",
+                        "units": "%"
+                    },
+                    {
+                        "name": "supply_air_temperature",
+                        "data_type": "num",
+                        "units": "°C"
+                    },
+                    {
+                        "name": "return_air_temperature",
+                        "data_type": "num",
+                        "units": "°C"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_power",
+                        "parameters": {
+                            "status": "enum"
+                        },
+                        "transition": {
+                            "Central_AHU": {
+                                "power_status": "<status>"
+                            }
+                        }
+                    },
+                    {
+                        "name": "set_fan_speed",
+                        "parameters": {
+                            "speed_percent": "num"
+                        },
+                        "transition": {
+                            "Central_AHU": {
+                                "fan_speed": "<speed_percent>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Main_Chiller",
+                "type": "chiller"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "power_status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    },
+                    {
+                        "name": "load",
+                        "data_type": "num",
+                        "units": "%"
+                    },
+                    {
+                        "name": "chilled_water_supply_temperature",
+                        "data_type": "num",
+                        "units": "°C"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_power",
+                        "parameters": {
+                            "status": "enum"
+                        },
+                        "transition": {
+                            "Main_Chiller": {
+                                "power_status": "<status>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Main_Boiler",
+                "type": "boiler"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "power_status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    },
+                    {
+                        "name": "load",
+                        "data_type": "num",
+                        "units": "%"
+                    },
+                    {
+                        "name": "hot_water_supply_temperature",
+                        "data_type": "num",
+                        "units": "°C"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_power",
+                        "parameters": {
+                            "status": "enum"
+                        },
+                        "transition": {
+                            "Main_Boiler": {
+                                "power_status": "<status>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Main_CoolingTower",
+                "type": "cooling_tower"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "power_status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    },
+                    {
+                        "name": "fan_speed",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_power",
+                        "parameters": {
+                            "status": "enum"
+                        },
+                        "transition": {
+                            "Main_CoolingTower": {
+                                "power_status": "<status>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "OAT_Sensor",
+                "type": "temperature_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "temperature",
+                        "data_type": "num",
+                        "units": "°C"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "OARH_Sensor",
+                "type": "humidity_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "relative_humidity",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "VAV_1A",
+                "type": "variable_air_volume_unit"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "damper_position",
+                        "data_type": "num",
+                        "units": "%"
+                    },
+                    {
+                        "name": "current_airflow",
+                        "data_type": "num",
+                        "units": "m³/h"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_damper_position",
+                        "parameters": {
+                            "position_percent": "num"
+                        },
+                        "transition": {
+                            "VAV_1A": {
+                                "damper_position": "<position_percent>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "TempSensor_1A",
+                "type": "temperature_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "temperature",
+                        "data_type": "num",
+                        "units": "°C"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "VAV_1B",
+                "type": "variable_air_volume_unit"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "damper_position",
+                        "data_type": "num",
+                        "units": "%"
+                    },
+                    {
+                        "name": "current_airflow",
+                        "data_type": "num",
+                        "units": "m³/h"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_damper_position",
+                        "parameters": {
+                            "position_percent": "num"
+                        },
+                        "transition": {
+                            "VAV_1B": {
+                                "damper_position": "<position_percent>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "TempSensor_1B",
+                "type": "temperature_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "temperature",
+                        "data_type": "num",
+                        "units": "°C"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "VAV_Conf1",
+                "type": "variable_air_volume_unit"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "damper_position",
+                        "data_type": "num",
+                        "units": "%"
+                    },
+                    {
+                        "name": "current_airflow",
+                        "data_type": "num",
+                        "units": "m³/h"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_damper_position",
+                        "parameters": {
+                            "position_percent": "num"
+                        },
+                        "transition": {
+                            "VAV_Conf1": {
+                                "damper_position": "<position_percent>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "TempSensor_Conf1",
+                "type": "temperature_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "temperature",
+                        "data_type": "num",
+                        "units": "°C"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "CO2Sensor_Conf1",
+                "type": "co2_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "co2_concentration",
+                        "data_type": "num",
+                        "units": "ppm"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "VAV_ServerRoom",
+                "type": "variable_air_volume_unit"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "damper_position",
+                        "data_type": "num",
+                        "units": "%"
+                    },
+                    {
+                        "name": "current_airflow",
+                        "data_type": "num",
+                        "units": "m³/h"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_damper_position",
+                        "parameters": {
+                            "position_percent": "num"
+                        },
+                        "transition": {
+                            "VAV_ServerRoom": {
+                                "damper_position": "<position_percent>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "TempSensor_ServerRoom",
+                "type": "temperature_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "temperature",
+                        "data_type": "num",
+                        "units": "°C"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "HumiditySensor_ServerRoom",
+                "type": "humidity_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "relative_humidity",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Main_Lighting_Panel",
+                "type": "lighting_control_panel"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "power_status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    },
+                    {
+                        "name": "load",
+                        "data_type": "num",
+                        "units": "kW"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_power",
+                        "parameters": {
+                            "status": "enum"
+                        },
+                        "transition": {
+                            "Main_Lighting_Panel": {
+                                "power_status": "<status>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Luminaire_Main_Entrance",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "power_status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    },
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_power",
+                        "parameters": {
+                            "status": "enum"
+                        },
+                        "transition": {
+                            "Luminaire_Main_Entrance": {
+                                "power_status": "<status>"
+                            }
+                        }
+                    },
+                    {
+                        "name": "set_brightness",
+                        "parameters": {
+                            "level_percent": "num"
+                        },
+                        "transition": {
+                            "Luminaire_Main_Entrance": {
+                                "brightness": "<level_percent>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Switch_Main_Entrance",
+                "type": "lighting_switch"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "switch_status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_status",
+                        "parameters": {
+                            "status": "enum"
+                        },
+                        "transition": {
+                            "Switch_Main_Entrance": {
+                                "switch_status": "<status>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Occupancy_Sensor_Main_Entrance",
+                "type": "occupancy_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "occupancy_status",
+                        "data_type": "enum",
+                        "units": "OCCUPIED/UNOCCUPIED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Luminaire_Lobby_1",
+                "type": "luminaire"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "power_status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    },
+                    {
+                        "name": "brightness",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_power",
+                        "parameters": {
+                            "status": "enum"
+                        },
+                        "transition": {
+                            "Luminaire_Lobby_1": {
+                                "power_status": "<status>"
+                            }
+                        }
+                    },
+                    {
+                        "name": "set_brightness",
+                        "parameters": {
+                            "level_percent": "num"
+                        },
+                        "transition": {
+                            "Luminaire_Lobby_1": {
+                                "brightness": "<level_percent>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Switch_Lobby_1",
+                "type": "lighting_switch"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "switch_status",
+                        "data_type": "enum",
+                        "units": "ON/OFF"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_status",
+                        "parameters": {
+                            "status": "enum"
+                        },
+                        "transition": {
+                            "Switch_Lobby_1": {
+                                "switch_status": "<status>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Dimmer_Lobby_1",
+                "type": "dimmer"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "brightness_level",
+                        "data_type": "num",
+                        "units": "%"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "set_level",
+                        "parameters": {
+                            "level_percent": "num"
+                        },
+                        "transition": {
+                            "Dimmer_Lobby_1": {
+                                "brightness_level": "<level_percent>"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Occupancy_Sensor_Lobby_1",
+                "type": "occupancy_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "occupancy_status",
+                        "data_type": "enum",
+                        "units": "OCCUPIED/UNOCCUPIED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Luminance_Sensor_Lobby_1",
+                "type": "luminance_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "illuminance",
+                        "data_type": "num",
+                        "units": "lux"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Main_FACP",
+                "type": "fire_alarm_control_panel"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "system_status",
+                        "data_type": "enum",
+                        "units": "NORMAL/ALARM/FAULT/SILENCED"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "silence_alarm",
+                        "parameters": {},
+                        "transition": {
+                            "Main_FACP": {
+                                "system_status": "SILENCED"
+                            }
+                        }
+                    },
+                    {
+                        "name": "reset_system",
+                        "parameters": {},
+                        "transition": {
+                            "Main_FACP": {
+                                "system_status": "NORMAL"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Smoke_Detector_Lobby_1",
+                "type": "smoke_detector"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "alarm_status",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Pull_Station_Lobby_1",
+                "type": "manual_pull_station"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "activation_status",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Horn_Lobby_1",
+                "type": "alarm_horn"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "activation_status",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "activate",
+                        "parameters": {},
+                        "transition": {
+                            "Horn_Lobby_1": {
+                                "activation_status": "true"
+                            }
+                        }
+                    },
+                    {
+                        "name": "deactivate",
+                        "parameters": {},
+                        "transition": {
+                            "Horn_Lobby_1": {
+                                "activation_status": "false"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Strobe_Lobby_1",
+                "type": "alarm_strobe"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "activation_status",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "activate",
+                        "parameters": {},
+                        "transition": {
+                            "Strobe_Lobby_1": {
+                                "activation_status": "true"
+                            }
+                        }
+                    },
+                    {
+                        "name": "deactivate",
+                        "parameters": {},
+                        "transition": {
+                            "Strobe_Lobby_1": {
+                                "activation_status": "false"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Sprinkler_Lobby_1",
+                "type": "sprinkler"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "flow_status",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Heat_Detector_Server_Room",
+                "type": "heat_detector"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "alarm_status",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Server_Room_Gas_Suppression",
+                "type": "fire_suppression_system"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "system_status",
+                        "data_type": "enum",
+                        "units": "ARMED/DISCHARGED/FAULT"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "discharge",
+                        "parameters": {},
+                        "transition": {
+                            "Server_Room_Gas_Suppression": {
+                                "system_status": "DISCHARGED"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Main_Access_Control_Panel",
+                "type": "access_control_panel"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "panel_status",
+                        "data_type": "enum",
+                        "units": "ONLINE/OFFLINE"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "lockdown_all_doors",
+                        "parameters": {},
+                        "transition": {}
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Reader_Main_Entrance",
+                "type": "access_reader"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "reader_status",
+                        "data_type": "enum",
+                        "units": "ACTIVE/INACTIVE"
+                    },
+                    {
+                        "name": "last_scan_result",
+                        "data_type": "enum",
+                        "units": "SUCCESS/FAIL/NONE"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "disable",
+                        "parameters": {
+                            "duration_seconds": "num"
+                        },
+                        "transition": {
+                            "Reader_Main_Entrance": {
+                                "reader_status": "INACTIVE"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Strike_Main_Entrance",
+                "type": "electric_strike"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "lock_status",
+                        "data_type": "enum",
+                        "units": "LOCKED/UNLOCKED"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "unlock",
+                        "parameters": {
+                            "duration_seconds": "num"
+                        },
+                        "transition": {
+                            "Strike_Main_Entrance": {
+                                "lock_status": "UNLOCKED"
+                            }
+                        }
+                    },
+                    {
+                        "name": "lock",
+                        "parameters": {},
+                        "transition": {
+                            "Strike_Main_Entrance": {
+                                "lock_status": "LOCKED"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Door_Sensor_Main_Entrance",
+                "type": "door_contact_sensor"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "door_state",
+                        "data_type": "enum",
+                        "units": "OPEN/CLOSED"
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "REX_Main_Entrance",
+                "type": "request_to_exit_button"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "button_pressed",
+                        "data_type": "boolean",
+                        "units": null
+                    }
+                ],
+                "commands": []
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Main_NVR",
+                "type": "network_video_recorder"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "recording_status",
+                        "data_type": "enum",
+                        "units": "RECORDING/STOPPED"
+                    },
+                    {
+                        "name": "storage_remaining",
+                        "data_type": "num",
+                        "units": "GB"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "start_recording",
+                        "parameters": {
+                            "camera_id": "string"
+                        },
+                        "transition": {
+                            "Main_NVR": {
+                                "recording_status": "RECORDING"
+                            }
+                        }
+                    },
+                    {
+                        "name": "stop_recording",
+                        "parameters": {
+                            "camera_id": "string"
+                        },
+                        "transition": {
+                            "Main_NVR": {
+                                "recording_status": "STOPPED"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Camera_Lobby_1",
+                "type": "security_camera"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "streaming_status",
+                        "data_type": "enum",
+                        "units": "ACTIVE/INACTIVE"
+                    },
+                    {
+                        "name": "video_url",
+                        "data_type": "string",
+                        "units": null
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "start_stream",
+                        "parameters": {},
+                        "transition": {
+                            "Camera_Lobby_1": {
+                                "streaming_status": "ACTIVE"
+                            }
+                        }
+                    },
+                    {
+                        "name": "stop_stream",
+                        "parameters": {},
+                        "transition": {
+                            "Camera_Lobby_1": {
+                                "streaming_status": "INACTIVE"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "identification": {
+                "device_name": "Camera_Roof_PTZ",
+                "type": "ptz_camera"
+            },
+            "capabilities": {
+                "measurable_attributes": [
+                    {
+                        "name": "streaming_status",
+                        "data_type": "enum",
+                        "units": "ACTIVE/INACTIVE"
+                    },
+                    {
+                        "name": "pan_angle",
+                        "data_type": "num",
+                        "units": "degrees"
+                    },
+                    {
+                        "name": "tilt_angle",
+                        "data_type": "num",
+                        "units": "degrees"
+                    },
+                    {
+                        "name": "zoom_level",
+                        "data_type": "num",
+                        "units": "x"
+                    }
+                ],
+                "commands": [
+                    {
+                        "name": "pan_to",
+                        "parameters": {
+                            "angle": "num"
+                        },
+                        "transition": {
+                            "Camera_Roof_PTZ": {
+                                "pan_angle": "<angle>"
+                            }
+                        }
+                    },
+                    {
+                        "name": "tilt_to",
+                        "parameters": {
+                            "angle": "num"
+                        },
+                        "transition": {
+                            "Camera_Roof_PTZ": {
+                                "tilt_angle": "<angle>"
+                            }
+                        }
+                    },
+                    {
+                        "name": "zoom_to",
+                        "parameters": {
+                            "level": "num"
+                        },
+                        "transition": {
+                            "Camera_Roof_PTZ": {
+                                "zoom_level": "<level>"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

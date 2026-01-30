@@ -1,0 +1,210 @@
+Rule_1: When the Time_Mode_Controller enters WORK_HOURS mode, the Global_Lighting_Mode is set to DAY_PROFILE.
+Rule_2: When the Time_Mode_Controller enters OFF_HOURS mode, the Global_Lighting_Mode is set to NIGHT_PROFILE.
+Rule_3: If an authorized card is presented at the Main Entrance, the Door_Lock_Main unlocks for 5 seconds.
+Rule_4: If the Main Entrance door is forced open without valid access, the Security_Alarm_Main triggers.
+Rule_5: If the Main Entrance door remains open for more than 30 seconds, the Door_Ajar_Alarm_Main activates.
+Rule_6: If Occupancy is detected in the Main Entrance, the Lights_Main_Entrance turn on to 100%.
+Rule_7: If no Occupancy is detected in the Main Entrance for 5 minutes, the Lights_Main_Entrance turn off.
+Rule_8: If the Illuminance level at the Main Entrance is above 1000 lux, the Lights_Main_Entrance stay OFF even if occupied.
+Rule_9: If Motion is detected at the Main Entrance during OFF_HOURS, the Camera_Main_Entrance starts recording.
+Rule_10: If the Main Entrance door unlocks, the Air_Curtain_Main activates for 60 seconds.
+Rule_11: If Occupancy is detected in Lobby 1, the Lights_Lobby_1 turn on to scene 'Welcome'.
+Rule_12: If no Occupancy is detected in Lobby 1 for 10 minutes, the Lights_Lobby_1 dim to 20%.
+Rule_13: If the Illuminance sensor in Lobby 1 reads > 500 lux, the Lights_Lobby_1 dim to 10% to save energy.
+Rule_14: If the Illuminance sensor in Lobby 1 reads < 300 lux and Occupancy is TRUE, the Lights_Lobby_1 increase to 80%.
+Rule_15: If the Temperature in Lobby 1 is > 24°C, the VAV_Lobby_1 increases cooling airflow.
+Rule_16: If the Temperature in Lobby 1 is < 21°C, the VAV_Lobby_1 reduces cooling airflow.
+Rule_17: If the CO2 level in Lobby 1 exceeds 800 ppm, the VAV_Lobby_1 increases fresh air intake.
+Rule_18: If the Smoke Detector in Lobby 1 is active, the Fire_Curtain_Lobby_1 deploys.
+Rule_19: If the Glass Break Sensor in Lobby 1 triggers, the Security_Alarm_Global activates.
+Rule_20: If Motion is detected in Lobby 1 during OFF_HOURS, the Camera_Lobby_1 begins recording high-definition video.
+Rule_21: If the Rain_Sensor indicates RAIN, the Automatic_Blinds_Lobby_1 close to 50%.
+Rule_22: If Occupancy is detected in Hallway 1, the Lights_Hallway_1 turn on to 100%.
+Rule_23: If no Occupancy is detected in Hallway 1 for 5 minutes, the Lights_Hallway_1 turn off.
+Rule_24: If the Main_Fire_Alarm is ACTIVE, the Lights_Hallway_1 flash in Emergency Pattern.
+Rule_25: If Motion is detected in Hallway 1 during OFF_HOURS, the Camera_Hallway_1 positions to the motion zone.
+Rule_26: If the Sound Level in Hallway 1 exceeds 85dB, a Noise_Alert is sent to the Control Room.
+Rule_27: If the Temperature in Hallway 1 > 26°C, the VAV_Hallway_1 switches to MAX_COOL.
+Rule_28: If the Smoke Detector in Hallway 1 triggers, the Fire_Doors_Hallway_1 close automatically.
+Rule_29: If Access Control grants entry to Office 1A, the Lights_Hallway_1 turn on to 100%.
+Rule_30: If Access Control grants entry to Office 1B, the Lights_Hallway_1 turn on to 100%.
+Rule_31: If the Janitor_Call_Button in Lobby 1 is pressed, a notification is sent to the Maintenance_System.
+Rule_32: If the Battery_Level of Smoke_Detector_Lobby_1 is < 10%, a Maintenance_Alert is generated.
+Rule_33: If the Filter_Status of VAV_Lobby_1 is DIRTY, a Maintenance_Ticket is created.
+Rule_34: If the Main Entrance Door is Locked, the Exterior_Canopy_Lights turn on at constant 50%.
+Rule_35: If the Ambient_Light_Sensor_Exterior is DARK, the Exterior_Pathway_Lights turn ON.
+Rule_36: If the Ambient_Light_Sensor_Exterior is BRIGHT, the Exterior_Pathway_Lights turn OFF.
+Rule_37: If the Security_System is ARMED and Motion is detected in Lobby 1, the Siren_Lobby_1 sounds.
+Rule_38: If the Time is between 18:00 and 06:00, the Elevator_Lobby_1 defaults to Ground Floor.
+Rule_39: If the Fire Alarm is ACTIVE, the Elevator_Lobby_1 recalls to Ground Floor and opens doors.
+Rule_40: If the Water_Leak_Sensor in Lobby 1 Restroom detects moisture, the Main_Water_Valve_Lobby closes.
+Rule_41: If Occupancy is detected in Office 1A, the Lights_Office_1A turn on to 100%.
+Rule_42: If no Occupancy is detected in Office 1A for 15 minutes, the Lights_Office_1A turn off.
+Rule_43: If the Window_Contact_Office_1A is OPEN, the VAV_1A sets damper position to 0% (Close).
+Rule_44: If the Temperature in Office 1A is > 24°C, the VAV_1A sets damper position to 80%.
+Rule_45: If the Temperature in Office 1A is < 21°C, the VAV_1A sets damper position to 20%.
+Rule_46: If Card Access is Granted at Office 1A, the VAV_1A switches to COMFORT_MODE immediately.
+Rule_47: If the Smoke Detector in Office 1A is active, the Door_Lock_Office_1A unlocks automatically.
+Rule_48: If the Illuminance in Office 1A is > 500 lux, the Lights_Office_1A dim to 50%.
+Rule_49: If Occupancy is detected in Office 1B, the Lights_Office_1B turn on to 100%.
+Rule_50: If no Occupancy is detected in Office 1B for 15 minutes, the Lights_Office_1B turn off.
+Rule_51: If the Window_Contact_Office_1B is OPEN, the VAV_1B sets damper position to 0% (Close).
+Rule_52: If the Temperature in Office 1B is > 24°C, the VAV_1B sets damper position to 80%.
+Rule_53: If the Temperature in Office 1B is < 21°C, the VAV_1B sets damper position to 20%.
+Rule_54: If Card Access is Granted at Office 1B, the VAV_1B switches to COMFORT_MODE immediately.
+Rule_55: If the Smoke Detector in Office 1B is active, the Door_Lock_Office_1B unlocks automatically.
+Rule_56: If the Illuminance in Office 1B is > 500 lux, the Lights_Office_1B dim to 50%.
+Rule_57: If Occupancy is detected in Conference Room 1C, the Lights_Conf_1C turn on to 100%.
+Rule_58: If no Occupancy is detected in Conference Room 1C for 20 minutes, the Lights_Conf_1C turn off.
+Rule_59: If the CO2 level in Conference Room 1C > 1000 ppm, the VAV_Conf_1C sets damper to 100% (Max Fresh Air).
+Rule_60: If the CO2 level in Conference Room 1C < 600 ppm, the VAV_Conf_1C returns to AUTO mode.
+Rule_61: If the Temperature in Conference Room 1C is > 25°C, the VAV_Conf_1C increases cooling load.
+Rule_62: If Presentation_Mode is ACTIVE in Conference Room 1C, the Lights_Conf_1C dim to 10%.
+Rule_63: If Presentation_Mode is ACTIVE in Conference Room 1C, the Automatic_Blinds_Conf_1C CLOSE completely.
+Rule_64: If the Smoke Detector in Conference Room 1C is active, the Audio_System_Conf_1C mutes.
+Rule_65: If Access Control Grants Entry to Conference Room 1C, the HVAC_Conf_1C Pre-Cooling activates.
+Rule_66: If the Door_Conf_1C is held open for > 5 minutes, the VAV_Conf_1C reduces airflow to saves energy.
+Rule_67: If the Time is OFF_HOURS and Occupancy is detected in Office 1A, the Lights_Office_1A turn on to 50% only.
+Rule_68: If the Time is OFF_HOURS and Occupancy is detected in Office 1B, the Lights_Office_1B turn on to 50% only.
+Rule_69: If the Time is OFF_HOURS and Occupancy is detected in Conference 1C, the Lights_Conf_1C turn on to 50% only.
+Rule_70: If the Battery_Status of Window_Sensor_Office_1A is LOW, send Alert to Facility_Manager.
+Rule_71: If the Battery_Status of Window_Sensor_Office_1B is LOW, send Alert to Facility_Manager.
+Rule_72: If Motion is detected in Office 1A but Door was not opened, trigger Intrusion_Alert_1A (Potential Stay-Behind).
+Rule_73: If Motion is detected in Office 1B but Door was not opened, trigger Intrusion_Alert_1B.
+Rule_74: If the HVAC_System is in HEATING_MODE, the VAV_1A maintains Minimum_Airflow to prevent cold drafts.
+Rule_75: If the HVAC_System is in HEATING_MODE, the VAV_1B maintains Minimum_Airflow to prevent cold drafts.
+Rule_76: If Temperature in Server Room > 22°C, the Dedicated_Cooling_System sets fan speed to 100%.
+Rule_77: If Temperature in Server Room > 28°C, the Server_Shutdown_Script executes to prevent hardware damage.
+Rule_78: If Humidity in Server Room > 60%, the Dehumidifier_Server_Room activates.
+Rule_79: If Humidity in Server Room < 30%, the Humidifier_Server_Room activates.
+Rule_80: If Heat Detector in Server Room is ACTIVE, the Pre-Action_Valve opens immediately.
+Rule_81: If Smoke Detector in Server Room is ACTIVE, the Gas_Suppression_System counts down 30 seconds.
+Rule_82: If Gas_Suppression_System is DISCHARGING, the Door_Lock_Server_Room unlocks for egress.
+Rule_83: If the Server Room Door is held open > 60 seconds, the Local_Siren activates.
+Rule_84: If Motion is detected in Server Room during OFF_HOURS, the Security_Team is notified via SMS.
+Rule_85: If Access is Granted to Server Room, the Lights_Server_Room turn on to 100%.
+Rule_86: If No Occupancy in Server Room for 5 minutes, Lights_Server_Room turn off.
+Rule_87: If Water Leak detected in Server Room (Underground), the Main_Water_Valve_Server closes.
+Rule_88: If Occupancy detected in Control Room, Lights_Control_Room turn on.
+Rule_89: If No Occupancy in Control Room for 30 minutes, Lights_Control_Room dim to 50%.
+Rule_90: If Control Room Access is attempted with Invalid Card, Camera_Control_Room records clip.
+Rule_91: If Main Fire Alarm is ACTIVE, the Access_Control_Panel in Control Room displays Zone Map.
+Rule_92: If Heat Detector in Mechanical Room is ACTIVE, the Main_Fire_Alarm triggers.
+Rule_93: If Water Leak detected in Mechanical Room, the Sump_Pump activates.
+Rule_94: If Water Level in Sump Pit is HIGH, the Backup_Pump activates.
+Rule_95: If Motion detected in Mechanical Room, Lights_Mechanical_Room turn on.
+Rule_96: If Access to Mechanical Room is assigned to 'Maintenance_Staff', allow entry 24/7.
+Rule_97: If Access to Mechanical Room is assigned to 'Office_Staff', deny entry.
+Rule_98: If the HVAC_Chiller status is FAULT, send Urgent_Alert to Control_Room_Display.
+Rule_99: If the Emergency_Generator is RUNNING, the Mechanical_Room_Exhaust_Fan turns on to 100%.
+Rule_100: If the Fuel_Level of Generator is < 20%, send Critical_Alert to Facility_Manager.
+Rule_101: If Occupancy is detected in Office 2A, the Lights_Office_2A turn on to 100%.
+Rule_102: If no Occupancy is detected in Office 2A for 15 minutes, the Lights_Office_2A turn off.
+Rule_103: If the Window_Contact_Office_2A is OPEN, the VAV_2A sets damper position to 0%.
+Rule_104: If the Temperature in Office 2A is > 24°C, the VAV_2A sets damper to 80%.
+Rule_105: If the Temperature in Office 2A is < 21°C, the VAV_2A sets damper to 20%.
+Rule_106: If Occupancy is detected in Office 2B, the Lights_Office_2B turn on to 100%.
+Rule_107: If no Occupancy is detected in Office 2B for 15 minutes, the Lights_Office_2B turn off.
+Rule_108: If the Window_Contact_Office_2B is OPEN, the VAV_2B sets damper position to 0%.
+Rule_109: If the Temperature in Office 2B is > 24°C, the VAV_2B sets damper to 80%.
+Rule_110: If the Temperature in Office 2B is < 21°C, the VAV_2B sets damper to 20%.
+Rule_111: If Occupancy is detected in Office 2C, the Lights_Office_2C turn on to 100%.
+Rule_112: If no Occupancy is detected in Office 2C for 15 minutes, the Lights_Office_2C turn off.
+Rule_113: If the Window_Contact_Office_2C is OPEN, the VAV_2C sets damper position to 0%.
+Rule_114: If the Temperature in Office 2C is > 24°C, the VAV_2C sets damper to 80%.
+Rule_115: If the Temperature in Office 2C is < 21°C, the VAV_2C sets damper to 20%.
+Rule_116: If Occupancy is detected in Office 2D, the Lights_Office_2D turn on to 100%.
+Rule_117: If no Occupancy is detected in Office 2D for 15 minutes, the Lights_Office_2D turn off.
+Rule_118: If the Window_Contact_Office_2D is OPEN, the VAV_2D sets damper position to 0%.
+Rule_119: If the Temperature in Office 2D is > 24°C, the VAV_2D sets damper to 80%.
+Rule_120: If the Temperature in Office 2D is < 21°C, the VAV_2D sets damper to 20%.
+Rule_121: If Smoke Detector in Office 2A is ACTIVE, the Door_Lock_Office_2A unlocks.
+Rule_122: If Smoke Detector in Office 2B is ACTIVE, the Door_Lock_Office_2B unlocks.
+Rule_123: If Smoke Detector in Office 2C is ACTIVE, the Door_Lock_Office_2C unlocks.
+Rule_124: If Smoke Detector in Office 2D is ACTIVE, the Door_Lock_Office_2D unlocks.
+Rule_125: If Access is Granted to Office 2A, the VAV_2A enters COMFORT_MODE.
+Rule_126: If Access is Granted to Office 2B, the VAV_2B enters COMFORT_MODE.
+Rule_127: If Access is Granted to Office 2C, the VAV_2C enters COMFORT_MODE.
+Rule_128: If Access is Granted to Office 2D, the VAV_2D enters COMFORT_MODE.
+Rule_129: If Occupancy is detected in Hallway 2, the Lights_Office_2A turn on to 10%.
+Rule_130: If Occupancy is detected in Hallway 2, the Lights_Office_2B turn on to 10%.
+Rule_131: If Occupancy is detected in Hallway 2, the Lights_Office_2C turn on to 10%.
+Rule_132: If Occupancy is detected in Hallway 2, the Lights_Office_2D turn on to 10%.
+Rule_133: If Illuminance in Office 2A > 600 lux, Lights_Office_2A dim to 30%.
+Rule_134: If Illuminance in Office 2B > 600 lux, Lights_Office_2B dim to 30%.
+Rule_135: If Illuminance in Office 2C > 600 lux, Lights_Office_2C dim to 30%.
+Rule_136: If Illuminance in Office 2D > 600 lux, Lights_Office_2D dim to 30%.
+Rule_137: If Battery of Window_Contact_2A is Low, notify Maintenance.
+Rule_138: If Battery of Window_Contact_2B is Low, notify Maintenance.
+Rule_139: If Battery of Window_Contact_2C is Low, notify Maintenance.
+Rule_140: If Battery of Window_Contact_2D is Low, notify Maintenance.
+Rule_141: If Motion detected in Office 2A during OFF_HOURS, Alarm_2A activates.
+Rule_142: If Motion detected in Office 2B during OFF_HOURS, Alarm_2B activates.
+Rule_143: If Motion detected in Office 2C during OFF_HOURS, Alarm_2C activates.
+Rule_144: If Motion detected in Office 2D during OFF_HOURS, Alarm_2D activates.
+Rule_145: If Global_Security_Alarm is ACTIVE, all Office Lights on Level 2 Flash.
+Rule_146: If Occupancy is detected in Conference 2E, the Lights_Conf_2E turn on to 100%.
+Rule_147: If no Occupancy is detected in Conference 2E for 20 minutes, the Lights_Conf_2E turn off.
+Rule_148: If CO2 in Conference 2E > 800 ppm, VAV_Conf_2E opens Fresh_Air_Damper to 100%.
+Rule_149: If CO2 in Conference 2E < 500 ppm, VAV_Conf_2E returns to AUTO.
+Rule_150: If Temperature in Conference 2E > 24°C, VAV_Conf_2E increases Cooling.
+Rule_151: If Temperature in Conference 2E < 21°C, VAV_Conf_2E decreases Cooling.
+Rule_152: If Presentation_Mode is ACTIVE in Conf 2E, Lights_Conf_2E dim to 20%.
+Rule_153: If Presentation_Mode is ACTIVE in Conf 2E, Blinds_Conf_2E Close.
+Rule_154: If Occupancy is detected in Conference 2F, the Lights_Conf_2F turn on to 100%.
+Rule_155: If no Occupancy is detected in Conference 2F for 20 minutes, the Lights_Conf_2F turn off.
+Rule_156: If CO2 in Conference 2F > 800 ppm, VAV_Conf_2F opens Fresh_Air_Damper to 100%.
+Rule_157: If CO2 in Conference 2F < 500 ppm, VAV_Conf_2F returns to AUTO.
+Rule_158: If Temperature in Conference 2F > 24°C, VAV_Conf_2F increases Cooling.
+Rule_159: If Temperature in Conference 2F < 21°C, VAV_Conf_2F decreases Cooling.
+Rule_160: If Presentation_Mode is ACTIVE in Conf 2F, Lights_Conf_2F dim to 20%.
+Rule_161: If Presentation_Mode is ACTIVE in Conf 2F, Blinds_Conf_2F Close.
+Rule_162: If Occupancy is detected in Lobby 2, Lights_Lobby_2 turn on.
+Rule_163: If no Occupancy in Lobby 2 for 15 minutes, Lights_Lobby_2 turn off.
+Rule_164: If Ambient_Light in Lobby 2 > 500 lux, Lights_Lobby_2 dim to 10%.
+Rule_165: If Smoke Detector in Lobby 2 is ACTIVE, Fire_Doors_Lobby_2 close.
+Rule_166: If Motion detected in Lobby 2 during OFF_HOURS, Camera_Lobby_2 records.
+Rule_167: If Occupancy detected in Hallway 2, Lights_Hallway_2 turn on.
+Rule_168: If no Occupancy in Hallway 2 for 5 minutes, Lights_Hallway_2 turn off.
+Rule_169: If Smoke Detector in Hallway 2 is ACTIVE, Alarm_Hallway_2 sounds.
+Rule_170: If Access Granted at Main Entrance, Lights_Lobby_2 turn on.
+Rule_171: If Alarm_Fire_Main is ACTIVE, All_Blinds_Conf_2E Open.
+Rule_172: If Alarm_Fire_Main is ACTIVE, All_Blinds_Conf_2F Open.
+Rule_173: If Window_Contact_Conf_2E is Open, VAV_Conf_2E OFF.
+Rule_174: If Window_Contact_Conf_2F is Open, VAV_Conf_2F OFF.
+Rule_175: If Water_Leak_Pantry_L2 detected, Close_Water_Valve_L2.
+Rule_176: If Emergency_Exit_Door_L2 opened, Alarm_Security_Global activates.
+Rule_177: If Temp_Server_Room > 30°C, Send_SMS_to_Admin.
+Rule_178: If Temp_Server_Room > 35°C, Shutdown_All_Servers.
+Rule_179: If Humidity_Server_Room > 80%, Send_Warning_to_Facility.
+Rule_180: If CO2_Lobby_1 > 1000 ppm, Activate_Exhaust_Fan_Lobby_1.
+Rule_181: If CO2_Lobby_2 > 1000 ppm, Activate_Exhaust_Fan_Lobby_2.
+Rule_182: If Time is HOLIDAY, Global_SetPoint_Cooling = 26°C.
+Rule_183: If Time is HOLIDAY, Global_SetPoint_Heating = 18°C.
+Rule_184: If Time is WORK_HOURS, Global_SetPoint_Cooling = 23°C.
+Rule_185: If Time is WORK_HOURS, Global_SetPoint_Heating = 21°C.
+Rule_186: If Outdoor_Temp > 30°C, Pre-Cool_Building starts at 06:00.
+Rule_187: If Outdoor_Temp < 5°C, Pre-Heat_Building starts at 06:00.
+Rule_188: If Wind_Speed > 50 km/h, Retract_External_Blinds.
+Rule_189: If Rain_Sensor is WET, Close_Roof_Vents.
+Rule_190: If Fire_Pump_Running is TRUE, Send_Signal_to_FACP.
+Rule_191: If Sprinkler_Flow_Lobby_1 detected, Activate_Fire_Alarm_Lobby_1.
+Rule_192: If Sprinkler_Flow_Hallway_1 detected, Activate_Fire_Alarm_Hallway_1.
+Rule_193: If Sprinkler_Flow_Server_Room detected, Activate_Fire_Alarm_Server.
+Rule_194: If Sprinkler_Flow_Office_1A detected, Activate_Fire_Alarm_L1.
+Rule_195: If Sprinkler_Flow_Office_2A detected, Activate_Fire_Alarm_L2.
+Rule_196: If Power_Main_Failure detected, Start_Generator.
+Rule_197: If Generator_Running, Shed_Non_Critical_Loads (Lighting Level 2).
+Rule_198: If Generator_Running, Shed_Non_Critical_Loads (Lighting Level 1).
+Rule_199: If UPS_Battery < 20%, Shutdown_Non_Critical_Servers.
+Rule_200: If Maintenance_Switch_Elevator is ON, Disable_Elevator_Call_Buttons.
+Rule_201: If Elevator_Stuck detected, Call_Emergency_Services.
+Rule_202: If the Main_Fire_Alarm is ACTIVE, the Door_Lock_Main unlocks immediately.
+Rule_203: If the Main_Fire_Alarm is ACTIVE, the Door_Lock_Server_Room unlocks immediately.
+Rule_204: If the Main_Fire_Alarm is ACTIVE, the Door_Lock_Office_1A unlocks.
+Rule_205: If the Main_Fire_Alarm is ACTIVE, the Door_Lock_Office_2A unlocks.
+Rule_206: If Global_Heating_Mode is ACTIVE and Temperature in Office 1A < 21°C, VAV_1A increases Warm_Air_Supply.
+Rule_207: If Global_Heating_Mode is ACTIVE and Temperature in Office 2A < 21°C, VAV_2A increases Warm_Air_Supply.
+Rule_208: If Global_Heating_Mode is ACTIVE and Temperature in Lobby 1 < 20°C, VAV_Lobby_1 increases Warm_Air_Supply.
+Rule_209: If Global_Heating_Mode is ACTIVE, VAV_1A damper limits minimum position to 30%.
+Rule_210: If Main_Fire_Alarm is ACTIVE, all Access_Control_Doors unlock.

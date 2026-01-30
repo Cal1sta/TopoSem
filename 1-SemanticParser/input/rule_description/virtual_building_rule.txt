@@ -1,0 +1,161 @@
+Rule_1: If the temperature in Office 1A rises above 24°C, the system automatically increases the cool air supply.
+Rule_2: if the temperature in Office 1A drops below 21°C, it increases the warm air supply.
+Rule_3: If the temperature in Office 1B rises above 24°C, the system automatically increases the cool air supply.
+Rule_4: if the temperature in Office 1B drops below 21°C, it increases the warm air supply.
+Rule_5: If the temperature in Office 2A rises above 24°C, the system automatically increases the cool air supply.
+Rule_6: if the temperature in Office 2A drops below 21°C, it increases the warm air supply.
+Rule_7: If the temperature in Office 2B rises above 24°C, the system automatically increases the cool air supply.
+Rule_8: if the temperature in Office 2B drops below 21°C, it increases the warm air supply.
+Rule_9: If the temperature in Office 2C rises above 24°C, the system automatically increases the cool air supply.
+Rule_10: if the temperature in Office 2C drops below 21°C, it increases the warm air supply.
+Rule_11: If the temperature in Office 3A rises above 24°C, the system automatically increases the cool air supply.
+Rule_12: if the temperature in Office 3A drops below 21°C, it increases the warm air supply.
+Rule_13: If the temperature in Office 3B rises above 24°C, the system automatically increases the cool air supply. 
+Rule_14: if the temperature in Office 3B drops below 21°C, it increases the warm air supply.
+Rule_15: If the CO2 concentration in Conference Room 1 exceeds 1000 ppm, the system will override temperature settings to increase the fresh air supply.
+Rule_16: If the CO2 concentration in Conference Room 2 exceeds 1000 ppm, the system will override temperature settings to increase the fresh air supply.
+Rule_17: If the CO2 concentration in Conference Room 3 exceeds 1000 ppm, the system will override temperature settings to increase the fresh air supply.
+Rule_18: If the relative humidity in the Server Room exceeds 60%, the system automatically increases the supply of dehumidified air.
+Rule_19: When the Time_Mode_Controller enters WORK_HOURS mode during the SUMMER season, the system automatically starts the central cooling plant.
+Rule_20: When the Time_Mode_Controller enters WORK_HOURS mode during the WINTER season, the system automatically starts the central heating plant.
+Rule_21: When the Time_Mode_Controller's day_profile transitions to OFF_HOURS, the system automatically shuts down all central HVAC plant equipment.
+Rule_22: If the smoke detector in Lobby 1 is triggered, the main fire alarm system will activate.
+Rule_23: If the smoke detector in Hallway 1 is triggered, the main fire alarm system will activate.
+Rule_24: If the smoke detector in Office 1A is triggered, the main fire alarm system will activate.
+Rule_25: If the smoke detector in Office 1B is triggered, the main fire alarm system will activate.
+Rule_26: If the smoke detector in Conference Room 1 is triggered, the main fire alarm system will activate.
+Rule_27: If the smoke detector in the Control Room is triggered, the main fire alarm system will activate.
+Rule_28: If the smoke detector in Hallway 2 is triggered, the main fire alarm system will activate.
+Rule_29: If the smoke detector in Office 2A is triggered, the main fire alarm system will activate.
+Rule_30: If the smoke detector in Office 2B is triggered, the main fire alarm system will activate.
+Rule_31: If the smoke detector in Office 2C is triggered, the main fire alarm system will activate.
+Rule_32: If the smoke detector in Conference Room 2 is triggered, the main fire alarm system will activate.
+Rule_33: If the smoke detector in Hallway 3 is triggered, the main fire alarm system will activate.
+Rule_34: If the smoke detector in Office 3A is triggered, the main fire alarm system will activate.
+Rule_35: If the smoke detector in Office 3B is triggered, the main fire alarm system will activate.
+Rule_36: If the smoke detector in Conference Room 3 is triggered, the main fire alarm system will activate.
+Rule_37: If the heat detector in the Server Room is triggered, the main fire alarm system will activate.
+Rule_38: If the heat detector in Mechanical Room 1 is triggered, the main fire alarm system will activate.
+Rule_39: If the manual pull station in Lobby 1 is activated, the main fire alarm system will activate.
+Rule_40: When the main fire alarm system is active, the horn and strobe in Lobby 1 will activate.
+Rule_41: When the main fire alarm system is active, the horn and strobe in Hallway 1 will activate.
+Rule_42: When the main fire alarm system is active, the horn and strobe in Conference Room 1 will activate.
+Rule_43: When the main fire alarm system is active, the horn and strobe in the Server Room will activate.
+Rule_44: When the main fire alarm system is active, the horn and strobe in the Control Room will activate.
+Rule_45: When the main fire alarm system is active, the horn and strobe in Mechanical Room 1 will activate.
+Rule_46: When the main fire alarm system is active, the horn and strobe in Hallway 2 will activate.
+Rule_47: When the main fire alarm system is active, the horn and strobe in Conference Room 2 will activate.
+Rule_48: When the main fire alarm system is active, the horn and strobe in Hallway 3 will activate.
+Rule_49: When the main fire alarm system is active, the horn and strobe in Conference Room 3 will activate.
+Rule_50: When the main fire alarm system is active, the strobe in Office 1A will activate.
+Rule_51: When the main fire alarm system is active, the strobe in Office 1B will activate.
+Rule_52: When the main fire alarm system is active, the strobe in Office 2A will activate.
+Rule_53: When the main fire alarm system is active, the strobe in Office 2B will activate.
+Rule_54: When the main fire alarm system is active, the strobe in Office 2C will activate.
+Rule_55: When the main fire alarm system is active, the strobe in Office 3A will activate.
+Rule_56: When the main fire alarm system is active, the strobe in Office 3B will activate.
+Rule_57: When the main fire alarm system is active, the central air handler unit for the entire building will shut down.
+Rule_58: When the main fire alarm system is active, the electric lock on the Main Entrance will be unlocked.
+Rule_59: When the main fire alarm system is active, the electric lock on the door to Office 1A will be unlocked.
+Rule_60: When the main fire alarm system is active, the electric lock on the door to Office 1B will be unlocked.
+Rule_61: When the main fire alarm system is active, the electric lock on the door to Office 2A will be unlocked.
+Rule_62: When the main fire alarm system is active, the electric lock on the door to Office 2B will be unlocked.
+Rule_63: When the main fire alarm system is active, the electric lock on the door to Office 2C will be unlocked.
+Rule_64: When the main fire alarm system is active, the electric lock on the door to Office 3A will be unlocked.
+Rule_65: When the main fire alarm system is active, the electric lock on the door to Office 3B will be unlocked.
+Rule_66: When the main fire alarm system is active, the electric lock on the door to the Server Room will be unlocked.
+Rule_67: When the main fire alarm system is active, the electric lock on the door to the Mechanical Room will be unlocked.
+Rule_68: When the main fire alarm system is active, the electric lock on the door to the Roof will be unlocked.
+Rule_69: When the main fire alarm system is active, the lights in the Main Entrance will turn on to 100% brightness.
+Rule_70: When the main fire alarm system is active, the lights in Lobby 1 will turn on to 100% brightness.
+Rule_71: When the main fire alarm system is active, the lights in Hallway 1 will turn on to 100% brightness.
+Rule_72: When the main fire alarm system is active, the lights in Office 1A will turn on to 100% brightness.
+Rule_73: When the main fire alarm system is active, the lights in Office 1B will turn on to 100% brightness.
+Rule_74: When the main fire alarm system is active, the lights in Conference Room 1 will turn on to 100% brightness.
+Rule_75: When the main fire alarm system is active, the lights in the Server Room will turn on to 100% brightness.
+Rule_76: When the main fire alarm system is active, the lights in the Control Room will turn on to 100% brightness.
+Rule_77: When the main fire alarm system is active, the lights in Mechanical Room 1 will turn on to 100% brightness.
+Rule_78: When the main fire alarm system is active, the lights in Hallway 2 will turn on to 100% brightness.
+Rule_79: When the main fire alarm system is active, the lights in Office 2A will turn on to 100% brightness.
+Rule_80: When the main fire alarm system is active, the lights in Office 2B will turn on to 100% brightness.
+Rule_81: When the main fire alarm system is active, the lights in Office 2C will turn on to 100% brightness.
+Rule_82: When the main fire alarm system is active, the lights in Conference Room 2 will turn on to 100% brightness.
+Rule_83: When the main fire alarm system is active, the lights in Hallway 3 will turn on to 100% brightness.
+Rule_84: When the main fire alarm system is active, the lights in Office 3A will turn on to 100% brightness.
+Rule_85: When the main fire alarm system is active, the lights in Office 3B will turn on to 100% brightness.
+Rule_86: When the main fire alarm system is active, the lights in Conference Room 3 will turn on to 100% brightness.
+Rule_87: When the main fire alarm system is active, the lights on the Roof will turn on to 100% brightness.
+Rule_88: If the heat detector in the Server Room is triggered, the gas fire suppression system for that room will discharge after a 30-second delay.
+Rule_89: An authorized user can silence all audible horns and visible strobes from the main fire alarm control panel.
+Rule_90: An authorized user can reset the entire fire alarm system from the main fire alarm control panel after an event is cleared.
+Rule_91: If occupancy is detected in the Main Entrance, the lights will automatically turn on.
+Rule_92: If the Main Entrance is unoccupied for 5 minutes, the lights will automatically turn off.
+Rule_93: If occupancy is detected in Lobby 1, the lights will automatically turn on to a default brightness.
+Rule_94: If Lobby 1 is unoccupied for 15 minutes, the lights will automatically turn off.
+Rule_95: If the natural light level in Lobby 1 is high, the lights will automatically dim to a lower level to save energy.
+Rule_96: If the natural light level in Lobby 1 is low while it is occupied, the lights will automatically brighten to ensure adequate illumination.
+Rule_97: If occupancy is detected in Hallway 1, the lights will automatically turn on.
+Rule_98: If Hallway 1 is unoccupied for 5 minutes, the lights will automatically turn off.
+Rule_99: If occupancy is detected in Hallway 2, the lights will automatically turn on.
+Rule_100: If Hallway 2 is unoccupied for 5 minutes, the lights will automatically turn off.
+Rule_101: If occupancy is detected in Hallway 3, the lights will automatically turn on.
+Rule_102: If Hallway 3 is unoccupied for 5 minutes, the lights will automatically turn off.
+Rule_103: If occupancy is detected in Office 1A, the lights will automatically turn on.
+Rule_104: If Office 1A is unoccupied for 10 minutes, the lights will automatically turn off.
+Rule_105: If occupancy is detected in Office 1B, the lights will automatically turn on.
+Rule_106: If Office 1B is unoccupied for 10 minutes, the lights will automatically turn off.
+Rule_107: If occupancy is detected in Office 2A, the lights will automatically turn on.
+Rule_108: If Office 2A is unoccupied for 10 minutes, the lights will automatically turn off.
+Rule_109: If occupancy is detected in Office 2B, the lights will automatically turn on.
+Rule_110: If Office 2B is unoccupied for 10 minutes, the lights will automatically turn off.
+Rule_111: If occupancy is detected in Office 2C, the lights will automatically turn on.
+Rule_112: If Office 2C is unoccupied for 10 minutes, the lights will automatically turn off.
+Rule_113: If occupancy is detected in Office 3A, the lights will automatically turn on.
+Rule_114: If Office 3A is unoccupied for 10 minutes, the lights will automatically turn off.
+Rule_115: If occupancy is detected in Office 3B, the lights will automatically turn on.
+Rule_116: If Office 3B is unoccupied for 10 minutes, the lights will automatically turn off.
+Rule_117: If occupancy is detected in Conference Room 1, the lights will automatically turn on.
+Rule_118: If Conference Room 1 is unoccupied for 15 minutes, the lights will automatically turn off.
+Rule_119: If occupancy is detected in Conference Room 2, the lights will automatically turn on.
+Rule_120: If Conference Room 2 is unoccupied for 15 minutes, the lights will automatically turn off.
+Rule_121: If occupancy is detected in Conference Room 3, the lights will automatically turn on.
+Rule_122: If Conference Room 3 is unoccupied for 15 minutes, the lights will automatically turn off.
+Rule_123: If occupancy is detected in the Server Room, the lights will automatically turn on.
+Rule_124: If the Server Room is unoccupied for 5 minutes, the lights will automatically turn off.
+Rule_125: If occupancy is detected in the Mechanical Room, the lights will automatically turn on.
+Rule_126: If the Mechanical Room is unoccupied for 5 minutes, the lights will automatically turn off.
+Rule_127: During off-hours, the automatic turn-on brightness for all Hallways will be reduced to 50% for energy saving.
+Rule_128: Using a manual light switch in any room will override the current automated lighting state for that room.
+Rule_129: If an authorized face or card is presented at the Main Entrance, the door will unlock for 5 seconds.
+Rule_130: If an authorized card is presented at the door to Office 1A, the door will unlock for 5 seconds.
+Rule_131: If an authorized card is presented at the door to Office 1B, the door will unlock for 5 seconds.
+Rule_132: If an authorized card is presented at the door to Office 2A, the door will unlock for 5 seconds.
+Rule_133: If an authorized card is presented at the door to Office 2B, the door will unlock for 5 seconds.
+Rule_134: If an authorized card is presented at the door to Office 2C, the door will unlock for 5 seconds.
+Rule_135: If an authorized card is presented at the door to Office 3A, the door will unlock for 5 seconds.
+Rule_136: If an authorized card is presented at the door to Office 3B, the door will unlock for 5 seconds.
+Rule_137: If an authorized card is presented at the door to the Server Room, the door will unlock for 5 seconds.
+Rule_138: If an authorized card is presented at the door to the Mechanical Room, the door will unlock for 5 seconds.
+Rule_139: If an authorized card is presented at the door to the Roof, the door will unlock for 5 seconds.
+Rule_140: If an unauthorized card is presented at the Main Entrance, access will be denied and the camera in Lobby 1 will record a 30-second video clip.
+Rule_141: If an unauthorized card is presented at the Server Room door, access will be denied and the camera outside the Server Room will record a 30-second video clip.
+Rule_142: If the request-to-exit button inside the Main Entrance is pressed, the door will unlock.
+Rule_143: If the request-to-exit button inside Office 1A is pressed, the door will unlock.
+Rule_144: If the request-to-exit button inside Office 1B is pressed, the door will unlock.
+Rule_145: If the request-to-exit button inside Office 2A is pressed, the door will unlock.
+Rule_146: If the request-to-exit button inside Office 2B is pressed, the door will unlock.
+Rule_147: If the request-to-exit button inside Office 2C is pressed, the door will unlock.
+Rule_148: If the request-to-exit button inside Office 3A is pressed, the door will unlock.
+Rule_149: If the request-to-exit button inside Office 3B is pressed, the door will unlock.
+Rule_150: If the request-to-exit button inside the Server Room is pressed, the door will unlock.
+Rule_151: If the request-to-exit button inside the Mechanical Room is pressed, the door will unlock.
+Rule_152: If the request-to-exit button inside the Roof access is pressed, the door will unlock.
+Rule_153: If the Main Entrance door is held open for more than 60 seconds, a "door propped open" alarm will be generated.
+Rule_154: If the Server Room door is held open for more than 30 seconds, a "door propped open" alarm will be generated.
+Rule_155: If the Main Entrance door is opened without authorization, a "door forced open" alarm will be generated and the camera in Lobby 1 will begin recording.
+Rule_156: If the Server Room door is opened without authorization, a "door forced open" alarm will be generated and the camera outside the Server Room will begin recording.
+Rule_157: The camera in Lobby 1 will record continuously during work hours.
+Rule_158: The camera in Hallway 1 will automatically begin recording for one minute when it detects motion.
+Rule_159: The camera in Hallway 2 will automatically begin recording for one minute when it detects motion.
+Rule_160: The camera in Hallway 3 will automatically begin recording for one minute when it detects motion.
+Rule_161: The PTZ camera on the Roof will automatically patrol a pre-defined tour during off-hours.
